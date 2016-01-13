@@ -1,0 +1,38 @@
+{
+    "name": "29-required-badfields-not",
+    "required": [
+        {
+            "name": "08-required-badfields-not-require-faketest",
+            "parmNames": [
+                "faketest"
+            ],
+            "suppliers": [
+                {
+                    "name": "08-required-badfields-not-require-faketest-obtener-faketest",
+                    "imports": [
+                        {
+                            "name": "08-required-badfields-not-require-faketest-obtener-faketest-import",
+                            "configurationPath": "@testspath/general/obtener-fake-test.json",
+                            "importMode": "STATIC"
+                        }
+                    ],
+                    "exports": [
+                        {
+                            "name": "08-required-badfields-not-require-faketest-obtener-faketest-export",
+                            "exportAs": "faketest",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+

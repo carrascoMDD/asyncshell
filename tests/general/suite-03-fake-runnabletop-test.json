@@ -1,0 +1,44 @@
+{
+    "name": "suite-03-fake-runnabletop-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/general-test/fake-test",
+    "constructorName": "FakeTest_Constructor",
+    "methodName": "pF_Fake",
+    "scheduleSubs": "SERIES",
+    "parms": {
+        "salutation": "Hello suite-03-fake-runnabletop-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+        "fake": {
+            "fakeResult":   { "fakeResult": "fakeResult"},
+            "fakeSuccess":  true,
+            "fakeRcvError": null,
+            "fakeRcvStatus": 200,
+            "fakeRcvBody": { "fakeBody": "fakeBody"}
+        }
+    },
+    "imports": [
+        {
+            "name": "hitpoint-import",
+            "configurationPath": "@testspath/general/security/parms-hitpoint.json",
+            "importMode": "STATIC"
+        },
+        {
+            "name": "credentials-import",
+            "configurationPath": "@testspath/general/security/parms-credentials.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-03-fake-runnabletop-test-sub",
+            "runnable": true
+        }
+    ]
+}
+
+
+
+
+
+
+

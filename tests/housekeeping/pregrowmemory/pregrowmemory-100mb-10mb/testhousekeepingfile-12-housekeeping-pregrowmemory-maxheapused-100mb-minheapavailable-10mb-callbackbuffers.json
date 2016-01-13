@@ -1,0 +1,78 @@
+{
+    "title": "testhousekeepingfile-12-housekeeping-pregrowmemory-maxheapused-100mb-minheapavailable-10mb-callbackbuffers.json",
+    "HOUSEKEEPOPTIONS": {
+        "incrementalMode":  true,
+        "maxHeapUsed":      100,
+        "minHeapAvailable": 10,
+        "ignoreThrashingMillis":  true,
+        "thrashingHeapAvailable": 20,
+        "thrashingMillis":        null,
+        "forceBits":        null
+    },
+    "MEMORY": [
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/pregrowmemory/pregrowmemory-100mb-10mb/suite-12-housekeeping-pregrowmemory-maxheapused-100mb-minheapavailable-10mb-callbackbuffers-test.json",
+            "attempts":  [
+                {
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ]
+                },
+                {
+                    "expectedRecommendations": [
+                       {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ]
+                },
+                {
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["CALLBACKSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1000000, "max": 20000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["CALLBACKSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1000000, "max": 20000000}}
+                        }
+                    ]
+                },
+                { "shallHaveNoHousekeeping": true}
+            ]
+        }
+    ]
+}

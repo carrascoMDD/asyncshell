@@ -1,0 +1,14 @@
+[
+    {
+        "title": "launcherstest-01-launchmodules-launch-toymodule",
+        "module": "#root/lib/common-test/toymodule",
+        "constructor": "ToyModule_Constructor",
+        "method": "pF_Toy"
+    },
+    {
+        "title": "launcherstest-01-launchmodules-launch-toymodule",
+        "module": "#root/lib/common-test/toymodule",
+        "constructor": "ToyModule_Constructor",
+        "method": "pF_Toy"
+    }
+]

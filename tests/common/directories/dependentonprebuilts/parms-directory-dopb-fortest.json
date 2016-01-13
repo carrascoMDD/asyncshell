@@ -1,0 +1,35 @@
+{
+    "name": "parms-directory-dopb-fortest",
+    "parms": {
+        "parmsfordirectorytestdopb": {
+            "baseDirectory":                  "~/end2enddirtestprebuilts/basedirfortest",
+            "baseDirectoryNotExists":         "~/end2enddirtestprebuilts/basedirfortestnotexists",
+            "baseDirectoryAlreadyExists":     "~/end2enddirtestprebuilts/basedirfortestalreadyexists",
+
+            "directoryOne":                   "dir01",
+            "directoryTwo":                   "dir02",
+            "directoryFourWithBase":          "~/end2enddirtestprebuilts/basedirfortest/dir04",
+            "directoryNotExists":             "subdirnotexists",
+
+
+            "directoryForTreeSublevels5":     "dirwithtreesublevels501",
+
+
+            "baseDirectoryToCreate":          "~/end2enddirtestprebuilts/basedircreated",
+            "baseDirectoryToCreateSubdir":    "~/end2enddirtestprebuilts/basedircreatedforsubdir01",
+            "baseDirectoryToCreateSubdirAlreadyExists": "~/end2enddirtestprebuilts/basedirforsubdiralreadyexists",
+
+            "directoryToCreate":              "dircreated01",
+            "directoryToCreateNested1Level":  "dircreated02/subdircreated02_01",
+            "directoryToCreateNested2Levels": "dircreated03/subdirtocreated03_01/subdircreated03_01_01",
+            "directoryToCreateNested3Levels": "dircreated04/subdircreated04_01/subdircreated04_01_01/subdircreated04_01_01_01",
+            "directoryToCreateAlreadyExists": "dirtocreatealreadyexists",
+
+            "directoryToRemoveFlat":          "dirtoremoveflat01",
+            "directoryToRemoveTreeNoFiles":   "dirtoremovetreenofiles01",
+            "directoryToRemoveTreeWithFiles": "dirtoremovetreewithfiles01"
+
+        }
+    }
+}
+

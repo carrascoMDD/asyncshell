@@ -1,0 +1,6 @@
+[
+    "@testspath/common/requestreply/suite-30-requestreply-releasepayloads-holders-1MB-test.json",
+    "@testspath/common/requestreply/suite-40-requestreply-releasepayloads-holders-10MB-test.json",
+    "@testspath/common/requestreply/suite-42-requestreply-releasepayloads-holders-50MB-test.json",
+    "@testspath/common/requestreply/suite-44-requestreply-releasepayloads-holders-100MB-test.json"
+]

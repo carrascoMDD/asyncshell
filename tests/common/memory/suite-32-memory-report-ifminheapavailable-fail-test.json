@@ -1,0 +1,30 @@
+{
+    "name": "suite-32-memory-report-ifminheapavailable-fail-test",
+    "runnable": true,
+    "expectSuccess": false,
+    "module": "@cmppath/common-test/memory-test",
+    "constructorName": "Memory_Constructor",
+    "methodName": "pF_Memory",
+    "parms": {
+        "memory": {
+            "minHeapAvailable":                100000,
+            "maxHeapUsed":                     -1,
+            "maxHeapTotal":                    -1,
+
+            "failIfUnderMinHeapAvailable":      true,
+            "failIfOverMaxHeapUsed":            false,
+            "failIfOverMaxHeapTotal":           false,
+
+            "garbageCollectIfMinHeapAvailable": false,
+            "garbageCollectIfMaxHeapUsed":      false,
+            "garbageCollectIfMaxHeapTotal":     false,
+            "garbageCollectAlways":             false,
+
+            "reportMemoryAfter":                true,
+
+            "dumpmemoryreport":                 true,
+            "dumpgarbagecollect":               true
+        }
+    },
+    "scheduleSubs": "SERIES"
+}

@@ -1,0 +1,20 @@
+[
+    [ "27-check-badfields", "27-check-badfields-TEST-wo-checkwhen"],
+    [ "27-check-badfields", "27-check-badfields-TEST-wo-checkkind"],
+    [ "27-check-badfields", "27-check-badfields-TEST-wo-checkorigin"],
+    [ "27-check-badfields", "27-check-badfields-TEST-wo-checksouce"],
+    [ "27-check-badfields", "27-check-badfields-TEST-wo-checkvalue"],
+    [ "27-check-badfields", "27-check-badfields-TEST-checknegate-number"],
+    [ "27-check-badfields", "27-check-badfields-TEST-checkwhen-badAFTER"],
+    [ "27-check-badfields", "27-check-badfields-TEST-checkkind-badEQ"],
+    [ "27-check-badfields", "27-check-badfields-TEST-checkorigin-badTEST"]
+]
+
+
+
+
+
+
+
+
+

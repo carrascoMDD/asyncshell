@@ -1,0 +1,642 @@
+{
+    "name": "suite-70-fileaccess-read-onlybasepath-ok-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/fileaccess-test",
+    "constructorName": "FileAccess_Constructor",
+    "methodName": "pF_FileAccess",
+    "scheduleSubs": "SERIES",
+    "imports": [
+        {
+            "name": "paths-import",
+            "configurationPath": "@testspath/common/fileaccess/parms-fileaccess-fortest.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "parms": {
+        "fileaccess": {
+            "basePathParmName":        null,
+            "basePath":                null,
+            "dirPathParmName":         null,
+            "dirPath":                 null,
+            "filenameParmName":        null,
+            "filename":                null,
+            "fullFilePathParmName":    "UsedFullFilePath",
+            "fullFilePath":            null,
+            "expandHome":              true,
+
+            "fileEncoding":            "DEFAULT",
+
+            "readFileContents":        true,
+
+            "unlinkFile":              false,
+            "touchFile":               false,
+            "createFile":              false,
+            "createFileMode":          "0660",
+            "truncateFile":            false,
+            "appendToFile":            false,
+            "writeFileContents":       true,
+
+            "contentsToWriteParmName": "ContentsToWriteToFile",
+
+            "failIfFileNotExists":     false,
+            "failIfFileAlreadyExists": false,
+            "failIfFileEmpty":         false,
+            "failIfFileNotEmpty":      false,
+
+            "dumppaths":               false,
+            "dumpstats":               true,
+            "dumpparseresult":         false,
+            "dumpfilecontents":        false,
+            "dumpremovals":            false,
+            "dumpcreatefile":          false,
+            "dumpreads":               false,
+            "dumpwrites":              true,
+            "dumpcontenttowrite":      false
+        },
+        "ContentsToWriteToFile": "ContentsToWrite\nToFile\nUserHome/end2endfiletest/basedirforfileaccess60writecreatedonlybasepath/filenamefor60writecreatedonlybasepath.txt"
+    },
+    "exports": [
+        {
+            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-export-UsedFullFilePath",
+            "exportAs": "UsedFullFilePath",
+            "exportOrigin": "TEST",
+            "exportSource": "_v_UsedFullFilePath",
+            "exportTarget": ".",
+            "exportWhen": "EXBEFORESUBS"
+        }
+    ],
+    "required": [
+        {
+            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink",
+            "parmNames": [
+                "createfilebeforeunlink"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/fileaccess-test",
+                    "constructorName": "FileAccess_Constructor",
+                    "methodName": "pF_FileAccess",
+                    "scheduleSubs": "SERIES",
+
+                    "parms": {
+                        "fileaccess": {
+                            "basePathParmName":        null,
+                            "basePath":                null,
+                            "dirPathParmName":         null,
+                            "dirPath":                 null,
+                            "filenameParmName":        null,
+                            "filename":                null,
+                            "fullFilePathParmName":    "UsedFullFilePath",
+                            "fullFilePath":            null,
+                            "expandHome":              true,
+
+                            "fileEncoding":            "DEFAULT",
+
+                            "readFileContents":        true,
+
+                            "unlinkFile":              false,
+                            "createFile":              true,
+                            "createFileMode":          "0660",
+                            "touchFile":               false,
+                            "truncateFile":            false,
+                            "appendToFile":            false,
+                            "writeFileContents":       false,
+
+                            "failIfFileNotExists":     false,
+                            "failIfFileAlreadyExists": true,
+                            "failIfFileEmpty":         false,
+                            "failIfFileNotEmpty":      false,
+
+                            "dumppaths":               false,
+                            "dumpstats":               true,
+                            "dumpparseresult":         false,
+                            "dumpfilecontents":        false,
+                            "dumpremovals":            false,
+                            "dumpcreatefile":          true,
+                            "dumpreads":               false,
+                            "dumpwrites":              false,
+                            "dumpcontenttowrite":      false
+                        }
+                    },
+                    "exports": [
+                        {
+                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-export-createfilebeforeunlink",
+                            "exportAs": "createfilebeforeunlink",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        },
+                        {
+                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-export-UsedFullFilePath",
+                            "exportAs": "UsedFullFilePath",
+                            "exportOrigin": "TEST",
+                            "exportSource": "_v_UsedFullFilePath",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFORESUBS"
+                        }
+                    ],
+                    "required": [
+                        {
+                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile",
+                            "parmNames": [
+                                "mkdirbeforecreatefile"
+                            ],
+                            "suppliers": [
+                                {
+                                    "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier",
+                                    "runnable": true,
+                                    "expectSuccess": true,
+                                    "module": "@cmppath/common-test/directory-test",
+                                    "constructorName": "Directory_Constructor",
+                                    "methodName": "pF_Directory",
+                                    "scheduleSubs": "SERIES",
+                                    "parms": {
+                                        "directory": {
+                                            "basePathParmName":        "parmsforfilestest.baseDirectoryForFileAccess60writecreatedonlybasepath",
+                                            "basePath":                null,
+                                            "dirPathParmName":         null,
+                                            "dirPath":                 null,
+                                            "fullDirPathParmName":     null,
+                                            "fullDirPath":             null,
+                                            "expandHome":              true,
+
+                                            "failIfDirNotExists":      false,
+                                            "failIfDirAlreadyExists":  false,
+
+                                            "tree":                    false,
+                                            "treeDirs":                false,
+                                            "treeLevel":               0,
+                                            "treeFiles":               false,
+
+                                            "rmDir":                   false,
+                                            "rmDirContentsDirs":       false,
+                                            "rmDirContentsFiles":      false,
+                                            "failIfDirNotEmpty":       false,
+
+                                            "createDir":               true,
+                                            "createDirMode":           "0770",
+
+                                            "dumppaths":               false,
+                                            "dumpstats":               false,
+                                            "dumpparseresult":         false,
+                                            "dumpreaddirs":            false,
+                                            "dumpdircontents":         false,
+                                            "dumptree":                false,
+                                            "dumptreeindented":        false,
+                                            "dumptreestats":           false,
+                                            "dumpremovals":            false,
+                                            "dumpmkdirs":              true
+
+                                        }
+                                    },
+                                    "exports": [
+                                        {
+                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-export-mkdirbeforecreatefile",
+                                            "exportAs": "mkdirbeforecreatefile",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "*",
+                                            "exportTarget": ".",
+                                            "exportWhen": "OK"
+                                        },
+                                        {
+                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-export-UsedFullDirPath",
+                                            "exportAs": "UsedFullDirPath",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "_v_UsedFullDirPath",
+                                            "exportTarget": ".",
+                                            "exportWhen": "EXBEFORESUBS"
+                                        }
+                                    ],
+                                    "checks": [
+                                        {
+                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-check-LISTCONTAINS-_v_DirsInTreePaths-UsedFullDirPath",
+                                            "checkWhen": "AFTER",
+                                            "checkNegate": false,
+                                            "checkKind": "LISTCONTAINS",
+                                            "checkOrigin": "TEST",
+                                            "checkSource": "_v_DirsCreated",
+                                            "checkValue": "~UsedFullDirPath"
+                                        }
+                                    ],
+                                    "required": [
+                                        {
+                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-require-rmdirbeforemkdir",
+                                            "parmNames": [
+                                                "rmdirbeforemkdir"
+                                            ],
+                                            "suppliers": [
+                                                {
+                                                    "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-require-rmdirbeforemkdir-supplier",
+                                                    "runnable": true,
+                                                    "expectSuccess": true,
+                                                    "module": "@cmppath/common-test/directory-test",
+                                                    "constructorName": "Directory_Constructor",
+                                                    "methodName": "pF_Directory",
+                                                    "scheduleSubs": "SERIES",
+                                                    "parms": {
+                                                        "directory": {
+                                                            "basePathParmName":        "parmsforfilestest.baseDirectoryForFileAccess60writecreatedonlybasepath",
+                                                            "basePath":                null,
+                                                            "dirPathParmName":         null,
+                                                            "dirPath":                 null,
+                                                            "fullDirPathParmName":     null,
+                                                            "fullDirPath":             null,
+                                                            "expandHome":              true,
+
+                                                            "tree":                    false,
+                                                            "treeDirs":                false,
+                                                            "treeLevel":               -1,
+                                                            "treeFiles":               false,
+
+                                                            "rmDir":                   true,
+                                                            "rmDirContentsDirs":       true,
+                                                            "rmDirContentsFiles":      true,
+                                                            "failIfDirNotEmpty":       false,
+
+                                                            "createDir":               false,
+                                                            "createDirMode":           "0770",
+                                                            "failIfDirNotExists":      false,
+                                                            "failIfDirAlreadyExists":  false,
+
+                                                            "dumppaths":               false,
+                                                            "dumpstats":               false,
+                                                            "dumpparseresult":         false,
+                                                            "dumpreaddirs":            false,
+                                                            "dumpdircontents":         false,
+                                                            "dumptree":                false,
+                                                            "dumptreeindented":        false,
+                                                            "dumptreestats":           false,
+                                                            "dumpremovals":            true,
+                                                            "dumpmkdirs":              true
+                                                        }
+                                                    },
+                                                    "exports": [
+                                                        {
+                                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-require-rmdirbeforemkdir-supplier-export-rmdirbeforemkdir",
+                                                            "exportAs": "rmdirbeforemkdir",
+                                                            "exportOrigin": "TEST",
+                                                            "exportSource": "*",
+                                                            "exportTarget": ".",
+                                                            "exportWhen": "OK"
+                                                        },
+                                                        {
+                                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-require-rmdirbeforemkdir-supplier-export-RemovedFullDirPath",
+                                                            "exportAs": "RemovedFullDirPath",
+                                                            "exportOrigin": "TEST",
+                                                            "exportSource": "_v_UsedFullDirPath",
+                                                            "exportTarget": ".",
+                                                            "exportWhen": "EXBEFORESUBS"
+                                                        }
+                                                    ],
+                                                    "subs": [
+                                                        {
+                                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-require-rmdirbeforemkdir-supplier-sub-mustnotexistsafterrmdir",
+                                                            "runnable": true,
+                                                            "expectSuccess": true,
+                                                            "module": "@cmppath/common-test/directory-test",
+                                                            "constructorName": "Directory_Constructor",
+                                                            "methodName": "pF_Directory",
+                                                            "scheduleSubs": "SERIES",
+                                                            "parms": {
+                                                                "directory": {
+                                                                    "basePathParmName":        null,
+                                                                    "basePath":                null,
+                                                                    "dirPathParmName":         null,
+                                                                    "dirPath":                 null,
+                                                                    "fullDirPathParmName":     "RemovedFullDirPath",
+                                                                    "fullDirPath":             null,
+                                                                    "expandHome":              true,
+
+                                                                    "tree":                    false,
+                                                                    "treeDirs":                false,
+                                                                    "treeLevel":               -1,
+                                                                    "treeFiles":               false,
+
+                                                                    "rmDir":                   false,
+                                                                    "rmDirContentsDirs":       false,
+                                                                    "rmDirContentsFiles":      false,
+                                                                    "failIfDirNotEmpty":       false,
+
+                                                                    "createDir":               false,
+                                                                    "createDirMode":           "0770",
+                                                                    "failIfDirNotExists":      false,
+                                                                    "failIfDirAlreadyExists":  true,
+
+                                                                    "dumppaths":               false,
+                                                                    "dumpstats":               false,
+                                                                    "dumpparseresult":         false,
+                                                                    "dumpreaddirs":            false,
+                                                                    "dumpdircontents":         false,
+                                                                    "dumptree":                false,
+                                                                    "dumptreeindented":        false,
+                                                                    "dumptreestats":           false,
+                                                                    "dumpremovals":            false,
+                                                                    "dumpmkdirs":              false
+                                                                }
+                                                            },
+                                                            "checks": [
+                                                                {
+                                                                    "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-require-rmdirbeforemkdir-supplier-sub-mustnotexistsafterrmdir-check-_v_FullDirExisted-false",
+                                                                    "checkWhen": "AFTER",
+                                                                    "checkNegate": false,
+                                                                    "checkKind": "EQ",
+                                                                    "checkOrigin": "TEST",
+                                                                    "checkSource": "_v_FullDirExisted",
+                                                                    "checkValue": false
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "subs": [
+                                        {
+                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-sub-mustexistsaftermkdir",
+                                            "runnable": true,
+                                            "expectSuccess": true,
+                                            "module": "@cmppath/common-test/directory-test",
+                                            "constructorName": "Directory_Constructor",
+                                            "methodName": "pF_Directory",
+                                            "scheduleSubs": "SERIES",
+                                            "parms": {
+                                                "directory": {
+                                                    "basePathParmName":        null,
+                                                    "basePath":                null,
+                                                    "dirPathParmName":         null,
+                                                    "dirPath":                 null,
+                                                    "fullDirPathParmName":     "UsedFullDirPath",
+                                                    "fullDirPath":             null,
+                                                    "expandHome":              true,
+
+                                                    "tree":                    true,
+                                                    "treeDirs":                true,
+                                                    "treeLevel":               -1,
+                                                    "treeFiles":               false,
+
+                                                    "rmDir":                   false,
+                                                    "rmDirContentsDirs":       false,
+                                                    "rmDirContentsFiles":      false,
+                                                    "failIfDirNotEmpty":          false,
+
+                                                    "createDir":               false,
+                                                    "createDirMode":              "0770",
+                                                    "failIfDirNotExists":         true,
+                                                    "failIfDirAlreadyExists":     false,
+
+                                                    "dumppaths":               false,
+                                                    "dumpstats":               false,
+                                                    "dumpparseresult":         false,
+                                                    "dumpreaddirs":            false,
+                                                    "dumpdircontents":         false,
+                                                    "dumptree":                false,
+                                                    "dumptreeindented":        false,
+                                                    "dumptreestats":           false,
+                                                    "dumpremovals":            false,
+                                                    "dumpmkdirs":              false
+                                                }
+                                            },
+                                            "checks": [
+                                                {
+                                                    "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-mkdirbeforecreatefile-supplier-sub-mustexistssaftemkmdir-check-LISTCONTAINS-_v_DirsInTreePaths-UsedFullDirPath",
+                                                    "checkWhen": "AFTER",
+                                                    "checkNegate": false,
+                                                    "checkKind": "LISTCONTAINS",
+                                                    "checkOrigin": "TEST",
+                                                    "checkSource": "_v_DirsInTreePaths",
+                                                    "checkValue": "~UsedFullDirPath"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-unlinkbeforecreatefile",
+                            "parmNames": [
+                                "unlinkbeforecreatefile"
+                            ],
+                            "suppliers": [
+                                {
+                                    "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-unlinkbeforecreatefile-supplier",
+                                    "runnable": true,
+                                    "expectSuccess": true,
+                                    "module": "@cmppath/common-test/fileaccess-test",
+                                    "constructorName": "FileAccess_Constructor",
+                                    "methodName": "pF_FileAccess",
+                                    "scheduleSubs": "SERIES",
+                                    "parms": {
+                                        "fileaccess": {
+                                            "basePathParmName":        "parmsforfilestest.baseDirectoryForFileAccess60writecreatedonlybasepath",
+                                            "basePath":                null,
+                                            "dirPathParmName":         null,
+                                            "dirPath":                 null,
+                                            "filenameParmName":        "parmsforfilestest.filenameForFileAccess60writecreatedonlybasepath",
+                                            "filename":                null,
+                                            "fullFilePathParmName":    null,
+                                            "fullFilePath":            null,
+                                            "expandHome":              true,
+
+                                            "fileEncoding":            "DEFAULT",
+
+                                            "readFileContents":        true,
+
+                                            "unlinkFile":              true,
+                                            "touchFile":               false,
+                                            "createFile":              false,
+                                            "createFileMode":          "0660",
+                                            "truncateFile":            false,
+                                            "appendToFile":            false,
+                                            "writeFileContents":       false,
+
+                                            "failIfFileNotExists":     false,
+                                            "failIfFileAlreadyExists": false,
+                                            "failIfFileEmpty":         false,
+                                            "failIfFileNotEmpty":      false,
+
+                                            "dumppaths":               false,
+                                            "dumpstats":               true,
+                                            "dumpparseresult":         false,
+                                            "dumpfilecontents":        false,
+                                            "dumpremovals":            true,
+                                            "dumpcreatefile":          false,
+                                            "dumpreads":               false,
+                                            "dumpwrites":              false,
+                                            "dumpcontenttowrite":      false
+                                        }
+                                    },
+                                    "exports": [
+                                        {
+                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-unlinkbeforecreatefile-supplier-export-unlinkbeforecreatefile",
+                                            "exportAs": "unlinkbeforecreatefile",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "*",
+                                            "exportTarget": ".",
+                                            "exportWhen": "OK"
+                                        },
+                                        {
+                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-export-UsedFullFilePath",
+                                            "exportAs": "UsedFullFilePath",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "_v_UsedFullFilePath",
+                                            "exportTarget": ".",
+                                            "exportWhen": "EXBEFORESUBS"
+                                        }
+                                    ],
+                                    "subs": [
+                                        {
+                                            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-unlinkbeforecreatefile-supplier-sub-mustnotexistsafterunlink",
+                                            "runnable": true,
+                                            "expectSuccess": true,
+                                            "module": "@cmppath/common-test/fileaccess-test",
+                                            "constructorName": "FileAccess_Constructor",
+                                            "methodName": "pF_FileAccess",
+                                            "scheduleSubs": "SERIES",
+                                            "parms": {
+                                                "fileaccess": {
+                                                    "basePathParmName":        null,
+                                                    "basePath":                null,
+                                                    "dirPathParmName":         null,
+                                                    "dirPath":                 null,
+                                                    "filenameParmName":        null,
+                                                    "filename":                null,
+                                                    "fullFilePathParmName":    "UsedFullFilePath",
+                                                    "fullFilePath":            null,
+                                                    "expandHome":              true,
+
+                                                    "fileEncoding":            "DEFAULT",
+
+                                                    "readFileContents":        true,
+
+                                                    "unlinkFile":              false,
+                                                    "touchFile":               false,
+                                                    "createFile":              false,
+                                                    "createFileMode":          "0660",
+                                                    "truncateFile":            false,
+                                                    "appendToFile":            false,
+                                                    "writeFileContents":       false,
+
+                                                    "failIfFileNotExists":     false,
+                                                    "failIfFileAlreadyExists": true,
+                                                    "failIfFileEmpty":         false,
+                                                    "failIfFileNotEmpty":      false,
+
+                                                    "dumppaths":               false,
+                                                    "dumpstats":               true,
+                                                    "dumpparseresult":         false,
+                                                    "dumpfilecontents":        false,
+                                                    "dumpremovals":            false,
+                                                    "dumpcreatefile":          false,
+                                                    "dumpreads":               false,
+                                                    "dumpwrites":              false,
+                                                    "dumpcontenttowrite":      false
+                                                }
+                                            },
+                                            "checks": [
+                                                {
+                                                    "name": "suite-70-fileaccess-read-onlybasepath-ok-test-require-createfilebeforeunlink-supplier-require-unlinkbeforecreatefile-supplier-check-_v_FullFileExisted-false",
+                                                    "checkWhen": "AFTER",
+                                                    "checkNegate": false,
+                                                    "checkKind": "EQ",
+                                                    "checkOrigin": "TEST",
+                                                    "checkSource": "_v_FullFileExisted",
+                                                    "checkValue": false
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-70-fileaccess-read-onlybasepath-ok-test-sub-readfilecontentsafterwrite",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/fileaccess-test",
+            "constructorName": "FileAccess_Constructor",
+            "methodName": "pF_FileAccess",
+            "scheduleSubs": "SERIES",
+            "parms": {
+                "fileaccess": {
+                    "basePathParmName":        null,
+                    "basePath":                null,
+                    "dirPathParmName":         null,
+                    "dirPath":                 null,
+                    "filenameParmName":        null,
+                    "filename":                null,
+                    "fullFilePathParmName":    "UsedFullFilePath",
+                    "fullFilePath":            null,
+                    "expandHome":              true,
+
+                    "fileEncoding":            "DEFAULT",
+
+                    "readFileContents":        true,
+
+                    "unlinkFile":              false,
+                    "touchFile":               false,
+                    "createFile":              false,
+                    "createFileMode":          "0660",
+                    "truncateFile":            false,
+                    "appendToFile":            false,
+                    "writeFileContents":       false,
+
+                    "failIfFileNotExists":     true,
+                    "failIfFileAlreadyExists": false,
+                    "failIfFileEmpty":         true,
+                    "failIfFileNotEmpty":      false,
+
+                    "dumppaths":               false,
+                    "dumpstats":               true,
+                    "dumpparseresult":         false,
+                    "dumpfilecontents":        false,
+                    "dumpremovals":            true,
+                    "dumpcreatefile":          false,
+                    "dumpreads":               false,
+                    "dumpwrites":              false,
+                    "dumpcontenttowrite":      false
+                }
+            },
+            "checks": [
+                {
+                    "name": "suite-70-fileaccess-read-onlybasepath-ok-test-sub-readfilecontentsafterwrite-check-_v_FullFileExisted-true",
+                    "checkWhen": "AFTER",
+                    "checkNegate": false,
+                    "checkKind": "EQ",
+                    "checkOrigin": "TEST",
+                    "checkSource": "_v_FullFileExisted",
+                    "checkValue": true
+                },
+                {
+                    "name": "suite-70-fileaccess-read-onlybasepath-ok-test-sub-readfilecontentsafterwrite-check-_v_FileContentsBefore-~ContentsToWriteToFile",
+                    "checkWhen": "AFTER",
+                    "checkNegate": false,
+                    "checkKind": "EQ",
+                    "checkOrigin": "TEST",
+                    "checkSource": "_v_FileContentsBefore",
+                    "checkValue": "~ContentsToWriteToFile"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+

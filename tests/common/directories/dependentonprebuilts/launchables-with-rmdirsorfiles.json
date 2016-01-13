@@ -1,0 +1,5 @@
+[
+    "@testspath/common/directories/dependentonprebuilts/suite-60-directory-dopb-rmdir-basepathparmname-dirpathparmname-expandhome-flat-ok-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-62-directory-dopb-rmdir-basepathparmname-dirpathparmname-expandhome-nofiles-ok-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-66-directory-dopb-rmdir-basepathparmname-dirpathparmname-expandhome-withfiles-ok-test.json"
+]

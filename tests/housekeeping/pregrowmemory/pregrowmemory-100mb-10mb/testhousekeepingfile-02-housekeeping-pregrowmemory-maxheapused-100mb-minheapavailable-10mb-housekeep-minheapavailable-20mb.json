@@ -1,0 +1,40 @@
+{
+    "title": "testhousekeepingfile-02-housekeeping-pregrowmemory-maxheapused-100mb-minheapavailable-10mb-housekeep-minheapavailable-20mb.json",
+    "HOUSEKEEPOPTIONS": {
+        "incrementalMode":  true,
+        "maxHeapUsed":      100,
+        "minHeapAvailable": 20,
+        "ignoreThrashingMillis":  true,
+        "thrashingHeapAvailable": null,
+        "thrashingMillis":        null,
+        "forceBits":        null
+    },
+    "MEMORY": [
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/pregrowmemory/pregrowmemory-100mb-10mb/suite-01-housekeeping-pregrowmemory-maxheapused-100mb-minheapavailable-10mb-01-test.json",
+            "attempts":  [
+                {
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 10000000, "max": 20000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 10000000, "max": 20000000}}
+                        }
+                    ]
+                },
+                { "shallHaveNoHousekeeping": true}
+            ]
+        }
+    ]
+}

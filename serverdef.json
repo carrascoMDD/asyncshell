@@ -1,0 +1,6 @@
+{
+    "server":    "default",
+    "port":      64404,
+    "cmppath":   "#root/cmppath.json",
+    "testspath": "#root/testspath.json"
+}

@@ -1,0 +1,5 @@
+[
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-01-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-02-test.json"
+]

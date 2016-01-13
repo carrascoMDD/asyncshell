@@ -1,0 +1,1552 @@
+{
+    "name": "suite-10-compare-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/compare-test",
+    "constructorName": "Compare_Constructor",
+    "methodName": "pF_Compare",
+    "parms": {
+        "compare": {
+            "left":                   null,
+            "right":                  null,
+
+            "failIfDifferent":        true,
+
+            "expectedLeftToRightDeltas": null,
+            "expectedRightToLeftDeltas": null,
+
+            "compareLeftToRight":     true,
+            "compareRightToLeft":     true,
+            "leftIncludedKeys":       null,
+            "rightIncludedKeys":      null,
+            "leftExcludedKeys":       null,
+            "rightExcludedKeys":      null,
+            "leftRules":              null,
+            "rightRules":             null,
+            "leftToRightKeysGen":     null,
+            "rightToLeftKeysGen":     null,
+
+            "dump_left":              true,
+            "dump_right":             true,
+            "dump_leftToRightDeltas": true,
+            "dump_rightToLeftDeltas": true
+        }
+    },
+    "scheduleSubs": "SERIES",
+    "subs": [
+
+        {
+            "name": "suite-10-compare-test-sub-flat",
+            "runnable": true,
+            "parms": {
+                "compare": {
+                }
+            },
+            "scheduleSubs": "SERIES",
+            "subs": [
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-both-undefined-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-both-null-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  null,
+                            "right": null
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-both-bool-false-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  false,
+                            "right": false
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-both-bool-true-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  true,
+                            "right": true
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-both-num-0-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  0,
+                            "right": 0
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-both-num-1-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  1,
+                            "right": 1
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-both-str-empty-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  "",
+                            "right": ""
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-both-str-notempty-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  "a",
+                            "right": "a"
+                        }
+                    }
+                },
+
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-right-undefined-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  1,
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason":    "either is null"
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason":    "either is null"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-right-null-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  1,
+                            "right": null,
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason":    "either is null"
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason":    "either is null"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-right-bool-false-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  true,
+                            "right": false,
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "boolean",
+                                    "oneDetails": true,
+                                    "otherDetails": false
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "boolean",
+                                    "oneDetails": false,
+                                    "otherDetails": true
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-right-bool-true-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  false,
+                            "right": true,
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "boolean",
+                                    "oneDetails": false,
+                                    "otherDetails": true
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "boolean",
+                                    "oneDetails": true,
+                                    "otherDetails": false
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-right-num-0-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  1,
+                            "right": 0,
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "number",
+                                    "oneDetails": 1,
+                                    "otherDetails": 0
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "number",
+                                    "oneDetails": 0,
+                                    "otherDetails": 1
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-right-num-1-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  0,
+                            "right": 1,
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "number",
+                                    "oneDetails": 0,
+                                    "otherDetails": 1
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "number",
+                                    "oneDetails": 1,
+                                    "otherDetails": 0
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-right-str-empty",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  "a",
+                            "right": "",
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "string",
+                                    "oneDetails": "a",
+                                    "otherDetails": ""
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "string",
+                                    "oneDetails": "",
+                                    "otherDetails": "a"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-flat-sub-right-str-notempty",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  "",
+                            "right": "a",
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "string",
+                                    "oneDetails": "",
+                                    "otherDetails": "a"
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath":   "",
+                                    "otherPath": "",
+                                    "reason": "values",
+                                    "details": "string",
+                                    "oneDetails": "a",
+                                    "otherDetails": ""
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+
+        },
+
+
+
+
+        {
+            "name": "suite-10-compare-test-sub-level01",
+            "runnable": true,
+            "parms": {
+                "compare": {
+                }
+            },
+            "scheduleSubs": "SERIES",
+            "subs": [
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-both-null-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  {
+                                "value01": null
+                            },
+                            "right":  {
+                                "value01": null
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-both-bool-false-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": false
+                            },
+                            "right": {
+                                "value01": false
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-both-bool-true-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": true
+                            },
+                            "right": {
+                                "value01": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-both-num-0-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": 0
+                            },
+                            "right": {
+                                "value01": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-both-num-1-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": 1
+                            },
+                            "right": {
+                                "value01": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-both-str-empty-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": ""
+                            },
+                            "right": {
+                                "value01": ""
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-both-str-notempty-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": "a"
+                            },
+                            "right": {
+                                "value01": "a"
+                            }
+                        }
+                    }
+                },
+
+
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-right-null-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": 1
+                            },
+                            "right": {
+                                "value01": null
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "either is null"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "either is null"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-right-bool-false-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": true
+                            },
+                            "right": {
+                                "value01": false
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "boolean",
+                                            "oneDetails": true,
+                                            "otherDetails": false
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "boolean",
+                                            "oneDetails": false,
+                                            "otherDetails": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-right-bool-true-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": false
+                            },
+                            "right": {
+                                "value01": true
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "boolean",
+                                            "oneDetails": false,
+                                            "otherDetails": true
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "boolean",
+                                            "oneDetails": true,
+                                            "otherDetails": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-right-num-0-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": 1
+                            },
+                            "right": {
+                                "value01": 0
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "number",
+                                            "oneDetails": 1,
+                                            "otherDetails": 0
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "number",
+                                            "oneDetails": 0,
+                                            "otherDetails": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-right-num-1-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": 0
+                            },
+                            "right": {
+                                "value01": 1
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "number",
+                                            "oneDetails": 0,
+                                            "otherDetails": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "number",
+                                            "oneDetails": 1,
+                                            "otherDetails": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-right-str-empty",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left":  {
+                                "value01": "a"
+                            },
+                            "right": {
+                                "value01": ""
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "string",
+                                            "oneDetails": "a",
+                                            "otherDetails": ""
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "string",
+                                            "oneDetails": "",
+                                            "otherDetails": "a"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level01-sub-right-str-notempty",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "value01": ""
+                            },
+                            "right": {
+                                "value01": "a"
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "string",
+                                            "oneDetails": "",
+                                            "otherDetails": "a"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "value01",
+                                            "otherPath": "value01",
+                                            "reason": "values",
+                                            "details": "string",
+                                            "oneDetails": "a",
+                                            "otherDetails": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "name": "suite-10-compare-test-sub-level02",
+            "runnable": true,
+            "parms": {
+                "compare": {}
+            },
+            "scheduleSubs": "SERIES",
+            "subs": [
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-both-null-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": null
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": null
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-both-bool-false-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": false
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-both-bool-true-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": true
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-both-num-0-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": 0
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-both-num-1-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-both-str-empty-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": ""
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": ""
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-both-str-notempty-ok",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": "a"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": "a"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-right-null-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": null
+                                    }
+                                }
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "either is null"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "either is null"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-right-bool-false-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": true
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": false
+                                    }
+                                }
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "boolean",
+                                                            "oneDetails": true,
+                                                            "otherDetails": false
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "boolean",
+                                                            "oneDetails": false,
+                                                            "otherDetails": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-right-bool-true-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": false
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": true
+                                    }
+                                }
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "equal": false,
+                                                            "reason": "values",
+                                                            "details": "boolean",
+                                                            "oneDetails": false,
+                                                            "otherDetails": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "boolean",
+                                                            "oneDetails": true,
+                                                            "otherDetails": false
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-right-num-0-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": 1
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": 0
+                                    }
+                                }
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "number",
+                                                            "oneDetails": 1,
+                                                            "otherDetails": 0
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "number",
+                                                            "oneDetails": 0,
+                                                            "otherDetails": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-right-num-1-fail",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": 0
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": 1
+                                    }
+                                }
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "number",
+                                                            "oneDetails": 0,
+                                                            "otherDetails": 1
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "number",
+                                                            "oneDetails": 1,
+                                                            "otherDetails": 0
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-right-str-empty",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": "a"
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": ""
+                                    }
+                                }
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "string",
+                                                            "oneDetails": "a",
+                                                            "otherDetails": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "string",
+                                                            "oneDetails": "",
+                                                            "otherDetails": "a"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "suite-10-compare-test-sub-level02-sub-right-str-notempty",
+                    "runnable": true,
+                    "parms": {
+                        "compare": {
+                            "left": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": ""
+                                    }
+                                }
+                            },
+                            "right": {
+                                "item01": {
+                                    "item0101": {
+                                        "value01": "a"
+                                    }
+                                }
+                            },
+                            "expectedLeftToRightDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "string",
+                                                            "oneDetails": "",
+                                                            "otherDetails": "a"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "expectedRightToLeftDeltas": [
+                                {
+                                    "onePath": "",
+                                    "otherPath": "",
+                                    "reason": "subs",
+                                    "subDeltas": [
+                                        {
+                                            "onePath": "item01",
+                                            "otherPath": "item01",
+                                            "reason": "subs",
+                                            "subDeltas": [
+                                                {
+                                                    "onePath": "item01.item0101",
+                                                    "otherPath": "item01.item0101",
+                                                    "reason": "subs",
+                                                    "subDeltas": [
+                                                        {
+                                                            "onePath": "item01.item0101.value01",
+                                                            "otherPath": "item01.item0101.value01",
+                                                            "reason": "values",
+                                                            "details": "string",
+                                                            "oneDetails": "a",
+                                                            "otherDetails": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

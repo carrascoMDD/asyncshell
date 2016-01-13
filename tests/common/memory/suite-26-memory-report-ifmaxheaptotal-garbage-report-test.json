@@ -1,0 +1,30 @@
+{
+    "name": "suite-26-memory-report-ifmaxheaptotal-garbage-report-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/memory-test",
+    "constructorName": "Memory_Constructor",
+    "methodName": "pF_Memory",
+    "parms": {
+        "memory": {
+            "minHeapAvailable":                -1,
+            "maxHeapUsed":                     -1,
+            "maxHeapTotal":                    1,
+
+            "failIfUnderMinHeapAvailable":      false,
+            "failIfOverMaxHeapUsed":            false,
+            "failIfOverMaxHeapTotal":           false,
+
+            "garbageCollectIfMinHeapAvailable": false,
+            "garbageCollectIfMaxHeapUsed":      false,
+            "garbageCollectIfMaxHeapTotal":     true,
+            "garbageCollectAlways":             false,
+
+            "reportMemoryAfter":                true,
+
+            "dumpmemoryreport":                 true,
+            "dumpgarbagecollect":               true
+        }
+    },
+    "scheduleSubs": "SERIES"
+}

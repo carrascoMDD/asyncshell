@@ -1,0 +1,91 @@
+{
+    "name": "suite-01-login-forcerr-test",
+    "module": "@cmppath/general-test/security-test/login-test",
+    "constructorName": "LoginTest_Constructor",
+    "methodName": "pF_Login",
+    "scheduleSubs": "SERIES",
+    "forceError": true,
+    "forceErrorDetail": "Forced error",
+    "parms": {
+        "salutation": "Hello suite-01-login-forcerr-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}"
+    },
+    "imports": [
+        {
+            "name": "hitpoint-import",
+            "configurationPath": "@testspath/general/security/parms-hitpoint.json",
+            "importMode": "STATIC"
+        },
+        {
+            "name": "credentials-import",
+            "configurationPath": "@testspath/general/security/parms-credentials-omnipotente.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-01-login-forcerr-test-ForceErrorException",
+            "expectSuccess": false,
+            "expectedEvent": "FORCEERROR_EXCEPTION",
+            "forceErrorKind": "EXCEPTION",
+            "subs": [
+                {
+                    "name": "suite-01-login-forcerr-test-ForceErrorExceptionWhenBegin",
+                    "runnable": true,
+                    "forceErrorWhen": "BEGIN"
+                },
+                {
+                    "name": "suite-01-login-forcerr-test-ForceErrorExceptionWhenSent",
+                    "runnable": true,
+                    "forceErrorWhen": "SENT"
+                },
+                {
+                    "name": "suite-01-login-forcerr-test-ForceErrorExceptionWhenReceived",
+                    "runnable": true,
+                    "forceErrorWhen": "RECEIVED"
+                },
+                {
+                    "name": "suite-01-login-forcerr-test-ForceErrorExceptionWhenOk",
+                    "runnable": true,
+                    "forceErrorWhen": "OK"
+                }
+            ]
+        },
+        {
+            "name": "suite-01-login-forcerr-test-ForceErrorCallback",
+            "expectSuccess": false,
+            "expectedEvent": "FORCEERROR_CALLBACK",
+            "forceErrorKind": "CALLBACK",
+            "subs": [
+                {
+                    "name": "suite-01-login-forcerr-test-ForceErrorCallbackWhenBegin",
+                    "runnable": true,
+                    "forceErrorWhen": "BEGIN"
+
+                },
+                {
+                    "name": "suite-01-login-forcerr-test-ForceErrorCallbackWhenSent",
+                    "runnable": true,
+                    "forceErrorWhen": "SENT"
+                },
+                {
+                    "name": "suite-01-login-forcerr-test-ForceErrorCallbackWhenReceived",
+                    "runnable": true,
+                    "forceErrorWhen": "RECEIVED"
+                },
+                {
+                    "name": "suite-01-login-forcerr-test-ForceErrorCallbackWhenOk",
+                    "runnable": true,
+                    "forceErrorWhen": "OK"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+

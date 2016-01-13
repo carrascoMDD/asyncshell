@@ -1,0 +1,32 @@
+[
+    {
+        "title": "pathsloader pathsloader-sync-test",
+        "module": "#root/lib/pathsloader-test/pathsloader-sync-test",
+        "constructor": null,
+        "method": "pPathsLoaderTest_sync"
+    },
+    {
+        "title": "pathsloader pathsloader-async-test",
+        "module": "#root/lib/pathsloader-test/pathsloader-async-test",
+        "constructor": null,
+        "method": "pPathsLoaderTest_async"
+    },
+    {
+        "title": "pathsloader pathsloader-sync-async-test",
+        "module": "#root/lib/pathsloader-test/pathsloader-sync-async-test",
+        "constructor": null,
+        "method": "pPathsLoaderSyncAsyncTest"
+    },
+    {
+        "title": "pathsloader pathsloader-all-test",
+        "module": "#root/lib/pathsloader-test/pathsloader-all-test",
+        "constructor": null,
+        "method": "pPathsLoaderAllTest"
+    },
+    {
+        "title": "pathsloader cmpandtestspathsloader-test",
+        "module": "#root/lib/pathsloader-test/cmpandtestspathsloader-test",
+        "constructor": null,
+        "method": "pCmpAndTestsPathsLoaderTest"
+    }
+]

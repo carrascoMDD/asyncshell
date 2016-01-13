@@ -1,0 +1,20 @@
+[
+    {
+        "title": "xloader-sync-test",
+        "module": "#root/lib/xloader-test/xloader-sync-test",
+        "constructor": null,
+        "method": "pXLoaderTest_sync"
+    },
+    {
+        "title": "xloader-async-test",
+        "module": "#root/lib/xloader-test/xloader-async-test",
+        "constructor": null,
+        "method": "pXLoaderTest_async"
+    },
+    {
+        "title": "xloader-sync-async-test",
+        "module": "#root/lib/xloader-test/xloader-sync-async-test",
+        "constructor": null,
+        "method": "pXLoaderSyncAsyncTest"
+    }
+]

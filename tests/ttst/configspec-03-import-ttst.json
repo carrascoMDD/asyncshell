@@ -1,0 +1,20 @@
+{
+    "name": "03-import",
+    "imports": [
+        {
+            "name": "03-import-import-01",
+            "configurationPath": "@testspath/ttst/configspec-01-base-ttst.json",
+            "importMode": "STATIC"
+        },
+        {
+            "name": "03-import-import-02",
+            "configurationPath": "@testspath/ttst/configspec-01-base-ttst.json",
+            "importMode": "STATIC"
+        }
+    ]
+}
+
+
+
+
+

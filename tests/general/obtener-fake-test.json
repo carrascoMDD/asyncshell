@@ -1,0 +1,31 @@
+{
+    "name": "obtener-fake-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/general-test/fake-test",
+    "constructorName": "FakeTest_Constructor",
+    "methodName": "pF_Fake",
+    "scheduleSubs": "SERIES",
+    "parms": {
+        "fake": {
+            "fakeResult":   { "fakeResult": "fakeResult"},
+            "fakeSuccess":  true,
+            "fakeRcvError": null,
+            "fakeRcvStatus": 200,
+            "fakeRcvBody": { "fakeBody": "fakeBody"}
+        }
+    },
+    "imports": [
+        {
+            "name": "hitpoint-import",
+            "configurationPath": "@testspath/general/security/parms-hitpoint.json",
+            "importMode": "STATIC"
+        },
+        {
+            "name": "credentials-import",
+            "configurationPath": "@testspath/general/security/parms-credentials.json",
+            "importMode": "STATIC"
+        }
+    ]
+}
+

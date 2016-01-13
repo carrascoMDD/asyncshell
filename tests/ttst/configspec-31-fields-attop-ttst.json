@@ -1,0 +1,21 @@
+{
+    "name": "31-fields-attop",
+    "runnable": true,
+    "inherit": "STATIC",
+    "scheduleSubs": "SERIES",
+    "expectSuccess": true,
+    "expectedEvent": "OK",
+    "module": "@cmppath/general-test/void-test-attop",
+    "constructorName": "VoidTest_Constructor-attop",
+    "methodName": "pF_Void-attop",
+    "forceError": true,
+    "forceErrorDetail": "Forced error-attop",
+    "forceErrorKind": "EXCEPTION",
+    "forceErrorWhen": "INIT"
+}
+
+
+
+
+
+

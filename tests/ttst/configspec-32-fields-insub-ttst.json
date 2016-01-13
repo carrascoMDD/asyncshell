@@ -1,0 +1,50 @@
+{
+    "name": "31-fields-insub",
+    "runnable": true,
+    "inherit": "STATIC",
+    "scheduleSubs": "SERIES",
+    "expectSuccess": true,
+    "expectedEvent": "OK",
+    "module": "@cmppath/general-test/void-test-0",
+    "constructorName": "VoidTest_Constructor-0",
+    "methodName": "pF_Void-0",
+    "forceError": true,
+    "forceErrorDetail": "Forced error-0",
+    "forceErrorKind": "EXCEPTION",
+    "forceErrorWhen": "INIT",
+    "subs": [
+        {
+            "name": "31-fields-insub-sub-1",
+            "runnable": false,
+            "inherit": "STATIC",
+            "scheduleSubs": "SERIES",
+            "expectSuccess": false,
+            "expectedEvent": "FAIL",
+            "forceError": false,
+            "forceErrorDetail": "Forced error-fields-insub-1",
+            "forceErrorKind": "CALLBACK",
+            "forceErrorWhen": "OK"
+        },
+        {
+            "name": "31-fields-insub-sub-2",
+            "runnable": false,
+            "inherit": "STATIC",
+            "scheduleSubs": "SERIES",
+            "expectSuccess": false,
+            "expectedEvent": "FAIL",
+            "forceError": false,
+            "forceErrorDetail": "Forced error-fields-insub-2",
+            "forceErrorKind": "CALLBACK",
+            "forceErrorWhen": "OK"
+        },
+        {
+            "name": "31-fields-insub-sub-3"
+        }
+    ]
+}
+
+
+
+
+
+

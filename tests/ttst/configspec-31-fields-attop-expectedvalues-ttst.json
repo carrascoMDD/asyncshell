@@ -1,0 +1,25 @@
+[
+    {
+        "path": ".",
+        "expectedFields": {
+            "_v_Runnable": true,
+            "_v_InheritMode": "STATIC",
+            "_v_ScheduleSubs": "SERIES",
+            "_v_ExpectSuccess": true,
+            "_v_ExpectedEvent": "OK",
+            "_v_ConstructorModuleName": "@cmppath/general-test/void-test-attop",
+            "_v_ConstructorName": "VoidTest_Constructor-attop",
+            "_v_MethodName": "pF_Void-attop",
+            "_v_ForceError": true,
+            "_v_ForceErrorDetail": "Forced error-attop",
+            "_v_ForceErrorKind": "EXCEPTION",
+            "_v_ForceErrorWhen": "INIT"
+        }
+    }
+]
+
+
+
+
+
+

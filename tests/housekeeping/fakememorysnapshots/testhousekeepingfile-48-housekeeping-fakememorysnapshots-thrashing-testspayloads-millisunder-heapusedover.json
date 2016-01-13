@@ -1,0 +1,109 @@
+{
+    "title": "testhousekeepingfile-48-housekeeping-fakememorysnapshots-thrashing-testspayloads-millisunder-heapusedover.json",
+    "HOUSEKEEPOPTIONS": {
+        "incrementalMode":  true,
+        "maxHeapUsed":      1000,
+        "minHeapAvailable": 10,
+        "ignoreThrashingMillis": false,
+        "thrashingHeapAvailable": 20,
+        "thrashingMillis": {
+            "TESTSPAYLOADS": 1000,
+            "CONFIGSPAYLOADS": 1000,
+            "CALLBACKSPAYLOADS": 1000,
+            "EVENTSPAYLOADS": 1000,
+            "TESTS": 1000,
+            "CONFIGS": 1000,
+            "CALLBACKS": 1000,
+            "EVENTS": 1000
+        },
+        "forceBits":        null
+    },
+    "MEMORY": [
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "COMMENT-@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-delay-2secs.json",
+            "comment":  "This spec is here just for documentation purposes, no houskeeping is checked on execution of the named test.",
+            "comment2":  "A delay test component is executed with 2 seconds parameter, to make sure that this test is not affected by any recent CLEANUP MEMORY action that may have been triggered by any test that may have been executed before this one."
+        },
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-01-test.json",
+            "attempts":  [
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB, causing a housekeeping CLEANUP MEMORY TESTSPAYLOADS action, to have a cleanup in recent a time"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+                { "shallHaveNoHousekeeping": true}
+            ]
+        },
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "COMMENT-@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-delay-1millisec.json",
+            "comment":  "This spec is here just for documentation purposes, no houskeeping is checked on execution of the named test.",
+            "comment2":  "A VERY SHORT delay test component is executed with 1 millis parameter which is short enough that when the next housekeeping check is run, less than thrashingMillis.TESTSPAYLOADS millis have lapsed, and therefore recommends an extra attempt with CLEANUP MEMORY whatToClean CONFIGSPAYLOADS"
+        },
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-02-test.json",
+            "attempts":  [
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB, causing a housekeeping CLEANUP MEMORY TESTSPAYLOADS action, to have a cleanup in recent a time"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 989000000, "cmt": "Or 990MB minus one MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . No HowMuchToClean, so it would not recommend a housekeeping cleanup memory action, but checks for thrasing, and finds that the most recent housekeeping action of same kind and previous WhatToClean executed in this housekeeping (TESTPAYLOADS) occurred less than thrashingMillis.TESTSPAYLOADS 1000 millis ago, because of the VERY SHORT 1 millis Delay executed in between. It shall recommend to cleanup the default standard minHowMuchToclean 1MB"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 1000000}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 1000000}
+                        }
+                    ]
+                },
+                { "shallHaveNoHousekeeping": true}
+            ]
+        }
+    ]
+}

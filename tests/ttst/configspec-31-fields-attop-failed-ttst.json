@@ -1,0 +1,19 @@
+{
+    "name": "31-fields-fromimport-tofail",
+    "runnable": true,
+    "expectSuccess": true,
+    "expectedEvent": "OK",
+    "module": "@cmppath/general-test/void-test-fromimport",
+    "constructorName": "VoidTest_Constructor-fromimport",
+    "methodName": "pF_Void-fromimport",
+    "forceError": true,
+    "forceErrorDetail": "Forced error-fromimport",
+    "forceErrorKind": "EXCEPTION",
+    "forceErrorWhen": "INIT"
+}
+
+
+
+
+
+

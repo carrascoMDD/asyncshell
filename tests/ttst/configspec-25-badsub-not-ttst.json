@@ -1,0 +1,26 @@
+{
+    "name": "25-badsub-not",
+    "subs": [
+        {
+            "name": "25-badsub-not-subs-01",
+            "runnable": true,
+            "inherit": "STATIC",
+            "scheduleSubs": "SERIES",
+            "expectSuccess": true,
+            "expectedEvent": "OK",
+            "module": "@cmppath/general-test/void-test",
+            "constructorName": "VoidTest_Constructor",
+            "methodName": "pF_Void",
+            "forceError": false,
+            "forceErrorDetail": "Forced error",
+            "forceErrorKind": "EXCEPTION",
+            "forceErrorWhen": "BEGIN"
+        }
+    ]
+}
+
+
+
+
+
+

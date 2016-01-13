@@ -1,0 +1,3 @@
+[
+    { "kind": "TEST", "title": "launch-50-springnut",    "launchables": "@testspath/springnut/launchables-browser.json"}
+]

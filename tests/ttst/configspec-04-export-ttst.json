@@ -1,0 +1,131 @@
+{
+    "name": "04-export",
+    "module": "@cmppath/general-test/void-test",
+    "constructorName": "VoidTest_Constructor",
+    "methodName": "pF_Void",
+    "subs": [
+        {
+            "name": "04-export",
+            "module": "@cmppath/general-test/void-test",
+            "constructorName": "VoidTest_Constructor",
+            "methodName": "pF_Void",
+            "parms": {
+                "parmToExport": "parmToExport-value"
+            },
+            "exports": [
+
+                {
+                    "name": "04-export-fromPARMS-when-PARSE",
+                    "exportAs": "exported_fromPARMSparmToExport_whenPARSE",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "PARSE"
+                },
+                {
+                    "name": "04-export-fromPARMS-when-AFTERINIT",
+                    "exportAs": "exported_fromPARMSparmToExport_whenAFTERINIT",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "AFTERINIT"
+                },
+                {
+                    "name": "04-export-fromPARMS-when-BEFORESUBS",
+                    "exportAs": "exported_fromPARMSparmToExport_whenBEFORESUBS",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "EXBEFORESUBS"
+                },
+                {
+                    "name": "04-export-fromPARMS-when-BETWEENSTEPS",
+                    "exportAs": "exported_fromPARMSparmToExport_whenBETWEENSTEPS",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "EXBETWEENSTEPS"
+                },
+                {
+                    "name": "04-export-fromPARMS-when-OK",
+                    "exportAs": "exported_fromPARMSparmToExport_whenOK",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "OK"
+                },
+                {
+                    "name": "04-export-fromPARMS-when-FAIL",
+                    "exportAs": "exported_fromPARMSparmToExport_whenFAIL",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "FAIL"
+                },
+                {
+                    "name": "04-export-fromPARMS-when-AFTER",
+                    "exportAs": "exported_fromPARMSparmToExport_whenAFTER",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "AFTER"
+                },
+
+                {
+                    "name": "04-export-fromTEST-when-AFTERINIT",
+                    "exportAs": "exported_fromTEST_v_Void_whenAFTERINIT",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "AFTERINIT"
+                },
+                {
+                    "name": "04-export-fromTEST-when-BEFORESUBS",
+                    "exportAs": "exported_fromTEST_v_Void_whenBEFORESUBS",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "EXBEFORESUBS"
+                },
+                {
+                    "name": "04-export-fromTEST-when-BETWEENSTEPS",
+                    "exportAs": "exported_fromTEST_v_Void_whenBETWEENSTEPS",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "EXBETWEENSTEPS"
+                },
+                {
+                    "name": "04-export-fromTEST-when-OK",
+                    "exportAs": "exported_fromTEST_v_Void_whenOK",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "OK"
+                },
+                {
+                    "name": "04-export-fromTEST-when-FAIL",
+                    "exportAs": "exported_fromTEST_v_Void_whenFAIL",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "FAIL"
+                },
+                {
+                    "name": "04-export-fromTEST-when-AFTER",
+                    "exportAs": "exported_fromTEST_v_Void_whenAFTER",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "AFTER"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+

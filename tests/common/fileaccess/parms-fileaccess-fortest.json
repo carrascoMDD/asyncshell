@@ -1,0 +1,47 @@
+{
+    "name": "parms-fileaccess-fortest",
+    "parms": {
+        "parmsforfilestest": {
+            "baseDirectoryForFileAccess10UnlinkMayexists":                        "~/end2endfiletest/basedirforfileaccess10unlinkmayexists",
+            "filenameFor10UnlinkMayexists":                                       "filenamefor10unlinkmayexist.txt",
+
+            "baseDirectoryForFileAccess20createonlybasepath":                     "~/end2endfiletest/basedirforfileaccess20createonlybasepath",
+            "filenameForFileAccess20createonlybasepath":                          "filenamefor20createonlybasepath.txt",
+
+            "baseDirectoryForFileAccess22createindirectory":                      "~/end2endfiletest/basedirforfileaccess22createindirectory",
+            "directoryForFileAccess22createindirectory":                          "dirforfileaccess22createindirectory/subdirforfileaccess22createindirectory/subsubdirforfileaccess22createindirectory/subsubsubdirforfileaccess22createindirectory",
+            "filenameForFileAccess22createindirectory":                           "filenamefor22createindirectory.txt",
+
+            "baseDirectoryForFileAccess40unlinkonlybasepath":                     "~/end2endfiletest/basedirforfileaccess40unlinkonlybasepath",
+            "filenameForFileAccess40unlinkonlybasepath":                          "filenamefor40unlinkonlybasepath.txt",
+
+            "baseDirectoryForFileAccess42unlinkindirectory":                      "~/end2endfiletest/basedirforfileaccess42unlinkindirectory",
+            "directoryForFileAccess42unlinkindirectory":                           "dirforfileaccess42unlinkindirectory/subdirforfileaccess42unlinkindirectory/subsubdirforfileaccess42unlinkindirectory/subsubsubdirforfileaccess42unlinkindirectory",
+            "filenameForFileAccess42unlinkindirectory":                           "filenamefor40unlinkindirectory.txt",
+
+            "baseDirectoryForFileAccess60writecreatedonlybasepath":               "~/end2endfiletest/basedirforfileaccess60writecreatedonlybasepath",
+            "filenameForFileAccess60writecreatedonlybasepath":                    "filenamefor60writecreatedonlybasepath.txt",
+
+            "baseDirectoryForFileAccess62writecreatedindirectory":                "~/end2endfiletest/basedirforfileaccess62writecreatedindirectory",
+            "directoryForFileAccess62writecreatedindirectory":                     "dirforfileaccess62writecreatedindirectory/subdirforfileaccess62writecreatedindirectory/subsubdirforfileaccess62writecreatedindirectory/subsubsubdirforfileaccess62writecreatedindirectory",
+            "filenameForFileAccess62writecreatedindirectory":                     "filenamefor62writecreatedindirectory.txt",
+
+            "baseDirectoryForFileAccess64appendcreatedindirectory":               "~/end2endfiletest/basedirforfileaccess64appendcreatedindirectory",
+            "directoryForFileAccess64appendcreatedindirectory":                    "dirforfileaccess64appendcreatedindirectory/subdirforfileaccess64appendcreatedindirectory/subsubdirforfileaccess64appendcreatedindirectory/subsubsubdirforfileaccess64appendcreatedindirectory",
+            "filenameForFileAccess64appendcreatedindirectory":                    "filenamefor64appendcreatedindirectory.txt",
+
+            "baseDirectoryForFileAccess80unlinkcreateindirectory":                "~/end2endfiletest/basedirforfileaccess80unlinkcreateindirectory",
+            "directoryForFileAccess80unlinkcreateindirectory":                    "dirforfileaccess80unlinkcreateindirectory",
+            "filenameForFileAccess80unlinkcreateindirectory":                     "filenamefor80unlinkcreateindirectory.txt",
+
+            "baseDirectoryForFileAccess82unlinkcreatewriteindirectory":           "~/end2endfiletest/basedirforfileaccess82unlinkcreatewriteindirectory",
+            "directoryForFileAccess82unlinkcreatewriteindirectory":               "dirforfileaccess82unlinkcreatewriteindirectory",
+            "filenameForFileAccess82unlinkcreatewriteindirectory":                "filenamefor82unlinkcreatewriteindirectory.txt",
+
+            "baseDirectoryForFileAccess90unlinkcreatewritermdirmkdirindirectory":  "~/end2endfiletest/basedirforfileaccess90unlinkcreatewritermdirmkdirindirectory",
+            "directoryForFileAccess90unlinkcreatewritermdirmkdirindirectory":      "dirforfileaccess90unlinkcreatewritermdirmkdirindirectory",
+            "filenameForFileAccess90unlinkcreatewritermdirmkdirindirectory":       "filenamefor82unlinkcreatewriteindirectory.txt"
+        }
+    }
+}
+

@@ -1,0 +1,90 @@
+{
+    "name": "27-check-badfields",
+    "module": "@cmppath/general-test/void-test",
+    "constructorName": "VoidTest_Constructor",
+    "methodName": "pF_Void",
+    "checks": [
+        {
+            "name": "27-check-badfields-TEST-wo-checkwhen",
+            "checkKind": "EQ",
+            "checkNegate": false,
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": "VOID"
+        },
+        {
+            "name": "27-check-badfields-TEST-wo-checkkind",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": "VOID"
+        },
+        {
+            "name": "27-check-badfields-TEST-wo-checkorigin",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EQ",
+            "checkSource": "_v_Void",
+            "checkValue": "VOID"
+        },
+        {
+            "name": "27-check-badfields-TEST-wo-checksouce",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkValue": "VOID"
+        },
+        {
+            "name": "27-check-badfields-TEST-wo-checkvalue",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void"
+        },
+        {
+            "name": "27-check-badfields-TEST-checknegate-number",
+            "checkWhen": "AFTER",
+            "checkNegate": 0,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": "VOID"
+        },
+        {
+            "name": "27-check-badfields-TEST-checkwhen-badAFTER",
+            "checkWhen": "badAFTER",
+            "checkNegate": false,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": "VOID"
+        },
+        {
+            "name": "27-check-badfields-TEST-checkkind-badEQ",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "badEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": "VOID"
+        },
+        {
+            "name": "27-check-badfields-TEST-checkorigin-badTEST",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EQ",
+            "checkOrigin": "badTEST",
+            "checkSource": "_v_Void",
+            "checkValue": "VOID"
+        }
+    ]
+}
+
+
+
+
+
+

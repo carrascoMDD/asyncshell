@@ -1,0 +1,4 @@
+[
+    { "kind": "TEST", "launchables": "@testspath/general/launchables-forcerr.json"},
+    { "kind": "TEST", "launchables": "@testspath/springnut/launchables-forcerr.json"}
+]

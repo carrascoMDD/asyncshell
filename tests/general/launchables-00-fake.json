@@ -1,0 +1,8 @@
+[
+    "@testspath/general/suite-01-fake-test.json",
+    "@testspath/general/suite-02-fake-check-test.json",
+    "@testspath/general/suite-03-fake-runnabletop-test.json",
+    "@testspath/general/suite-04-fake-groupattop-test.json",
+    "@testspath/general/suite-11-required-inline-test.json",
+    "@testspath/general/suite-12-required-imported-test.json"
+]

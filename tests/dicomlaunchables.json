@@ -1,0 +1,7 @@
+[
+    { "kind": "TTST", "title": "ttst",        "launchables": "@testspath/ttst/ttstlaunchables.json"},
+    { "kind": "TEST", "title": "common",      "launchables": "@testspath/common/launchables.json"},
+    { "kind": "TEST", "title": "general",     "launchables": "@testspath/general/launchables.json"},
+
+    { "kind": "TEST", "title": "dicom",       "launchables": "@testspath/dicom/launchables.json"}
+]

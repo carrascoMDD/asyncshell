@@ -1,0 +1,770 @@
+{
+    "name": "suite-20-checkkinds-negated-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/general-test/fake-test",
+    "constructorName": "FakeTest_Constructor",
+    "methodName": "pF_Fake",
+    "scheduleSubs": "SERIES",
+    "parms": {
+        "salutation": "Hello suite-20-checkkinds-negated-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+        "fake": {
+            "fakeResult":   { "fakeResult": "fakeResult"},
+            "fakeSuccess":  true,
+            "fakeRcvError": null,
+            "fakeRcvStatus": 200,
+            "fakeRcvBody": { "fakeBody": "fakeBody"}
+        }
+    },
+    "checks": [
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_BOOL-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_BOOL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_BOOL-_v_Number_2",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_BOOL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_2",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_BOOL-_v_List_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_BOOL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_BOOL-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_BOOL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_STRING-_v_Bool_True",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_STRING",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Bool_True",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_STRING-_v_Number_2",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_STRING",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_2",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_STRING-_v_List_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_STRING",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_STRING-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_STRING",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_NUMBER-_v_Bool_True",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_NUMBER",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Bool_True",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_NUMBER-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_NUMBER",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_NUMBER-_v_List_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_NUMBER",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_NUMBER-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_NUMBER",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_OBJECT-_v_Bool_True",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_OBJECT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Bool_True",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_OBJECT-_v_Number_1",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_OBJECT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_1",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_OBJECT-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_OBJECT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_LIST-_v_Bool_True",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_LIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Bool_True",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_LIST-_v_Number_1",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_LIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_1",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_LIST-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_LIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_LIST-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_LIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_FUNCTION-_v_Bool_True",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_FUNCTION",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Bool_True",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_FUNCTION-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_FUNCTION",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_FUNCTION-_v_Number_1",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_FUNCTION",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_1",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_FUNCTION-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_FUNCTION",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-TYPE_FUNCTION-_v_List_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "TYPE_FUNCTION",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NULL-_v_Null",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NULL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NOTNULL-_v_NotNull",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NOTNULL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Null",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EMPTYSTRING-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EMPTYSTRING",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NOTEMPTYSTRING-_v_String_Empty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NOTEMPTYSTRING",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_Empty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-STRINGLEN-_v_String_Empty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "STRINGLEN",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_Empty",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-STRINGLEN-_v_String_NotEmpty-14",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "STRINGLEN",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EMPTYLIST-_v_List_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EMPTYLIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NOTEMPTYLIST-_v_List_Empty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NOTEMPTYLIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_Empty",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LISTSIZE-_v_List_Empty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LISTSIZE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_Empty",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LISTSIZE-_v_List_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LISTSIZE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EMPTYDICT-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EMPTYDICT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NOTEMPTYDICT-_v_Object_WOKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NOTEMPTYDICT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WOKeys",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-DICTSIZE-_v_Object_WOKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "DICTSIZE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WOKeys",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-DICTSIZE-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "DICTSIZE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_Bool_True",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Bool_True",
+            "checkValue": false
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_Bool_False",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Bool_False",
+            "checkValue": true
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_String_Empty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_Empty",
+            "checkValue": "somestring"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": "somestring"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_Number_0",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_0",
+            "checkValue": 99
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_Object_WOKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WOKeys",
+            "checkValue": { "a": 1, "b": 2, "c": 3}
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": { }
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_List_Empty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_Empty",
+            "checkValue": [ 1, 2, 3]
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_List_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": [ ]
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-EQ-_v_Null",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Null",
+            "checkValue": [ ]
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_Bool_True",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Bool_True",
+            "checkValue": true
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_Bool_False",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Bool_False",
+            "checkValue": false
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_String_Empty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_Empty",
+            "checkValue": ""
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": "notemptystring"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_Number_0",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_0",
+            "checkValue": 0
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_Number_1",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_1",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_Number_2",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_2",
+            "checkValue": 2
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_Object_WOKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WOKeys",
+            "checkValue": { }
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": { "a": 1, "b": 2, "c": 3}
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_List_Empty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_Empty",
+            "checkValue": [ ]
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_List_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": [ 1, 2, 3]
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NEQ-_v_Null",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Null",
+            "checkValue": null
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-GT-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "GT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": "z_notemptystring"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-GT-_v_Number_2",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "GT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_2",
+            "checkValue": 2
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-GTE-_v_String_NotEmpty-z_notemptystring",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "GTE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": "z_notemptystring"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-GTE-_v_Number_2",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "GTE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_2",
+            "checkValue": 3
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LT-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": "a"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LT-_v_Number_2",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_2",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LTE-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LTE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": "a"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LTE-_v_Number_2",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LTE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_2",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LISTCONTAINS-_v_List_NotEmpty-1",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LISTCONTAINS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": 99
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LISTNOTCONTAINS-_v_List_NotEmpty-99",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LISTNOTCONTAINS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": 1
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LISTNOTCONTAINS-_v_List_NotEmpty-99",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LISTNOTCONTAINS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": 2
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-LISTNOTCONTAINS-_v_List_NotEmpty-99",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "LISTNOTCONTAINS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_List_NotEmpty",
+            "checkValue": 3
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-INLIST-_v_Number_1",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "INLIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_1",
+            "checkValue": [ 99, 98, 97]
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NOTINLIST-_v_Number_2",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NOTINLIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Number_2",
+            "checkValue": [ 1, 2, 3]
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-INKEYS-_v_Object_WithKeys-z",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "INKEYS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": "z"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NOTINKEYS-_v_Object_WithKeys-a",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NOTINKEYS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": "a"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NOTINKEYS-_v_Object_WithKeys-b",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NOTINKEYS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": "b"
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-INVALUES-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "INVALUES",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": { "a": "somestring", "b": "otherstring"}
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-INVALUES-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "INVALUES",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": { "j": "somestring", "k": { "z": 1, "b": 2, "c": 3}}
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NOTINVALUES-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NOTINVALUES",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_String_NotEmpty",
+            "checkValue": { "b": "notemptystring", "c": "otherstring"}
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-NOTINVALUES-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "NOTINVALUES",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": { "j": "notemptystring", "k": { "a": 1, "b": 2, "c": 3}}
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-CHECKKIND_DICTCONTAINSVALUE-_v_Object_WithKeys",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "DICTCONTAINSVALUE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": 99
+        },
+        {
+            "name": "suite-20-checkkinds-negated-test-check-CHECKKIND_DICTNOTCONTAINSVALUE-_v_String_NotEmpty",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "DICTNOTCONTAINSVALUE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Object_WithKeys",
+            "checkValue": 1
+        }
+    ]
+}
+
+

@@ -1,0 +1,53 @@
+{
+    "name": "32-fields-insub-failed",
+    "runnable": true,
+    "expectSuccess": true,
+    "expectedEvent": "OK",
+    "module": "@cmppath/general-test/void-test-0",
+    "constructorName": "VoidTest_Constructor-0",
+    "methodName": "pF_Void-0",
+    "forceError": true,
+    "forceErrorDetail": "Forced error-0",
+    "forceErrorKind": "EXCEPTION",
+    "forceErrorWhen": "INIT",
+    "subs": [
+        {
+            "name": "32-fields-insub-failed-sub-1",
+            "runnable": false,
+            "inherit": "STATIC",
+            "expectSuccess": false,
+            "expectedEvent": "FAIL",
+            "module": "@cmppath/general-test/void-test-fields-insub-1",
+            "constructorName": "VoidTest_Constructor-fields-insub-1",
+            "methodName": "pF_Void-fields-insub-1",
+            "forceError": false,
+            "forceErrorDetail": "Forced error-fields-insub-1",
+            "forceErrorKind": "CALLBACK",
+            "forceErrorWhen": "OK"
+        },
+        {
+            "name": "32-fields-insub-failed-sub-2",
+            "runnable": false,
+            "inherit": "STATIC",
+            "scheduleSubs": "SERIES",
+            "expectSuccess": false,
+            "expectedEvent": "FAIL",
+            "module": "@cmppath/general-test/void-test-fields-insub-2",
+            "constructorName": "VoidTest_Constructor-fields-insub-2",
+            "methodName": "pF_Void-fields-insub-2",
+            "forceError": false,
+            "forceErrorDetail": "Forced error-fields-insub-2",
+            "forceErrorKind": "CALLBACK",
+            "forceErrorWhen": "OK"
+        },
+        {
+            "name": "32-fields-insub-failed-sub-3"
+        }
+    ]
+}
+
+
+
+
+
+

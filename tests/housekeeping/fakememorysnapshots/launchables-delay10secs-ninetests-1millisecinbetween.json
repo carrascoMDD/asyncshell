@@ -1,0 +1,19 @@
+[
+    "@testspath/housekeeping/fakememorysnapshots/suite-04-housekeeping-fakememorysnapshots-delay-10secs-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-01-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-01-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-02-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-02-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-03-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-03-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-04-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-04-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-05-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-05-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-06-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-06-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-07-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-07-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-08-test.json"
+
+]

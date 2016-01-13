@@ -1,0 +1,23 @@
+[
+    {
+        "path": ".",
+        "expectedParms": {
+            "salutationExported": "Hello 44-parms-fromexport-sub-1",
+            "salutationExportedToFail": "44-parms-fromexport-tofail-sub-1-exported-salutation",
+            "salutationAbsent": "Hello 44-parms-fromexport-sub-1-absent"
+        },
+        "failedParms": [
+            "salutationExportedToFail"
+        ],
+        "absentParms": [
+            "salutationExported",
+            "salutationAbsent"
+        ]
+    }
+]
+
+
+
+
+
+

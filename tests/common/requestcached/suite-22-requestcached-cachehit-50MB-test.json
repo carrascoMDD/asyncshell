@@ -1,0 +1,575 @@
+{
+    "name": "suite-22-requestcached-cachehit-50MB-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/requestcached-test",
+    "constructorName": "RequestCached_Constructor",
+    "methodName": "pF_RequestCached",
+    "parms": {
+        "requestcached": {
+            "doReadCache":     true,
+            "doRequestReply":  true,
+            "doWriteCache":    false
+        },
+        "requestreply": {
+            "usePayloadHolder": true,
+
+            "contentkind":           "BINARY",
+            "baseURLparmName":       "hitpoint-common-samplefiles.baseURL",
+            "requestmethod":         "GET",
+            "URLpath":                "/RandomFile_50MB.bin",
+            "URLparms":               null,
+            "URLparmsnotencoded":     null,
+            "URLpathParms":           null,
+            "URLfull":                null,
+            "NOTUSED_AnotherURLfull": "http://192.168.69.3:8600/RandomFile_50MB.bin",
+            "NOTUSED_OtherURLfull":   "http://www.SpringNut.org/springnut/resources/images/SpringNut300transparentbg.png",
+            "statuscode":             200,
+            "dumpurl":                true,
+            "dumprequestdata": false,
+            "dumpreply":       false
+        },
+        "fileaccess": {
+            "usePayloadHolder": true,
+
+            "basePathParmName":        "parmsforfilesrequestreplycachetest.baseDirectoryForRequestReplyCache",
+            "basePath":                null,
+            "dirPathParmName":         "parmsforfilesrequestreplycachetest.directoryForRequestReplyCache",
+            "dirPath":                 null,
+            "filenameParmName":        null,
+            "filename":                "/RandomFile_50MB.bin",
+            "fullFilePathParmName":    null,
+            "fullFilePath":            null,
+            "expandHome":              true,
+
+            "fileEncoding":            "BINARY",
+
+            "readFileContents":        "ToBeInjectedByInstance_suite-22-requestcached-cachehit-50MB-test_withValue_true_whenReadCache_value_true_when_ReadCache",
+
+            "unlinkFile":              false,
+            "touchFile":               false,
+            "createFile":              "ToBeInjectedByInstance_suite-22-requestcached-cachehit-50MB-test_withValue_false_whenReadCAche_value_false_when_ReadCache",
+            "createFileMode":          "0660",
+            "truncateFile":            false,
+            "appendToFile":            false,
+            "writeFileContents":       "ToBeInjectedByInstance_test_withValue_false_whenReadCAche_value_true_when_WriteCache",
+            "contentsToWrite":         "ToBeInjectedByInstance_-test_withValue_ofVariable__v_Reply_of_Test_whichIsOfType_PayloadHolder_Buffer",
+
+            "failIfFileNotExists":     true,
+            "failIfFileAlreadyExists": false,
+            "failIfFileEmpty":         false,
+            "failIfFileNotEmpty":      false,
+
+            "dumppaths":               false,
+            "dumpstats":               true,
+            "dumpparseresult":         false,
+            "dumpfilecontents":        false,
+            "dumpremovals":            false,
+            "dumpcreatefile":          false,
+            "dumpreads":               true,
+            "dumpwrites":              false,
+            "dumpcontenttowrite":      false,
+
+            "doDirectory":             false
+        }
+    },
+    "scheduleSubs": "SERIES",
+    "imports": [
+        {
+            "name": "hitpoint-common-samplefiles-import",
+            "configurationPath": "@testspath/common/parms-hitpoint-common-samplefiles.json",
+            "importMode": "STATIC"
+        },
+        {
+            "name": "requestreplycache-fortest-import",
+            "configurationPath": "@testspath/common/requestcached/parms-requestcached-fortest.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "exports": [
+        {
+            "name": "suite-22-requestcached-cachehit-50MB-test-export-requestcachedtest",
+            "exportAs": "requestcachedtest",
+            "exportOrigin": "TEST",
+            "exportSource": "*",
+            "exportTarget": ".",
+            "exportWhen": "EXBEFORESUBS"
+        }
+    ],
+    "required": [
+        {
+            "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache",
+            "parmNames": [
+                "unlinkbeforecreatefile"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/requestcached-test",
+                    "constructorName": "RequestCached_Constructor",
+                    "methodName": "pF_RequestCached",
+                    "parms": {
+                        "requestcached": {
+                            "doReadCache":     true,
+                            "doRequestReply":  true,
+                            "doWriteCache":    true
+                        },
+                        "requestreply": {
+                            "usePayloadHolder": true,
+
+                            "contentkind":           "BINARY",
+                            "baseURLparmName":       "hitpoint-common-samplefiles.baseURL",
+                            "requestmethod":         "GET",
+                            "URLpath":                "/RandomFile_50MB.bin",
+                            "URLparms":               null,
+                            "URLparmsnotencoded":     null,
+                            "URLpathParms":           null,
+                            "URLfull":                null,
+                            "NOTUSED_AnotherURLfull": "http://192.168.69.3:8600/RandomFile_50MB.bin",
+                            "NOTUSED_OtherURLfull":   "http://www.SpringNut.org/springnut/resources/images/SpringNut300transparentbg.png",
+                            "statuscode":             200,
+                            "dumpurl":                true,
+                            "dumprequestdata": false,
+                            "dumpreply":       false
+                        },
+                        "fileaccess": {
+                            "usePayloadHolder": true,
+
+                            "basePathParmName":        "parmsforfilesrequestreplycachetest.baseDirectoryForRequestReplyCache",
+                            "basePath":                null,
+                            "dirPathParmName":         "parmsforfilesrequestreplycachetest.directoryForRequestReplyCache",
+                            "dirPath":                 null,
+                            "filenameParmName":        null,
+                            "filename":                "/RandomFile_50MB.bin",
+                            "fullFilePathParmName":    null,
+                            "fullFilePath":            null,
+                            "expandHome":              true,
+
+                            "fileEncoding":            "BINARY",
+
+                            "readFileContents":        "ToBeInjectedByInstance_suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier_withValue_true_whenReadCache_value_false_when_WriteCache",
+
+                            "unlinkFile":              false,
+                            "touchFile":               false,
+                            "createFile":              "ToBeInjectedByInstance_suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier_withValue_false_whenReadCAche_value_true_when_WriteCache",
+                            "createFileMode":          "0660",
+                            "truncateFile":            false,
+                            "appendToFile":            false,
+                            "writeFileContents":       "ToBeInjectedByInstance_test_withValue_false_whenReadCAche_value_true_when_WriteCache",
+                            "contentsToWrite":         "ToBeInjectedByInstance_-test_withValue_ofVariable__v_Reply_of_Test_whichIsOfType_PayloadHolder_Buffer",
+
+                            "failIfFileNotExists":     false,
+                            "failIfFileAlreadyExists": false,
+                            "failIfFileEmpty":         false,
+                            "failIfFileNotEmpty":      false,
+
+                            "dumppaths":               false,
+                            "dumpstats":               false,
+                            "dumpparseresult":         false,
+                            "dumpfilecontents":        false,
+                            "dumpremovals":            false,
+                            "dumpcreatefile":          true,
+                            "dumpreads":               false,
+                            "dumpwrites":              true,
+                            "dumpcontenttowrite":      false,
+
+                            "doDirectory":             true
+                        },
+                        "directory": {
+                            "basePathParmName":        "ToBeInjectedByInstance_FileAccessFor-suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier_of_fileaccess-test_withValue_null",
+                            "basePath":                "ToBeInjectedByInstance_FileAccessFor-suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier_of_fileaccess-test_withValue_null",
+                            "dirPathParmName":         "ToBeInjectedByInstance_FileAccessFor-suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier_of_fileaccess-test_withValue_null",
+                            "dirPath":                 "ToBeInjectedByInstance_FileAccessFor-suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier_of_fileaccess-test_withValue_null",
+                            "fullDirPathParmName":     "ToBeInjectedByInstance_FileAccessFor-suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier_of_fileaccess-test_into_synthetic_instance_of_directory-test_withValue_ofProperty_v_DirectoryOfUsedFullFilePath",
+                            "fullDirPath":             "ToBeInjectedByInstance_FileAccessFor-suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier_of_fileaccess-test_withValue_null",
+                            "expandHome":              "ToBeInjectedByInstance_FileAccessFor-suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier_of_fileaccess-test_withValue_false",
+
+                            "failIfDirNotExists":      false,
+                            "failIfDirAlreadyExists":  false,
+
+                            "tree":                    true,
+                            "treeDirs":                true,
+                            "treeLevel":               -1,
+                            "treeFiles":               true,
+
+                            "rmDir":                   false,
+                            "rmDirContentsDirs":       false,
+                            "rmDirContentsFiles":      false,
+                            "failIfDirNotEmpty":       false,
+
+                            "createDir":               true,
+                            "createDirMode":           "0770",
+                            "failIfDirNotExists":      false,
+                            "failIfDirAlreadyExists":  false,
+
+                            "dumppaths":               false,
+                            "dumpstats":               false,
+                            "dumpparseresult":         false,
+                            "dumpreaddirs":            false,
+                            "dumpdircontents":         false,
+                            "dumptree":                false,
+                            "dumptreeindented":        false,
+                            "dumptreestats":           false,
+                            "dumpremovals":            false,
+                            "dumpmkdirs":              true
+                        }
+                    },
+                    "scheduleSubs": "SERIES",
+                    "exports": [
+                        {
+                            "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplie-export-requestcachedtesttopopulatecache",
+                            "exportAs": "requestcachedtesttopopulatecache",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFORESUBS"
+                        }
+                    ],
+                    "required": [
+                        {
+                            "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-require-unlinkbeforecreatefile",
+                            "parmNames": [
+                                "unlinkbeforecreatefile"
+                            ],
+                            "suppliers": [
+                                {
+                                    "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-require-unlinkbeforecreatefile-supplier",
+                                    "runnable": true,
+                                    "expectSuccess": true,
+                                    "module": "@cmppath/common-test/fileaccess-test",
+                                    "constructorName": "FileAccess_Constructor",
+                                    "methodName": "pF_FileAccess",
+                                    "scheduleSubs": "SERIES",
+                                    "parms": {
+                                        "fileaccess": {
+                                            "usePayloadHolder": true,
+                                            "basePathParmName":        "parmsforfilesrequestreplycachetest.baseDirectoryForRequestReplyCache",
+                                            "basePath":                null,
+                                            "dirPathParmName":         "parmsforfilesrequestreplycachetest.directoryForRequestReplyCache",
+                                            "dirPath":                 null,
+                                            "filenameParmName":        null,
+                                            "filename":                "RandomFile_1MB.bin",
+                                            "fullFilePathParmName":    null,
+                                            "fullFilePath":            null,
+                                            "expandHome":              true,
+
+                                            "fileEncoding":            "BINARY",
+
+                                            "readFileContents":        true,
+
+                                            "unlinkFile":              true,
+                                            "touchFile":               false,
+                                            "createFile":              false,
+                                            "createFileMode":          "0660",
+                                            "truncateFile":            false,
+                                            "appendToFile":            false,
+                                            "writeFileContents":       false,
+
+                                            "failIfFileNotExists":     false,
+                                            "failIfFileAlreadyExists": false,
+                                            "failIfFileEmpty":         false,
+                                            "failIfFileNotEmpty":      false,
+
+                                            "dumppaths":               false,
+                                            "dumpstats":               false,
+                                            "dumpparseresult":         false,
+                                            "dumpfilecontents":        false,
+                                            "dumpremovals":            true,
+                                            "dumpcreatefile":          false,
+                                            "dumpreads":               false,
+                                            "dumpwrites":              false,
+                                            "dumpcontenttowrite":      false
+                                        }
+                                    },
+                                    "exports": [
+                                        {
+                                            "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-require-unlinkbeforecreatefile-supplier-export-unlinkbeforecreatefile",
+                                            "exportAs": "unlinkbeforecreatefile",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "*",
+                                            "exportTarget": ".",
+                                            "exportWhen": "OK"
+                                        },
+                                        {
+                                            "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-require-directoryunlinkfile-supplier-require-createfilebeforeunlink-export-UsedFullFilePath",
+                                            "exportAs": "UsedFullFilePath",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "_v_UsedFullFilePath",
+                                            "exportTarget": ".",
+                                            "exportWhen": "EXBEFORESUBS"
+                                        }
+                                    ],
+                                    "subs": [
+                                        {
+                                            "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-require-unlinkbeforecreatefile-supplier-sub-mustnotexistsafterunlink",
+                                            "runnable": true,
+                                            "expectSuccess": true,
+                                            "module": "@cmppath/common-test/fileaccess-test",
+                                            "constructorName": "FileAccess_Constructor",
+                                            "methodName": "pF_FileAccess",
+                                            "scheduleSubs": "SERIES",
+                                            "parms": {
+                                                "fileaccess": {
+                                                    "usePayloadHolder": true,
+                                                    "basePathParmName":        null,
+                                                    "basePath":                null,
+                                                    "dirPathParmName":         null,
+                                                    "dirPath":                 null,
+                                                    "filenameParmName":        null,
+                                                    "filename":                null,
+                                                    "fullFilePathParmName":    "UsedFullFilePath",
+                                                    "fullFilePath":            null,
+                                                    "expandHome":              true,
+
+                                                    "fileEncoding":            "BINARY",
+
+                                                    "readFileContents":        true,
+
+                                                    "unlinkFile":              false,
+                                                    "touchFile":               false,
+                                                    "createFile":              false,
+                                                    "createFileMode":          "0660",
+                                                    "truncateFile":            false,
+                                                    "appendToFile":            false,
+                                                    "writeFileContents":       false,
+
+                                                    "failIfFileNotExists":     false,
+                                                    "failIfFileAlreadyExists": true,
+                                                    "failIfFileEmpty":         false,
+                                                    "failIfFileNotEmpty":      false,
+
+                                                    "dumppaths":               false,
+                                                    "dumpstats":               true,
+                                                    "dumpparseresult":         false,
+                                                    "dumpfilecontents":        false,
+                                                    "dumpremovals":            false,
+                                                    "dumpcreatefile":          false,
+                                                    "dumpreads":               false,
+                                                    "dumpwrites":              false,
+                                                    "dumpcontenttowrite":      false
+                                                }
+                                            },
+                                            "checks": [
+                                                {
+                                                    "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-require-unlinkbeforecreatefile-supplier-check-_v_FullFileExisted-false",
+                                                    "checkWhen": "AFTER",
+                                                    "checkNegate": false,
+                                                    "checkKind": "EQ",
+                                                    "checkOrigin": "TEST",
+                                                    "checkSource": "_v_FullFileExisted",
+                                                    "checkValue": false
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-require-garbagecollectbefore",
+                            "parmNames": [
+                                "garbagecollectbefore"
+                            ],
+                            "suppliers": [
+                                {
+                                    "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-require-garbagecollectbefore-supplier",
+                                    "runnable": true,
+                                    "expectSuccess": true,
+                                    "module": "@cmppath/common-test/memory-test",
+                                    "constructorName": "Memory_Constructor",
+                                    "methodName": "pF_Memory",
+                                    "parms": {
+                                        "memory": {
+                                            "minHeapAvailable":                -1,
+                                            "maxHeapUsed":                     -1,
+                                            "maxHeapTotal":                    -1,
+
+                                            "failIfUnderMinHeapAvailable":      false,
+                                            "failIfOverMaxHeapUsed":            false,
+                                            "failIfOverMaxHeapTotal":           false,
+
+                                            "garbageCollectIfMinHeapAvailable": false,
+                                            "garbageCollectIfMaxHeapUsed":      false,
+                                            "garbageCollectIfMaxHeapTotal":     false,
+                                            "garbageCollectAlways":             true,
+
+                                            "reportMemoryAfter":                true,
+
+                                            "dumpmemoryreport":                 true,
+                                            "dumpgarbagecollect":               true
+                                        }
+                                    },
+                                    "scheduleSubs": "SERIES",
+                                    "exports": [
+                                        {
+                                            "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-require-garbagecollectbefore-supplier-export-",
+                                            "exportAs": "garbagecollectbefore",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "*",
+                                            "exportTarget": ".",
+                                            "exportWhen": "OK"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "subs": [
+                        {
+                            "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-sub-reportmemorybeforegarbagecollect",
+                            "runnable": true,
+                            "expectSuccess": true,
+                            "module": "@cmppath/common-test/memory-test",
+                            "constructorName": "Memory_Constructor",
+                            "methodName": "pF_Memory",
+                            "parms": {
+                                "memory": {
+                                    "minHeapAvailable":                -1,
+                                    "maxHeapUsed":                     -1,
+                                    "maxHeapTotal":                    -1,
+
+                                    "failIfUnderMinHeapAvailable":      false,
+                                    "failIfOverMaxHeapUsed":            false,
+                                    "failIfOverMaxHeapTotal":           false,
+
+                                    "garbageCollectIfMinHeapAvailable": false,
+                                    "garbageCollectIfMaxHeapUsed":      false,
+                                    "garbageCollectIfMaxHeapTotal":     false,
+                                    "garbageCollectAlways":             false,
+
+                                    "reportMemoryAfter":                false,
+
+                                    "dumpmemoryreport":                 true,
+                                    "dumpgarbagecollect":               true
+                                }
+                            },
+                            "scheduleSubs": "SERIES",
+                            "exports": [
+                                {
+                                    "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-sub-reportmemorybeforegarbagecollect-export-toReleaseRequestCachedReplyToPopulateCache",
+                                    "exportAs": "toReleaseRequestCachedReplyToPopulateCache",
+                                    "exportOrigin": "TEST",
+                                    "exportSource": "*",
+                                    "exportTarget": ".",
+                                    "exportWhen": "EXBEFORESUBS",
+                                    "exportCompuExtraParms": "~requestcachedtesttopopulatecache",
+                                    "exportComputation": "function( theMemoryTest, theRequestCachedTest) { return theRequestCachedTest && theRequestCachedTest._v_Reply && theRequestCachedTest._v_Reply.pReleasePayload && theRequestCachedTest._v_Reply.pReleasePayload(); }"
+                                }
+                            ],
+                            "subs": [
+                                {
+                                    "name": "suite-22-requestcached-cachehit-50MB-test-require-fileincache-supplier-sub-reportmemorybeforegarbagecollect-sub-garbagecollectafter-supplier",
+                                    "runnable": true,
+                                    "expectSuccess": true,
+                                    "module": "@cmppath/common-test/memory-test",
+                                    "constructorName": "Memory_Constructor",
+                                    "methodName": "pF_Memory",
+                                    "parms": {
+                                        "memory": {
+                                            "minHeapAvailable":                -1,
+                                            "maxHeapUsed":                     -1,
+                                            "maxHeapTotal":                    -1,
+
+                                            "failIfUnderMinHeapAvailable":      false,
+                                            "failIfOverMaxHeapUsed":            false,
+                                            "failIfOverMaxHeapTotal":           false,
+
+                                            "garbageCollectIfMinHeapAvailable": false,
+                                            "garbageCollectIfMaxHeapUsed":      false,
+                                            "garbageCollectIfMaxHeapTotal":     false,
+                                            "garbageCollectAlways":             true,
+
+                                            "reportMemoryAfter":                true,
+
+                                            "dumpmemoryreport":                 true,
+                                            "dumpgarbagecollect":               true
+                                        }
+                                    },
+                                    "scheduleSubs": "SERIES"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-22-requestcached-cachehit-50MB-test-sub-reportmemorybeforegarbagecollect",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/memory-test",
+            "constructorName": "Memory_Constructor",
+            "methodName": "pF_Memory",
+            "parms": {
+                "memory": {
+                    "minHeapAvailable":                -1,
+                    "maxHeapUsed":                     -1,
+                    "maxHeapTotal":                    -1,
+
+                    "failIfUnderMinHeapAvailable":      false,
+                    "failIfOverMaxHeapUsed":            false,
+                    "failIfOverMaxHeapTotal":           false,
+
+                    "garbageCollectIfMinHeapAvailable": false,
+                    "garbageCollectIfMaxHeapUsed":      false,
+                    "garbageCollectIfMaxHeapTotal":     false,
+                    "garbageCollectAlways":             false,
+
+                    "reportMemoryAfter":                false,
+
+                    "dumpmemoryreport":                 true,
+                    "dumpgarbagecollect":               true
+                }
+            },
+            "scheduleSubs": "SERIES",
+            "exports": [
+                {
+                    "name": "suite-22-requestcached-cachehit-50MB-test-sub-reportmemorybeforegarbagecollect-export-toReleaseRequestCachedReply",
+                    "exportAs": "toReleaseRequestCachedReply",
+                    "exportOrigin": "TEST",
+                    "exportSource": "*",
+                    "exportTarget": ".",
+                    "exportWhen": "EXBEFORESUBS",
+                    "exportCompuExtraParms": "~requestcachedtest",
+                    "exportComputation": "function( theMemoryTest, theRequestCachedTest) { return theRequestCachedTest && theRequestCachedTest._v_Reply && theRequestCachedTest._v_Reply.pReleasePayload && theRequestCachedTest._v_Reply.pReleasePayload(); }"
+                }
+            ],
+            "subs": [
+                {
+                    "name": "suite-22-requestcached-cachehit-50MB-test-sub-reportmemorybeforegarbagecollect-sub-garbagecollectafter-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/memory-test",
+                    "constructorName": "Memory_Constructor",
+                    "methodName": "pF_Memory",
+                    "parms": {
+                        "memory": {
+                            "minHeapAvailable":                -1,
+                            "maxHeapUsed":                     -1,
+                            "maxHeapTotal":                    -1,
+
+                            "failIfUnderMinHeapAvailable":      false,
+                            "failIfOverMaxHeapUsed":            false,
+                            "failIfOverMaxHeapTotal":           false,
+
+                            "garbageCollectIfMinHeapAvailable": false,
+                            "garbageCollectIfMaxHeapUsed":      false,
+                            "garbageCollectIfMaxHeapTotal":     false,
+                            "garbageCollectAlways":             true,
+
+                            "reportMemoryAfter":                true,
+
+                            "dumpmemoryreport":                 true,
+                            "dumpgarbagecollect":               true
+                        }
+                    },
+                    "scheduleSubs": "SERIES"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "parms-requestcached-fortest",
+    "parms": {
+        "parmsforfilesrequestreplycachetest": {
+
+            "baseDirectoryForRequestReplyCache":  "~/end2endrequestcachedtest/basedirforrequestreplycache",
+            "directoryForRequestReplyCache":      "requestcachedfiles"
+        }
+    }
+}
+

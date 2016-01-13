@@ -1,0 +1,73 @@
+[
+    {
+        "name": "ctrl action echo",
+        "method": "get",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/daerth/echo",
+        "headers": null,
+        "parms": {
+            "theToEcho": "listener echoed text get"
+        },
+        "form": null,
+        "body": null,
+        "json": null,
+        "expect": "listener echoed text get"
+    },
+    {
+        "name": "ctrl action initial",
+        "method": "post",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/daerth/initial",
+        "headers": null,
+        "parms": null,
+        "form": {
+            "theTestSpecKind": "SINGLE",
+            "theTestSpecOrPath": "@testspath/general/suite-01-fake-test.json"
+        },
+        "body": null,
+        "json": null
+    },
+    {
+        "name": "ctrl action asktodo",
+        "method": "get",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/daerth/asktodo",
+        "headers": null,
+        "parms": null,
+        "form": null,
+        "body":null,
+        "json": true
+    },
+    {
+        "name": "ctrl action resultandasktodo",
+        "method": "post",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/daerth/resultandasktodo",
+        "headers": null,
+        "parms": null,
+        "form": null,
+        "body": {
+            "resultvalue1": 1,
+            "resultvalue2": 2
+        },
+        "json": true
+    },
+    {
+        "name": "ctrl action terminated",
+        "method": "get",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/daerth/terminated",
+        "headers": null,
+        "parms": null,
+        "form": {
+            "theToEcho": "listener echoed json post form"
+        },
+        "body": null,
+        "json": true
+    }
+]

@@ -1,0 +1,27 @@
+{
+    "name": "29-required-badfields",
+    "subs": [
+        {
+            "name": "29-required-badfields-required-notobjectlist",
+            "required": "str"
+        },
+        {
+            "name": "29-required-badfields-required-parmNames",
+            "required": [
+                {
+                    "name": "29-required-badfields-required-parmNames-notstringlist",
+                    "parmNames": "faketest"
+                }
+            ]
+        },
+        {
+            "name": "29-required-badfields-required-suppliers",
+            "required": [
+                {
+                    "name": "29-required-badfields-required-suppliers-notobjectlist",
+                    "suppliers": "str"
+                }
+            ]
+        }
+    ]
+}

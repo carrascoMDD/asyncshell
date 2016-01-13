@@ -1,0 +1,11 @@
+[
+    "@testspath/general/security/suite-01-login-test.json",
+    "@testspath/general/security/suite-02-login-test.json",
+    "@testspath/general/security/suite-05-login-obtener-test.json",
+    "@testspath/general/security/suite-11-isauthenticated-requiredlogin-inline-test.json",
+    "@testspath/general/security/suite-12-isauthenticated-requiredlogin-imported-test.json",
+    "@testspath/general/security/suite-13-isauthenticated-obtener-test.json",
+    "@testspath/general/security/suite-21-session-requiredloginisauthenticated-test.json",
+    "@testspath/general/security/suite-22-session-obtener-test.json",
+    "@testspath/general/security/suite-31-logout-test.json"
+]

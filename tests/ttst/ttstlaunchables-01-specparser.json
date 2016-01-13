@@ -1,0 +1,167 @@
+[
+
+    {
+        "title": "specparserbasettst",
+        "module": "@cmppath/ttst/specparser/specparser-base-ttst",
+        "constructor": "SpecParserBaseTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-01-base-ttst.json"
+    },
+    {
+        "title": "specparserparmsttst",
+        "module": "@cmppath/ttst/specparser/specparser-parms-ttst",
+        "constructor": "SpecParserParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-02-parms-ttst.json"
+    },
+
+    {
+        "title": "specparserimportttst",
+        "module": "@cmppath/ttst/specparser/specparser-import-ttst",
+        "constructor": "SpecParserImportTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-03-import-ttst.json"
+    },
+    {
+        "title": "specparserexportttst",
+        "module": "@cmppath/ttst/specparser/specparser-export-ttst",
+        "constructor": "SpecParserExportTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-04-export-ttst.json"
+    },
+    {
+        "title": "specparsersubsttst",
+        "module": "@cmppath/ttst/specparser/specparser-subs-ttst",
+        "constructor": "SpecParserSubsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-05-subs-ttst.json"
+    },
+    {
+        "title": "specparsercheckttst",
+        "module": "@cmppath/ttst/specparser/specparser-check-ttst",
+        "constructor": "SpecParserCheckTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-06-check-ttst.json"
+    },
+    {
+        "title": "specparserdefaultsttst",
+        "module": "@cmppath/ttst/specparser/specparser-defaults-ttst",
+        "constructor": "SpecParserDefaultsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-07-defaults-ttst.json"
+    },
+    {
+        "title": "specparserrequiredttst",
+        "module": "@cmppath/ttst/specparser/specparser-required-ttst",
+        "constructor": "SpecParserRequiredTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-08-required-ttst.json"
+    },
+    {
+        "title": "specparserwholettst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-10-whole-ttst.json"
+    },
+    {
+        "title": "specparserbasebadfieldsttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-21-base-badfields-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-21-base-badfields-expectedfailedconfigpaths-ttst.json"
+    },
+    {
+        "title": "specparserparmsbadfieldsttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-22-parms-badfields-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-22-parms-badfields-expectedfailedconfigpaths-ttst.json"
+    },
+    {
+        "title": "specparserdefaultsbadfieldsttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-28-defaults-badfields-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-28-defaults-badfields-expectedfailedconfigpaths-ttst.json"
+    },
+    {
+        "title": "specparserimportbadfieldsttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-23-import-badfields-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-23-import-badfields-expectedfailedconfigpaths-ttst.json"
+    },
+    {
+        "title": "specparserexportbadfieldsttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-24-export-badfields-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-24-export-badfields-expectedfailedconfigpaths-ttst.json"
+    },
+    {
+        "title": "specparserbadsubttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-25-badsub-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-25-badsub-expectedfailedconfigpaths-ttst.json"
+    },
+    {
+        "title": "specparserextrafieldsttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-26-extrafields-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-26-extrafields-expectedfailedconfigpaths-ttst.json"
+    },
+    {
+        "title": "specparsercheckbadfieldsttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-27-check-badfields-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-27-check-badfields-expectedfailedconfigpaths-ttst.json"
+    },
+    {
+        "title": "specparserdefaultsbadfieldsttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-28-defaults-badfields-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-28-defaults-badfields-expectedfailedconfigpaths-ttst.json"
+    },
+    {
+        "title": "specparserrequiredbadfieldsttst",
+        "module": "@cmppath/ttst/specparser/specparser-whole-ttst",
+        "constructor": "SpecParserWholeTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-29-required-badfields-ttst.json",
+        "expectSucceed": true,
+        "abandonAtFirstSyntaxError": false,
+        "expectedFailedConfigPaths": "@testspath/ttst/configspec-29-required-badfields-expectedfailedconfigpaths-ttst.json"
+    }
+]

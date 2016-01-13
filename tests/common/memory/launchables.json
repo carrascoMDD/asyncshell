@@ -1,0 +1,12 @@
+[
+    "@testspath/common/memory/suite-10-memory-report-test.json",
+
+    "@testspath/common/memory/suite-20-memory-report-always-garbage-report-test.json",
+    "@testspath/common/memory/suite-22-memory-report-ifminheapavailable-garbage-report-test.json",
+    "@testspath/common/memory/suite-24-memory-report-ifmaxheapused-garbage-report-test.json",
+    "@testspath/common/memory/suite-26-memory-report-ifmaxheaptotal-garbage-report-test.json",
+
+    "@testspath/common/memory/suite-32-memory-report-ifminheapavailable-fail-test.json",
+    "@testspath/common/memory/suite-34-memory-report-ifmaxheapused-fail-test.json",
+    "@testspath/common/memory/suite-36-memory-report-ifmaxheaptotal-fail-test.json"
+]

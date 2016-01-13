@@ -1,0 +1,172 @@
+{
+    "name": "suite-24-requestreply-releasepayloads-100MB-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/requestreply-test",
+    "constructorName": "RequestReply_Constructor",
+    "methodName": "pF_RequestReply",
+    "parms": {
+        "requestreply": {
+            "contentkind":  "BINARY",
+            "baseURLparmName": "hitpoint-common-samplefiles.baseURL",
+            "requestmethod": "GET",
+            "URLpath": "/RandomFile_100MB.bin",
+            "URLparms": null,
+            "URLparmsnotencoded": null,
+            "URLpathParms": null,
+            "NOTUSED_AnotherURLfull":      "http://192.168.69.3:8600/RandomFile_100MB.bin",
+            "NOTUSED_OtherURLfull":        "http://www.SpringNut.org/springnut/resources/images/SpringNut300transparentbg.png",
+            "NOTUSED_URLfull":             "http://192.168.69.111:64404/springnut/resources/images/SpringNut300transparentbg.png",
+            "NOTUSED_OtherURLfull":        "http://www.SpringNut.org/springnut/resources/images/SpringNut300transparentbg.png",
+            "statuscode": 200,
+            "forgivablestatuscodes": [ 404],
+            "dumpurl":               true,
+            "UNUSED_dumprequestdata": true,
+            "UNUSED_dumpreply":       false
+        }
+    },
+    "scheduleSubs": "SERIES",
+    "imports": [
+        {
+            "name": "hitpoint-common-samplefiles-import",
+            "configurationPath": "@testspath/common/parms-hitpoint-common-samplefiles.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "exports": [
+        {
+            "name": "suite-24-requestreply-releasepayloads-100MB-test-export-requestReplyTest",
+            "exportAs": "requestReplyTest",
+            "exportOrigin": "TEST",
+            "exportSource": "*",
+            "exportTarget": ".",
+            "exportWhen": "EXBEFORESUBS"
+        }
+    ],
+    "required": [
+        {
+            "name": "suite-24-requestreply-releasepayloads-100MB-test-require-garbagecollectbefore",
+            "parmNames": [
+                "garbagecollectbefore"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-24-requestreply-releasepayloads-100MB-test-require-garbagecollectbefore-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/memory-test",
+                    "constructorName": "Memory_Constructor",
+                    "methodName": "pF_Memory",
+                    "parms": {
+                        "memory": {
+                            "minHeapAvailable":                -1,
+                            "maxHeapUsed":                     -1,
+                            "maxHeapTotal":                    -1,
+
+                            "failIfUnderMinHeapAvailable":      false,
+                            "failIfOverMaxHeapUsed":            false,
+                            "failIfOverMaxHeapTotal":           false,
+
+                            "garbageCollectIfMinHeapAvailable": false,
+                            "garbageCollectIfMaxHeapUsed":      false,
+                            "garbageCollectIfMaxHeapTotal":     false,
+                            "garbageCollectAlways":             true,
+
+                            "reportMemoryAfter":                true,
+
+                            "dumpmemoryreport":                 true,
+                            "dumpgarbagecollect":               true
+                        }
+                    },
+                    "scheduleSubs": "SERIES",
+                    "exports": [
+                        {
+                            "name": "suite-24-requestreply-releasepayloads-100MB-test-require-garbagecollectbefore-supplier-export-",
+                            "exportAs": "garbagecollectbefore",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-24-requestreply-releasepayloads-100MB-test-sub-reportmemorybeforegarbagecollect",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/memory-test",
+            "constructorName": "Memory_Constructor",
+            "methodName": "pF_Memory",
+            "parms": {
+                "memory": {
+                    "minHeapAvailable":                -1,
+                    "maxHeapUsed":                     -1,
+                    "maxHeapTotal":                    -1,
+
+                    "failIfUnderMinHeapAvailable":      false,
+                    "failIfOverMaxHeapUsed":            false,
+                    "failIfOverMaxHeapTotal":           false,
+
+                    "garbageCollectIfMinHeapAvailable": false,
+                    "garbageCollectIfMaxHeapUsed":      false,
+                    "garbageCollectIfMaxHeapTotal":     false,
+                    "garbageCollectAlways":             false,
+
+                    "reportMemoryAfter":                false,
+
+                    "dumpmemoryreport":                 true,
+                    "dumpgarbagecollect":               true
+                }
+            },
+            "scheduleSubs": "SERIES",
+            "exports": [
+                {
+                    "name": "suite-24-requestreply-releasepayloads-100MB-test-sub-reportmemorybeforegarbagecollect-export-toReleaseRequestReplyPayloads",
+                    "exportAs": "toReleaseRequestReplyPayloads",
+                    "exportOrigin": "TEST",
+                    "exportSource": "*",
+                    "exportTarget": ".",
+                    "exportWhen": "EXBEFORESUBS",
+                    "exportCompuExtraParms": "~requestReplyTest",
+                    "exportComputation": "function( theMemoryTest, theRequestReplyTest) { return ( theRequestReplyTest && theRequestReplyTest.fReleasePayloads_RequestReply && theRequestReplyTest.fReleasePayloads_RequestReply() ); }"
+                }
+            ],
+            "subs": [
+                {
+                    "name": "suite-24-requestreply-releasepayloads-100MB-test-sub-reportmemorybeforegarbagecollect-sub-garbagecollectafter-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/memory-test",
+                    "constructorName": "Memory_Constructor",
+                    "methodName": "pF_Memory",
+                    "parms": {
+                        "memory": {
+                            "minHeapAvailable":                -1,
+                            "maxHeapUsed":                     -1,
+                            "maxHeapTotal":                    -1,
+
+                            "failIfUnderMinHeapAvailable":      false,
+                            "failIfOverMaxHeapUsed":            false,
+                            "failIfOverMaxHeapTotal":           false,
+
+                            "garbageCollectIfMinHeapAvailable": false,
+                            "garbageCollectIfMaxHeapUsed":      false,
+                            "garbageCollectIfMaxHeapTotal":     false,
+                            "garbageCollectAlways":             true,
+
+                            "reportMemoryAfter":                true,
+
+                            "dumpmemoryreport":                 true,
+                            "dumpgarbagecollect":               true
+                        }
+                    },
+                    "scheduleSubs": "SERIES"
+                }
+            ]
+        }
+    ]
+}

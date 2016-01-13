@@ -1,0 +1,5 @@
+[
+    "@testspath/general/launchables-00-fake.json",
+    "@testspath/general/security/launchables.json",
+    "@testspath/general/launchables-02-echo.json"
+]

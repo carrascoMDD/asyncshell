@@ -1,0 +1,36 @@
+[
+    "#root/tests/launchers/launchablemodules.json",
+    "#root/tests/xloader/launchablemodules.json",
+    "#root/tests/pathsloader/launchablemodules.json",
+    "#root/tests/resloader/launchablemodules.json",
+    "#root/tests/infrasvcs/launchablemodules.json",
+    "#root/tests/ctrlserver/launchablemodules.json",
+    {
+        "title": "toplaunchables",
+        "module": "#root/lib/common-test/launchers/launcher-top.js",
+        "constructor": "LauncherTop_Constructor",
+        "method": "pF_LauncherTop",
+        "constructorparm": "@testspath/#testsroot/toplaunchables.json"
+    },
+    {
+        "title": "orthanc",
+        "module": "#root/lib/common-test/launchers/launcher-top.js",
+        "constructor": "LauncherTop_Constructor",
+        "method": "pF_LauncherTop",
+        "constructorparm": "@testspath/#testsroot/orthanc/launchables.json"
+    },
+    {
+        "title": "istdicom",
+        "module": "#root/lib/common-test/launchers/launcher-top.js",
+        "constructor": "LauncherTop_Constructor",
+        "method": "pF_LauncherTop",
+        "constructorparm": "@testspath/#testsroot/istdicom/launchables.json"
+    },
+    {
+        "title": "dicom",
+        "module": "#root/lib/common-test/launchers/launcher-top.js",
+        "constructor": "LauncherTop_Constructor",
+        "method": "pF_LauncherTop",
+        "constructorparm": "@testspath/#testsroot/dicom/launchables.json"
+    }
+]

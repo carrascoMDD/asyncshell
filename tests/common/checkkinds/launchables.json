@@ -1,0 +1,4 @@
+[
+    "@testspath/common/checkkinds/suite-10-checkkinds-test.json",
+    "@testspath/common/checkkinds/suite-20-checkkinds-negated-test.json"
+]

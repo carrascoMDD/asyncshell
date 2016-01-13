@@ -1,0 +1,42 @@
+[
+    {
+        "path": ".",
+        "expectedFields": {
+            "_v_Runnable": false,
+            "_v_InheritMode": "STATIC",
+            "_v_ScheduleSubs": "SERIES",
+            "_v_ExpectSuccess": false,
+            "_v_ExpectedEvent": "FAIL",
+            "_v_ConstructorModuleName": "@cmppath/general-test/void-test-fromimport-failed",
+            "_v_ConstructorName": "VoidTest_Constructor-fromimport-failed",
+            "_v_MethodName": "pF_Void-fromimport-failed",
+            "_v_ForceError": false,
+            "_v_ForceErrorDetail": "Forced error-fromimport-failed",
+            "_v_ForceErrorKind": "CALLBACK",
+            "_v_ForceErrorWhen": "OK"
+        },
+        "failedFields": [
+            "_v_Runnable",
+            "_v_ScheduleSubs",
+            "_v_ExpectSuccess",
+            "_v_ExpectedEvent",
+            "_v_ConstructorModuleName",
+            "_v_ConstructorName",
+            "_v_MethodName",
+            "_v_ForceError",
+            "_v_ForceErrorDetail",
+            "_v_ForceErrorKind",
+            "_v_ForceErrorWhen"
+        ],
+        "absentFields": [
+            "_v_InheritMode",
+            "_v_ScheduleSubs"
+        ]
+    }
+]
+
+
+
+
+
+

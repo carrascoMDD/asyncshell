@@ -1,0 +1,38 @@
+{
+    "name": "08-required",
+    "required": [
+        {
+            "name": "08-required-require-faketest",
+            "parmNames": [
+                "faketest"
+            ],
+            "suppliers": [
+                {
+                    "name": "08-required-require-faketest-obtener-faketest",
+                    "imports": [
+                        {
+                            "name": "08-required-require-faketest-obtener-faketest-import",
+                            "configurationPath": "@testspath/general/obtener-fake-test.json",
+                            "importMode": "STATIC"
+                        }
+                    ],
+                    "exports": [
+                        {
+                            "name": "08-required-require-faketest-obtener-faketest-export",
+                            "exportAs": "faketest",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+

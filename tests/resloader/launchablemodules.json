@@ -1,0 +1,23 @@
+[
+    {
+        "title": "resloader cmploader-test",
+        "module": "#root/lib/resloader-test/cmploader-test",
+        "constructor": null,
+        "method": "pCmpLoaderTest",
+        "parm": true
+    },
+    {
+        "title": "resloader specloader-test",
+        "module": "#root/lib/resloader-test/specloader-test",
+        "constructor": null,
+        "method": "pSpecLoaderTest",
+        "parm": true
+    },
+    {
+        "title": "resloader cmpandspecloaders-test",
+        "module": "#root/lib/resloader-test/cmpandspecloaders-test",
+        "constructor": null,
+        "method": "pCmpAndSpecLoaderTest",
+        "parm": true
+    }
+]

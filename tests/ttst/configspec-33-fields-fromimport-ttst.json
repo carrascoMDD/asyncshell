@@ -1,0 +1,15 @@
+{
+    "name": "33-fields-fromimport",
+    "imports": [
+        {
+            "name": "33-fields-fromimport-toimport-here",
+            "configurationPath": "@testspath/ttst/configspec-33-fields-fromimport-toimport-ttst.json",
+            "importMode": "STATIC"
+        }
+    ]
+}
+
+
+
+
+

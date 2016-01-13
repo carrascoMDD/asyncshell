@@ -1,0 +1,14 @@
+[
+    "@testspath/common/directories/suite-10-directory-rmdir-mayexists-test.json",
+
+    "@testspath/common/directories/suite-20-directory-mkdir-onlybasepath-ok-test.json",
+    "@testspath/common/directories/suite-22-directory-mkdir-dirlevels01-ok-test.json",
+    "@testspath/common/directories/suite-24-directory-mkdir-dirlevels02-ok-test.json",
+    "@testspath/common/directories/suite-26-directory-mkdir-dirlevels04-ok-test.json",
+
+    "@testspath/common/directories/suite-40-directory-rmdir-onlybasepath-ok-test.json",
+    "@testspath/common/directories/suite-42-directory-rmdir-dirlevels01-ok-test.json",
+    "@testspath/common/directories/suite-44-directory-rmdir-dirlevels02-ok-test.json",
+    "@testspath/common/directories/suite-46-directory-rmdir-dirlevels04-ok-test.json",
+    "@testspath/common/directories/suite-60-directory-rmdir-mkdir-dirlevels01-ok-test.json"
+]

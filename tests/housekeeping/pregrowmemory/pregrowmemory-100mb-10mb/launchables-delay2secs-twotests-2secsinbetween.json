@@ -1,0 +1,7 @@
+[
+    "@testspath/housekeeping/pregrowmemory/suite-03-housekeeping-pregrowmemory-delay-2secs-test.json",
+    "@testspath/housekeeping/pregrowmemory/pregrowmemory-100mb-10mb/suite-01-housekeeping-pregrowmemory-maxheapused-100mb-minheapavailable-10mb-01-test.json",
+    "@testspath/housekeeping/pregrowmemory/suite-02-housekeeping-pregrowmemory-delay-1millisec-01-test.json",
+    "@testspath/housekeeping/pregrowmemory/pregrowmemory-100mb-10mb/suite-01-housekeeping-pregrowmemory-1Bx1-02-test.json"
+
+]

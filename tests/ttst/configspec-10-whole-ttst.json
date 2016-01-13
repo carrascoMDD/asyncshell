@@ -1,0 +1,374 @@
+{
+    "name": "10-whole",
+    "parms": {
+        "salutation": "Hello 10-whole",
+        "comment": "In this Hello 10-whole You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}"
+    },
+    "imports": [
+        {
+            "name": "10-whole-import-configurationpath",
+            "configurationPath": "@testspath/ttst/configspec-01-base-ttst.json"
+        },
+        {
+            "name": "10-whole-import-importmode-STATIC",
+            "configurationPath": "@testspath/ttst/configspec-01-base-ttst.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "subs": [
+        {
+            "name": "10-whole-strings",
+            "subs": [
+                {
+                    "name": "10-whole-str-module",
+                    "module": "@cmppath/general-test/void-test"
+                },
+                {
+                    "name": "10-whole-str-constructorname",
+                    "constructorName": "VoidTest_Constructor"
+                },
+                {
+                    "name": "10-whole-str-methodname",
+                    "methodName": "pF_Void"
+                },
+                {
+                    "name": "10-whole-str-forceerrordetail",
+                    "forceErrorDetail": "Forced error"
+                }
+            ]
+        },
+        {
+            "name": "10-whole-booleans",
+            "subs": [
+                {
+                    "name": "10-whole-bool-runnable",
+                    "subs": [
+                        {
+                            "name": "10-whole-enum-runnable-true",
+                            "runnable": true
+                        },
+                        {
+                            "name": "10-whole-enum-runnable-false",
+                            "runnable": false
+                        }
+                    ]
+                },
+                {
+                    "name": "10-whole-bool-schedulesubs",
+                    "subs": [
+                        {
+                            "name": "10-whole-enum-schedulesubs-true",
+                            "scheduleSubs": "SERIES"
+                        }
+                    ]
+                },
+                {
+                    "name": "10-whole-bool-expectsuccess",
+                    "subs": [
+                        {
+                            "name": "10-whole-enum-expectsuccess-true",
+                            "expectSuccess": true
+                        },
+                        {
+                            "name": "10-whole-enum-expectsuccess-false",
+                            "expectSuccess": false
+                        }
+                    ]
+                },
+                {
+                    "name": "10-whole-bool-forceerror",
+                    "subs": [
+                        {
+                            "name": "10-whole-enum-forceerror-true",
+                            "expectSuccess": true
+                        },
+                        {
+                            "name": "10-whole-enum-forceerror-false",
+                            "expectSuccess": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "10-whole-enums",
+            "subs": [
+                {
+                    "name": "10-whole-enum-inherit-values",
+                    "subs": [
+                        {
+                            "name": "10-whole-enum-inherit-STATIC",
+                            "inherit": "STATIC"
+                        }
+                    ]
+                },
+                {
+                    "name": "10-whole-enum-schedulesubs-values",
+                    "subs": [
+                        {
+                            "name": "10-whole-enum-schedulesubs-SERIES",
+                            "scheduleSubs": "SERIES"
+                        }
+                    ]
+                },
+                {
+                    "name": "10-whole-enum-expectedevent-values",
+                    "subs": [
+                        {
+                            "name": "10-whole-enum-expectedevent-INIT",
+                            "expectedEvent": "INIT"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-ALREADY",
+                            "expectedEvent": "ALREADY"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-BEGIN",
+                            "expectedEvent": "BEGIN"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-SENT",
+                            "expectedEvent": "SENT"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-RECEIVED",
+                            "expectedEvent": "RECEIVED"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-FAIL",
+                            "expectedEvent": "FAIL"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-OK",
+                            "expectedEvent": "OK"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-INFO",
+                            "expectedEvent": "INFO"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-FORCEERROR_CALLBACK",
+                            "expectedEvent": "FORCEERROR_CALLBACK"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-FORCEERROR_EXCEPTION",
+                            "expectedEvent": "FORCEERROR_EXCEPTION"
+                        },
+                        {
+                            "name": "10-whole-enum-expectedevent-CATCHED_EXCEPTION",
+                            "expectedEvent": "CATCHED_EXCEPTION"
+                        }
+                    ]
+                },
+                {
+                    "name": "10-whole-enum-forceerrorkind-values",
+                    "subs": [
+                        {
+                            "name": "10-whole-enum-forceerrorkind-EXCEPTION",
+                            "forceErrorKind": "EXCEPTION"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorkind-CALLBACK",
+                            "forceErrorKind": "CALLBACK"
+                        }
+                    ]
+                },
+                {
+                    "name": "10-whole-enum-forceerrorwhen-values",
+                    "subs": [
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-INIT",
+                            "forceErrorWhen": "INIT"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-ALREADY",
+                            "forceErrorWhen": "ALREADY"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-BEGIN",
+                            "forceErrorWhen": "BEGIN"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-SENT",
+                            "forceErrorWhen": "SENT"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-RECEIVED",
+                            "forceErrorWhen": "RECEIVED"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-FAIL",
+                            "forceErrorWhen": "FAIL"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-OK",
+                            "forceErrorWhen": "OK"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-INFO",
+                            "forceErrorWhen": "INFO"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-FORCEERROR_CALLBACK",
+                            "forceErrorWhen": "FORCEERROR_CALLBACK"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-FORCEERROR_EXCEPTION",
+                            "forceErrorWhen": "FORCEERROR_EXCEPTION"
+                        },
+                        {
+                            "name": "10-whole-enum-forceerrorwhen-CATCHED_EXCEPTION",
+                            "forceErrorWhen": "CATCHED_EXCEPTION"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "10-whole-subs-01",
+            "runnable": true,
+            "inherit": "STATIC",
+            "scheduleSubs": "SERIES",
+            "expectSuccess": true,
+            "expectedEvent": "OK",
+            "module": "@cmppath/general-test/void-test",
+            "constructorName": "VoidTest_Constructor",
+            "methodName": "pF_Void",
+            "forceError": false,
+            "forceErrorDetail": "Forced error",
+            "forceErrorKind": "EXCEPTION",
+            "forceErrorWhen": "BEGIN"
+        },
+        {
+            "name": "10-whole-subs-02",
+            "runnable": true,
+            "inherit": "STATIC",
+            "scheduleSubs": "SERIES",
+            "expectSuccess": true,
+            "expectedEvent": "OK",
+            "module": "@cmppath/general-test/void-test",
+            "constructorName": "VoidTest_Constructor",
+            "methodName": "pF_Void",
+            "forceError": false,
+            "forceErrorDetail": "Forced error",
+            "forceErrorKind": "EXCEPTION",
+            "forceErrorWhen": "BEGIN"
+        },
+        {
+            "name": "10-whole-exports",
+            "module": "@cmppath/general-test/void-test",
+            "constructorName": "VoidTest_Constructor",
+            "methodName": "pF_Void",
+            "parms": {
+                "parmToExport": "parmToExport-value"
+            },
+            "exports": [
+                {
+                    "name": "10-whole-exports-fromPARMS-when-PARSE",
+                    "exportAs": "exported_fromPARMSparmToExport_whenPARSE",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "PARSE"
+                },
+                {
+                    "name": "10-whole-exports-fromPARMSt-when-PARSE",
+                    "exportAs": "exported_parms_unparm_whenPARSE",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "PARSE"
+                },
+                {
+                    "name": "10-whole-exports-fromPARMS-when-AFTERINIT",
+                    "exportAs": "exported_fromPARMSparmToExport_whenAFTERINIT",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "AFTERINIT"
+                },
+                {
+                    "name": "10-whole-exports-fromPARMS-when-BETWEENSTEPS",
+                    "exportAs": "exported_fromPARMSparmToExport_whenBETWEENSTEPS",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "EXBETWEENSTEPS"
+                },
+                {
+                    "name": "10-whole-exports-fromPARMS-when-OK",
+                    "exportAs": "exported_fromPARMSparmToExport_whenOK",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "OK"
+                },
+                {
+                    "name": "10-whole-exports-fromPARMS-when-FAIL",
+                    "exportAs": "exported_fromPARMSparmToExport_whenFAIL",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "FAIL"
+                },
+                {
+                    "name": "10-whole-exports-fromPARMS-when-AFTER",
+                    "exportAs": "exported_fromPARMSparmToExport_whenAFTER",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "AFTER"
+                },
+
+
+                {
+                    "name": "10-whole-exports-fromTEST-when-AFTERINIT",
+                    "exportAs": "exported_fromTEST_v_Void_whenAFTERINIT",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "AFTERINIT"
+                },
+                {
+                    "name": "10-whole-exports-fromTEST-when-BETWEENSTEPS",
+                    "exportAs": "exported_fromTEST_v_Void_whenBETWEENSTEPS",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "EXBETWEENSTEPS"
+                },
+                {
+                    "name": "10-whole-exports-fromTEST-when-OK",
+                    "exportAs": "exported_fromTEST_v_Void_whenOK",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "OK"
+                },
+                {
+                    "name": "10-whole-exports-fromTEST-when-FAIL",
+                    "exportAs": "exported_fromTEST_v_Void_whenFAIL",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "FAIL"
+                },
+                {
+                    "name": "10-whole-exports-fromTEST-when-AFTER",
+                    "exportAs": "exported_fromTEST_v_Void_whenAFTER",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_Void",
+                    "exportTarget": "..",
+                    "exportWhen": "AFTER"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+

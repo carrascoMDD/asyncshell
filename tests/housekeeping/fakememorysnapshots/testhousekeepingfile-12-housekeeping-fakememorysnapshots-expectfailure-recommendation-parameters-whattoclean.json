@@ -1,0 +1,34 @@
+{
+    "title": "testhousekeepingfile-12-housekeeping-fakememorysnapshots-expectfailure-recommendation-parameters-whattoclean.json",
+    "HOUSEKEEPOPTIONS": {
+        "incrementalMode":  true,
+        "maxHeapUsed":      1000,
+        "minHeapAvailable": 10,
+        "ignoreThrashingMillis":  true,
+        "thrashingHeapAvailable": null,
+        "thrashingMillis":        null,
+        "forceBits":        null
+    },
+    "MEMORY": [
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-01-test.json",
+            "attempts":  [
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB. It shall fail Check Recommendation because of HowMuchToClean not in min max range"}},
+                    "expectedRecommendations": [
+                        {
+                            "expectFailure":                      true,
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTS"],  "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+                { "shallHaveNoHousekeeping": true}
+            ]
+        }
+    ]
+}

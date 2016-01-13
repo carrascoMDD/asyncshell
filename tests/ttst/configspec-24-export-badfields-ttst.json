@@ -1,0 +1,33 @@
+{
+    "name": "24-export-badfields",
+    "expectSuccess": false,
+    "expectedEvent": "FAIL",
+    "exports": [
+        {
+            "name": "24-export-badfields-exportas-number",
+            "exportAs": 0
+        },
+        {
+            "name": "24-export-badfields-exportorigin-badTEST",
+            "exportOrigin": "badTEST"
+        },
+        {
+            "name": "24-export-badfields-exportsource-number",
+            "exportSource": 0
+        },
+        {
+            "name": "24-export-badfields-exporttarget-number",
+            "exportTarget": 0
+        },
+        {
+            "name": "24-export-badfields-enum-exportwhen-badAFTER",
+            "exportWhen": "badAFTER"
+        }
+    ]
+}
+
+
+
+
+
+

@@ -1,0 +1,579 @@
+{
+    "title": "testreleasingfile-02-releasing-subordinates.json",
+    "RELEASING": [
+        {
+            "testName": "@testspath/releasing/suite-02-releasing-subordinates-test.json",
+            "checkTest":  [
+                { "type":"ScheduleRootTest","title": "pSL_createTest"},
+                { "type":"ScheduleOneTest","title": "suite-02-releasing-subordinates-test"},
+                { "type":"AllocTest","title": "suite-02-releasing-subordinates-test"},
+                { "type":"AllocTest","title": "suite-02-releasing-subordinates-test-sub-1"},
+                { "type":"AllocTest","title": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "type":"AllocTest","title": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "type":"AllocTest","title": "suite-02-releasing-subordinates-test-sub-2"},
+                { "type":"AllocTest","title": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "type":"AllocTest","title": "suite-02-releasing-subordinates-test-sub-2-sub-2"}
+            ],
+            "checkConfiguration": [
+                { "type":"Configuration","title": "suite-02-releasing-subordinates-test"},
+                { "type":"Configuration","title": "suite-02-releasing-subordinates-test-sub-1"},
+                { "type":"Configuration","title": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "type":"ConfigParms","title": "ParmsFor-suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "type":"ParmsParser","title": "ParmsParser-For-SpecParser-For-suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 alloc.numBuffers"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 alloc.bufferSize"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_ConstructorModuleName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_ConstructorName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_MethodName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_ForceError"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_ForceErrorDetail"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_ForceErrorKind"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_ForceErrorWhen"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_ExpectSuccess"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_ExpectedEvent"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-1 _v_ExpectedException"},
+                { "type":"SpecParserConfig","title": "SpecParser-For-suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "type":"Configuration","title": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "type":"ConfigParms","title": "ParmsFor-suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "type":"ParmsParser","title": "ParmsParser-For-SpecParser-For-suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 alloc.numBuffers"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 alloc.bufferSize"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_ConstructorModuleName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_ConstructorName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_MethodName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_ForceError"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_ForceErrorDetail"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_ForceErrorKind"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_ForceErrorWhen"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_ExpectSuccess"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_ExpectedEvent"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1-sub-2 _v_ExpectedException"},
+                { "type":"SpecParserConfig","title": "SpecParser-For-suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "type":"ConfigParms","title": "ParmsFor-suite-02-releasing-subordinates-test-sub-1"},
+                { "type":"ParmsParser","title": "ParmsParser-For-SpecParser-For-suite-02-releasing-subordinates-test-sub-1"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-1 alloc.numBuffers"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-1 alloc.bufferSize"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_ConstructorModuleName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_ConstructorName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_MethodName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_ForceError"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_ForceErrorDetail"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_ForceErrorKind"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_ForceErrorWhen"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_ExpectedEvent"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_ExpectedException"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-1 _v_ExpectSuccess"},
+                { "type":"SpecParserConfig","title": "SpecParser-For-suite-02-releasing-subordinates-test-sub-1"},
+                { "type":"Configuration","title": "suite-02-releasing-subordinates-test-sub-2"},
+                { "type":"Configuration","title": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "type":"ConfigParms","title": "ParmsFor-suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "type":"ParmsParser","title": "ParmsParser-For-SpecParser-For-suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 alloc.numBuffers"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 alloc.bufferSize"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_ConstructorModuleName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_ConstructorName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_MethodName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_ForceError"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_ForceErrorDetail"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_ForceErrorKind"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_ForceErrorWhen"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_ExpectSuccess"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_ExpectedEvent"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-1 _v_ExpectedException"},
+                { "type":"SpecParserConfig","title": "SpecParser-For-suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "type":"Configuration","title": "suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "type":"ConfigParms","title": "ParmsFor-suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "type":"ParmsParser","title": "ParmsParser-For-SpecParser-For-suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 alloc.numBuffers"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 alloc.bufferSize"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_ConstructorModuleName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_ConstructorName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_MethodName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_ForceError"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_ForceErrorDetail"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_ForceErrorKind"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_ForceErrorWhen"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_ExpectSuccess"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_ExpectedEvent"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2-sub-2 _v_ExpectedException"},
+                { "type":"SpecParserConfig","title": "SpecParser-For-suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "type":"ConfigParms","title": "ParmsFor-suite-02-releasing-subordinates-test-sub-2"},
+                { "type":"ParmsParser","title": "ParmsParser-For-SpecParser-For-suite-02-releasing-subordinates-test-sub-2"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-2 alloc.numBuffers"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test-sub-2 alloc.bufferSize"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_ConstructorModuleName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_ConstructorName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_MethodName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_ForceError"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_ForceErrorDetail"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_ForceErrorKind"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_ForceErrorWhen"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_ExpectedEvent"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_ExpectedException"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test-sub-2 _v_ExpectSuccess"},
+                { "type":"SpecParserConfig","title": "SpecParser-For-suite-02-releasing-subordinates-test-sub-2"},
+                { "type":"ConfigParms","title": "ParmsFor-suite-02-releasing-subordinates-test"},
+                { "type":"ParmsParser","title": "ParmsParser-For-SpecParser-For-suite-02-releasing-subordinates-test"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test alloc.numBuffers"},
+                { "type":"ResolutionParm","title": "suite-02-releasing-subordinates-test alloc.bufferSize"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_ConstructorModuleName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_ConstructorName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_MethodName"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_ForceError"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_ForceErrorDetail"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_ForceErrorKind"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_ForceErrorWhen"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_ExpectedEvent"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_ExpectedException"},
+                { "type":"ResolutionField","title": "suite-02-releasing-subordinates-test _v_ExpectSuccess"},
+                { "type":"SpecParserConfig","title": "SpecParser-For-suite-02-releasing-subordinates-test"}
+            ],
+            "checkCallback": [
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "pF_CmpAndTestsPathsLoader"},
+                { "title": "fOverallRunCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title": "fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title": "fLoadCmpPathsCallback"},
+                { "title": "fLoadXCallback", "creatorType": "PathsLoader","creatorTitle": "CmpPathsLoaderFor-CmpAndTestsPathsLoaderFor-undefined-ToLoad-../../../cmppath.json"},
+                { "title": "fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title": "fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title": "fLoadTestsPathsCallback"},
+                { "title": "fLoadXCallback", "creatorType": "PathsLoader","creatorTitle": "TestsPathsLoaderFor-CmpAndTestsPathsLoaderFor-undefined-ToLoad-../../../testspath.json"},
+                { "title": "fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "fReadConfigAsyncCallback", "creatorType": "LauncherOne"},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "pF_LauncherMany", "creatorType": "LauncherOne"},
+                { "title": "fScheduleRootCallback", "creatorType": "ScheduleRootTest","creatorTitle": "pSL_createTest"},
+                { "title": "fScheduleOneCallback", "creatorType": "ScheduleOneTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fOverallRunnableCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fRunStepsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fRunRequiredsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fRunSubsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fScheduleNextSubCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fOverallRunnableCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fRunStepsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fRunRequiredsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fRunSubsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fScheduleNextSubCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fOverallRunnableCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "title": "fRunStepsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "title": "fRunRequiredsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "title": "fRunSubsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-1"},
+                { "title": "fScheduleNextSubCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1"},
+                { "title": "fOverallRunnableCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "title": "fRunStepsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "title": "fRunRequiredsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "title": "fRunSubsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-1-sub-2"},
+                { "title": "fScheduleNextSubCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test"},
+                { "title": "fOverallRunnableCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fRunStepsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fRunRequiredsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fRunSubsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fScheduleNextSubCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fOverallRunnableCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "title": "fRunStepsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "title": "fRunRequiredsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "title": "fRunSubsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-1"},
+                { "title": "fScheduleNextSubCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2"},
+                { "title": "fOverallRunnableCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "title": "fRunStepsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "title": "fRunRequiredsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "title": "fScheduleNextStepCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-2"},
+                { "title": "fRunSubsCallback", "creatorType": "AllocTest","creatorTitle": "suite-02-releasing-subordinates-test-sub-2-sub-2"}
+            ],
+            "checkEvent": {
+                "INFO": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "LauncherOne": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSL_createTest": 1
+                            }
+                        },
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fFindStepToScheduleNext": 28,
+                                "fFindSubConfigurationToScheduleNext": 6
+                            }
+                        }
+                    }
+                },
+                "BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleRoot": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_Alloc": 7
+                            }
+                        }
+                    }
+                },
+                "CALLBACKRECEIVED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSL_runTest": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 2,
+                                "pF_Alloc": 14,
+                                "fScheduleNextStepCallback": 21,
+                                "fScheduleNextSubCallback": 12
+                            }
+                        }
+                    }
+                },
+                "CALLBACKCHAINED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_Alloc": 7,
+                                "pS_RunSteps": 7,
+                                "fScheduleNextStepCallback": 28,
+                                "pS_RunRequireds": 7,
+                                "pS_RunSubs": 7,
+                                "fScheduleNextSubCallback": 6
+                            }
+                        }
+                    }
+                },
+                "ADDEDSUBORDINATETEST": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 1
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 1
+                        },
+                        "AllocTest": {
+                            "ownEvents": 6
+                        }
+                    }
+                },
+                "BEGINRUNNABLE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_Alloc": 7
+                            }
+                        }
+                    }
+                },
+                "STEP_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSS_Alloc": 7
+                            }
+                        }
+                    }
+                },
+                "STEPS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSteps": 7
+                            }
+                        }
+                    }
+                },
+                "STEPS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextStep": 35
+                            }
+                        }
+                    }
+                },
+                "OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_retrieveAllocParms": 7,
+                                "pF_Alloc": 7
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        }
+                    }
+                },
+                "CALLBACKINVOKED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextStepCallback": 28,
+                                "pS_RunRequireds": 7,
+                                "pS_RunSubs": 7,
+                                "pS_RunSteps": 7,
+                                "pF_Alloc": 7,
+                                "fScheduleNextSubCallback": 6
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        }
+                    }
+                },
+                "STEP_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextStepCallback": 28
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunRequireds": 7
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextRequired": 7
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextRequired": 7
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunRequireds": 7
+                            }
+                        }
+                    }
+                },
+                "SUBS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSubs": 7
+                            }
+                        }
+                    }
+                },
+                "SUBS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextSub": 13
+                            }
+                        }
+                    }
+                },
+                "SUBS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextSub": 7
+                            }
+                        }
+                    }
+                },
+                "SUBS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSubs": 7
+                            }
+                        }
+                    }
+                },
+                "STEPS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextStep": 7
+                            }
+                        }
+                    }
+                },
+                "STEPS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSteps": 7
+                            }
+                        }
+                    }
+                },
+                "PASSED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "suite-02-releasing-subordinates-test-sub-1-sub-1": 1,
+                                "suite-02-releasing-subordinates-test-sub-1-sub-2": 1,
+                                "suite-02-releasing-subordinates-test-sub-1": 1,
+                                "suite-02-releasing-subordinates-test-sub-2-sub-1": 1,
+                                "suite-02-releasing-subordinates-test-sub-2-sub-2": 1,
+                                "suite-02-releasing-subordinates-test-sub-2": 1,
+                                "suite-02-releasing-subordinates-test": 1
+                            }
+                        }
+                    }
+                },
+                "SUB_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextSubCallback": 6
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+[
+    "@testspath/housekeeping/fakememorysnapshots/suite-03-housekeeping-fakememorysnapshots-delay-2secs-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-01-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-01-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-02-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-02-housekeeping-fakememorysnapshots-delay-1millisec-02-test.json",
+    "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-03-test.json"
+
+]

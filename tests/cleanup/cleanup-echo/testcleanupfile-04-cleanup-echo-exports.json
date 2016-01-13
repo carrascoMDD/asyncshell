@@ -1,0 +1,716 @@
+{
+    "title": "testcleanupfile-04-cleanup-echo-exports.json",
+    "CLEANUP": [
+        {
+            "testName": "@testspath/cleanup/cleanup-echo/suite-04-cleanup-echo-exports-test.json",
+            "whatToClean": {
+                "TESTSPAYLOADS":  [
+                    { "type":"ScheduleRootTest","title":"pSL_createTest"},
+                    { "type":"ScheduleOneTest","title":"suite-04-cleanup-echo-exports-test"},
+                    { "type":"EchoTest","title":"suite-04-cleanup-echo-exports-test"},
+                    { "type":"RunRequiredTest","title":"suite-04-cleanup-echo-exports-test-require-requiredtest"},
+                    { "type":"EchoTest","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "type":"EchoTest","title":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "type":"EchoTest","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "type":"EchoTest","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"}
+                ],
+                "CONFIGSPAYLOADS": [
+                    { "type":"Configuration","title":"suite-04-cleanup-echo-exports-test"},
+                    { "type":"ConfigParms","title":"ParmsFor-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ParmsParser","title":"ParmsParser-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ImportConfig","title":"hitpoint-import"},
+                    { "type":"Configuration","title":"parms-hitpoint"},
+                    { "type":"ImportConfig","title":"hitpoint-springnut-import"},
+                    { "type":"Configuration","title":"parms-hitpoint"},
+                    { "type":"ConfigParms","title":"ParmsFor-parms-hitpoint"},
+                    { "type":"ParmsParser","title":"ParmsParser-For-SpecParser-For-parms-hitpoint"},
+                    { "type":"ResolutionParm","title":"parms-hitpoint requiredtest"},
+                    { "type":"ResolutionParm","title":"parms-hitpoint sessiontest"},
+                    { "type":"ResolutionParm","title":"parms-hitpoint hitpoint.baseURL"},
+                    { "type":"ResolutionParm","title":"parms-hitpoint toecho"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ForceError"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ForceErrorDetail"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ForceErrorKind"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ForceErrorWhen"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ExpectedEvent"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ExpectedException"},
+                    { "type":"SpecParserConfig","title":"SpecParser-For-parms-hitpoint"},
+                    { "type":"SpecParserImport","title":"SpecParserImport-For-SpecParser-For-parms-hitpoint"},
+                    { "type":"ResolutionParm","title":"parms-hitpoint requiredtest"},
+                    { "type":"ResolutionParm","title":"parms-hitpoint sessiontest"},
+                    { "type":"ResolutionParm","title":"parms-hitpoint hitpoint.baseURL"},
+                    { "type":"ResolutionParm","title":"parms-hitpoint toecho"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ForceError"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ForceErrorDetail"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ForceErrorKind"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ForceErrorWhen"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ExpectedEvent"},
+                    { "type":"ResolutionField","title":"parms-hitpoint _v_ExpectedException"},
+                    { "type":"SpecParserConfig","title":"SpecParser-For-parms-hitpoint"},
+                    { "type":"SpecParserImport","title":"SpecParserImport-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"Required","title":"suite-04-cleanup-echo-exports-test-require-requiredtest"},
+                    { "type":"Configuration","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "type":"Configuration","title":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "type":"Configuration","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "type":"ConfigParms","title":"ParmsFor-suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "type":"ParmsParser","title":"ParmsParser-For-SpecParser-For-suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 sessiontest"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 hitpoint.baseURL"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 echo.toecho"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 toecho"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_ConstructorModuleName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_ConstructorName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_MethodName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_ForceError"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_ForceErrorDetail"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_ForceErrorKind"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_ForceErrorWhen"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_ExpectSuccess"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_ExpectedEvent"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-1 _v_ExpectedException"},
+                    { "type":"SpecParserConfig","title":"SpecParser-For-suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "type":"Configuration","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "type":"ConfigParms","title":"ParmsFor-suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "type":"ParmsParser","title":"ParmsParser-For-SpecParser-For-suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 sessiontest"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 hitpoint.baseURL"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 echo.toecho"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 toecho"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_ConstructorModuleName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_ConstructorName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_MethodName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_ForceError"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_ForceErrorDetail"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_ForceErrorKind"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_ForceErrorWhen"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_ExpectSuccess"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_ExpectedEvent"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1-sub-2 _v_ExpectedException"},
+                    { "type":"SpecParserConfig","title":"SpecParser-For-suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "type":"ConfigParms","title":"ParmsFor-suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "type":"ParmsParser","title":"ParmsParser-For-SpecParser-For-suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1 sessiontest"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1 hitpoint.baseURL"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1 echo.toecho"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-sub-1 toecho"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_ConstructorModuleName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_ConstructorName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_MethodName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_ForceError"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_ForceErrorDetail"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_ForceErrorKind"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_ForceErrorWhen"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_ExpectedEvent"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_ExpectedException"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-sub-1 _v_ExpectSuccess"},
+                    { "type":"SpecParserConfig","title":"SpecParser-For-suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "type":"ConfigParms","title":"ParmsFor-suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "type":"ParmsParser","title":"ParmsParser-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originTEST"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originTEST-AFTERINIT"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originTEST-EXBETWEENSTEPS"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originTEST"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originTEST-EXBEFOREREQUIREDS"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originTEST-EXBETWEENSUBS"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originTEST-FAIL"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originTEST-AFTER"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originPARMS"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originPARMS-PARSE"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originPARMS-AFTERINIT"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originPARMS-EXBETWEENSTEPS"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originPARMS"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originPARMS-EXBEFOREREQUIREDS"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originPARMS-EXBETWEENSUBS"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originPARMS-FAIL"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ExportParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier-export-originPARMS-AFTER"},
+                    { "type":"SpecParserExport","title":"SpecParserExport-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier *"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier sessiontest"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier hitpoint.baseURL"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier echo.toecho"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier toecho"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_ConstructorModuleName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_ConstructorName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_MethodName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_ForceError"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_ForceErrorDetail"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_ForceErrorKind"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_ForceErrorWhen"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_ExpectedEvent"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_ExpectedException"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier _v_ExpectSuccess"},
+                    { "type":"SpecParserSupplierConfig","title":"SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"SpecParserRequired","title":"SpecParserRequired-For-SpecParser-For-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ConfigParms","title":"ExportedParmsFor-suite-04-cleanup-echo-exports-test"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test requiredtest"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test sessiontest"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test hitpoint.baseURL"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test toecho"},
+                    { "type":"ResolutionParm","title":"suite-04-cleanup-echo-exports-test echo.toecho"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_ConstructorModuleName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_ConstructorName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_MethodName"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_ForceError"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_ForceErrorDetail"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_ForceErrorKind"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_ForceErrorWhen"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_ExpectSuccess"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_ExpectedEvent"},
+                    { "type":"ResolutionField","title":"suite-04-cleanup-echo-exports-test _v_ExpectedException"},
+                    { "type":"SpecParserConfig","title":"SpecParser-For-suite-04-cleanup-echo-exports-test"}
+
+                ],
+                "CALLBACKSPAYLOADS": [
+                    { "title":"fRunNextInLauncherSeriesCallback","creatorType":"LauncherOne"},
+                    { "title":"pF_CmpAndTestsPathsLoader"},
+                    { "title":"fOverallRunCmpAndTestsPathsLoaderSeriesCallback"},
+                    { "title":"fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                    { "title":"fLoadCmpPathsCallback"},
+                    { "title":"fLoadXCallback","creatorType":"PathsLoader","creatorTitle":"CmpPathsLoaderFor-CmpAndTestsPathsLoaderFor-undefined-ToLoad-../../../cmppath.json"},
+                    { "title":"fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                    { "title":"fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                    { "title":"fLoadTestsPathsCallback"},
+                    { "title":"fLoadXCallback","creatorType":"PathsLoader","creatorTitle":"TestsPathsLoaderFor-CmpAndTestsPathsLoaderFor-undefined-ToLoad-../../../testspath.json"},
+                    { "title":"fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                    { "title":"fRunNextInLauncherSeriesCallback","creatorType":"LauncherOne"},
+                    { "title":"fRunNextInLauncherSeriesCallback","creatorType":"LauncherOne"},
+                    { "title":"fReadConfigAsyncCallback","creatorType":"LauncherOne"},
+                    { "title":"fRunNextInLauncherSeriesCallback","creatorType":"LauncherOne"},
+                    { "title":"fRunNextInLauncherSeriesCallback","creatorType":"LauncherOne"},
+                    { "title":"fRunNextInLauncherSeriesCallback","creatorType":"LauncherOne"},
+                    { "title":"pF_LauncherMany","creatorType":"LauncherOne"},
+                    { "title":"fScheduleRootCallback","creatorType":"ScheduleRootTest","creatorTitle":"pSL_createTest"},
+                    { "title":"fScheduleOneCallback","creatorType":"ScheduleOneTest","creatorTitle":"suite-04-cleanup-echo-exports-test"},
+                    { "title":"fOverallRunnableCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test"},
+                    { "title":"fRunStepsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test"},
+                    { "title":"fRunRequiredsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test"},
+                    { "title":"fScheduleNextRequiredCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test"},
+                    { "title":"fRunSuppliersCallback","creatorType":"RunRequiredTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest"},
+                    { "title":"fScheduleNextSupplierCallback","creatorType":"RunRequiredTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest"},
+                    { "title":"fOverallRunnableCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "title":"fRunStepsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "title":"fRunRequiredsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "title":"pS_AsyncRequestGetOrPost","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "title":"fRunSubsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "title":"fScheduleNextSubCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-require-requiredtest-supplier"},
+                    { "title":"fOverallRunnableCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"fRunStepsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"fRunRequiredsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"pS_AsyncRequestGetOrPost","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"fRunSubsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"fScheduleNextSubCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"fOverallRunnableCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "title":"fRunStepsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "title":"fRunRequiredsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "title":"pS_AsyncRequestGetOrPost","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "title":"fRunSubsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-1"},
+                    { "title":"fScheduleNextSubCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1"},
+                    { "title":"fOverallRunnableCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "title":"fRunStepsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "title":"fRunRequiredsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "title":"pS_AsyncRequestGetOrPost","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "title":"fRunSubsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test-sub-1-sub-2"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test"},
+                    { "title":"pS_AsyncRequestGetOrPost","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test"},
+                    { "title":"fScheduleNextStepCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test"},
+                    { "title":"fRunSubsCallback","creatorType":"EchoTest","creatorTitle":"suite-04-cleanup-echo-exports-test"}
+                ],
+                "EVENTSPAYLOADS": {
+                    "INFO": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "ScheduleRootTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_ScheduleOne": 1
+                                }
+                            },
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "fFindStepToScheduleNext": 15,
+                                    "fFindRequiredToScheduleNext": 1,
+                                    "pS_echoSendReceive": 10,
+                                    "fFindSubConfigurationToScheduleNext": 3
+                                }
+                            },
+                            "RunRequiredTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "fFindSupplierToScheduleNext": 1
+                                }
+                            }
+                        }
+                    },
+                    "BEGIN": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "ScheduleRootTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_ScheduleRoot": 1
+                                }
+                            },
+                            "ScheduleOneTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_ScheduleOne": 1
+                                }
+                            },
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_Echo": 5
+                                }
+                            }
+                        }
+                    },
+                    "CALLBACKRECEIVED": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "ScheduleRootTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pSL_runTest": 1
+                                }
+                            },
+                            "ScheduleOneTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_ScheduleOne": 1
+                                }
+                            },
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_ScheduleOne": 2,
+                                    "pF_Echo": 10,
+                                    "fScheduleNextStepCallback": 25,
+                                    "fScheduleNextSupplierCallback": 2,
+                                    "fScheduleNextSubCallback": 6
+                                }
+                            },
+                            "RunRequiredTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "fScheduleNextRequiredCallback": 1
+                                }
+                            }
+                        }
+                    },
+                    "CALLBACKCHAINED": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "ScheduleRootTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_ScheduleOne": 1
+                                }
+                            },
+                            "ScheduleOneTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_ScheduleOne": 1
+                                }
+                            },
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_Echo": 5,
+                                    "pS_RunSteps": 5,
+                                    "fScheduleNextStepCallback": 15,
+                                    "pS_RunRequireds": 5,
+                                    "fScheduleNextRequiredCallback": 1,
+                                    "pS_echoSendReceive-pS_AsyncRequestGet": 5,
+                                    "pS_RunSubs": 5,
+                                    "fScheduleNextSubCallback": 3
+                                }
+                            },
+                            "RunRequiredTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pSS_RunSuppliers": 1,
+                                    "fScheduleNextSupplierCallback": 1
+                                }
+                            }
+                        }
+                    },
+                    "ADDEDSUBORDINATETEST": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "ScheduleRootTest": {
+                                "ownEvents": 1
+                            },
+                            "ScheduleOneTest": {
+                                "ownEvents": 1
+                            },
+                            "EchoTest": {
+                                "ownEvents": 3
+                            }
+                        }
+                    },
+                    "BEGINRUNNABLE": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_Echo": 5
+                                }
+                            }
+                        }
+                    },
+                    "STEP_BEGIN": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pSS_Echo": 5
+                                }
+                            }
+                        }
+                    },
+                    "STEPS_BEGIN": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_RunSteps": 5
+                                }
+                            }
+                        }
+                    },
+                    "STEPS_FINDNEXT": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pTryToScheduleNextStep": 20
+                                }
+                            }
+                        }
+                    },
+                    "REQUIREDS_BEGIN": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_RunRequireds": 5
+                                }
+                            }
+                        }
+                    },
+                    "REQUIREDS_FINDNEXT": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pTryToScheduleNextRequired": 6
+                                }
+                            }
+                        }
+                    },
+                    "SUPPLIERS_BEGIN": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "RunRequiredTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pSS_RunSuppliers": 1
+                                }
+                            }
+                        }
+                    },
+                    "SUPPLIERS_FINDNEXT": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "RunRequiredTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pTryToScheduleNextSupplier": 2
+                                }
+                            }
+                        }
+                    },
+                    "REQUIREDS_NOMORE": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pTryToScheduleNextRequired": 5
+                                }
+                            }
+                        }
+                    },
+                    "CALLBACKINVOKED": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_RunRequireds": 5,
+                                    "fScheduleNextStepCallback": 15,
+                                    "pS_echoSendReceive-pS_AsyncRequestGet": 5,
+                                    "pS_RunSubs": 5,
+                                    "pS_RunSteps": 5,
+                                    "pF_Echo": 5,
+                                    "fScheduleNextSubCallback": 3,
+                                    "fScheduleNextRequiredCallback": 1
+                                }
+                            },
+                            "RunRequiredTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "fScheduleNextSupplierCallback": 1,
+                                    "pSS_RunSuppliers": 1
+                                }
+                            },
+                            "ScheduleOneTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_ScheduleOne": 1
+                                }
+                            },
+                            "ScheduleRootTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_ScheduleOne": 1
+                                }
+                            }
+                        }
+                    },
+                    "REQUIREDS_OK": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_RunRequireds": 5,
+                                    "fScheduleNextRequiredCallback": 1
+                                }
+                            }
+                        }
+                    },
+                    "STEP_OK": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "fScheduleNextStepCallback": 15,
+                                    "pS_echoSendReceive-pS_AsyncRequestGet": 5
+                                }
+                            }
+                        }
+                    },
+                    "BEGINASYNC": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_echoSendReceive-pS_AsyncRequestGet": 5
+                                }
+                            }
+                        }
+                    },
+                    "SENT": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_echoSendReceive-pS_AsyncRequestGet": 5
+                                }
+                            }
+                        }
+                    },
+                    "RECEIVED": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_echoSendReceive-pS_AsyncRequestGet": 5
+                                }
+                            }
+                        }
+                    },
+                    "SUBS_BEGIN": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_RunSubs": 5
+                                }
+                            }
+                        }
+                    },
+                    "SUBS_FINDNEXT": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pTryToScheduleNextSub": 8
+                                }
+                            }
+                        }
+                    },
+                    "SUBS_NOMORE": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pTryToScheduleNextSub": 5
+                                }
+                            }
+                        }
+                    },
+                    "SUBS_OK": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_RunSubs": 5
+                                }
+                            }
+                        }
+                    },
+                    "STEPS_NOMORE": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pTryToScheduleNextStep": 5
+                                }
+                            }
+                        }
+                    },
+                    "STEPS_OK": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_RunSteps": 5
+                                }
+                            }
+                        }
+                    },
+                    "OK": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_Echo": 5
+                                }
+                            },
+                            "ScheduleOneTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pF_ScheduleOne": 1
+                                }
+                            },
+                            "ScheduleRootTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pS_ScheduleOne": 1
+                                }
+                            }
+                        }
+                    },
+                    "PASSED": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "suite-04-cleanup-echo-exports-test-sub-1-sub-1": 1,
+                                    "suite-04-cleanup-echo-exports-test-sub-1-sub-2": 1,
+                                    "suite-04-cleanup-echo-exports-test-sub-1": 1,
+                                    "suite-04-cleanup-echo-exports-test-require-requiredtest-supplier": 1,
+                                    "suite-04-cleanup-echo-exports-test": 1
+                                }
+                            }
+                        }
+                    },
+                    "SUB_OK": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "EchoTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "fScheduleNextSubCallback": 3
+                                }
+                            }
+                        }
+                    },
+                    "SUPPLIERS_OK": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "RunRequiredTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "fScheduleNextSupplierCallback": 1,
+                                    "pSS_RunSuppliers": 1
+                                }
+                            }
+                        }
+                    },
+                    "SUPPLIERS_NOMORENAMES": {
+                        "ownEvents": 0,
+                        "eventsByRecordedType": {
+                            "RunRequiredTest": {
+                                "ownEvents": 0,
+                                "eventsByStep": {
+                                    "pTryToScheduleNextSupplier": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

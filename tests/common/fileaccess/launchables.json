@@ -1,0 +1,23 @@
+[
+    "@testspath/common/fileaccess/suite-10-fileaccess-unlink-mayexists-test.json",
+
+    "@testspath/common/fileaccess/suite-20-fileaccess-create-onlybasepath-ok-test.json",
+    "@testspath/common/fileaccess/suite-22-fileaccess-create-indirectory-ok-test.json",
+
+    "@testspath/common/fileaccess/suite-40-fileaccess-unlink-onlybasepath-ok-test.json",
+    "@testspath/common/fileaccess/suite-42-fileaccess-unlink-indirectory-ok-test.json",
+
+    "@testspath/common/fileaccess/suite-60-fileaccess-write-created-onlybasepath-ok-test.json",
+    "@testspath/common/fileaccess/suite-62-fileaccess-write-created-indirectory-ok-test.json",
+    "@testspath/common/fileaccess/suite-64-fileaccess-append-created-written-indirectory-ok-test.json",
+
+    "@testspath/common/fileaccess/suite-70-fileaccess-read-onlybasepath-ok-test.json",
+    "@testspath/common/fileaccess/suite-72-fileaccess-read-indirectory-ok-test.json",
+    "@testspath/common/fileaccess/suite-74-fileaccess-read-usepayloadholder-onlybasepath-ok-test.json",
+    "@testspath/common/fileaccess/suite-76-fileaccess-read-usepayloadholder-indirectory-ok-test.json",
+
+    "@testspath/common/fileaccess/suite-80-fileaccess-unlink-create-indirectory-ok-test.json",
+    "@testspath/common/fileaccess/suite-82-fileaccess-unlink-create-write-indirectory-ok-test.json",
+
+    "@testspath/common/fileaccess/suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test.json"
+]

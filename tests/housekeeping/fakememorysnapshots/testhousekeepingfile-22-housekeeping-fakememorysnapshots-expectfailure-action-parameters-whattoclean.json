@@ -1,0 +1,43 @@
+{
+    "title": "testhousekeepingfile-22-housekeeping-fakememorysnapshots-expectfailure-action-parameters-whattoclean.json",
+    "HOUSEKEEPOPTIONS": {
+        "incrementalMode":  true,
+        "maxHeapUsed":      1000,
+        "minHeapAvailable": 10,
+        "ignoreThrashingMillis":  true,
+        "thrashingHeapAvailable": null,
+        "thrashingMillis":        null,
+        "forceBits":        null
+    },
+    "MEMORY": [
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-01-test.json",
+            "attempts":  [
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB. It shall fail to check action because whatotoclean differs"}},
+                    "expectedRecommendations": [
+                        {
+                            "expectFailure":                 true,
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "expectFailure":                 true,
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["TESTS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ]
+                },
+                { "shallHaveNoHousekeeping": true}
+            ]
+        }
+    ]
+}

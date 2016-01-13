@@ -1,0 +1,5 @@
+[
+    "@testspath/ttst/ttstlaunchables-01-specparser.json",
+    "@testspath/ttst/ttstlaunchables-02-queryconfig.json",
+    "@testspath/ttst/ttstlaunchables-03-queryfalseish.json"
+]

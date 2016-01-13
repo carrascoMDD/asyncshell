@@ -1,0 +1,4 @@
+[
+    "@testspath/housekeeping/pregrowmemory/pregrowmemory-100mb-10mb/suite-01-housekeeping-pregrowmemory-maxheapused-100mb-minheapavailable-10mb-01-test.json",
+    "@testspath/housekeeping/pregrowmemory/pregrowmemory-100mb-10mb/suite-04-housekeeping-pregrowmemory-maxheapused-100mb-minheapavailable-15mb-test.json"
+]

@@ -1,0 +1,109 @@
+[
+    {
+        "name": "listener text get",
+        "method": "get",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/springnut/aux/echo/echo",
+        "headers": null,
+        "parms": {
+            "theToEcho": "listener echoed text get"
+        },
+        "form": null,
+        "body": null,
+        "json": null,
+        "expect": "listener echoed text get"
+    },
+    {
+        "name": "listener text post form",
+        "method": "post",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/springnut/aux/echo/echoForm",
+        "headers": null,
+        "parms": null,
+        "form": {
+            "theToEcho": "listener echoed text post form"
+        },
+        "body": null,
+        "json": null,
+        "expect": "listener echoed text post form"
+    },
+    {
+        "name": "listener text post json",
+        "method": "post",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/springnut/aux/echo/echoBody",
+        "headers": null,
+        "parms": null,
+        "form": null,
+        "body": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "listener echoed text post json"
+        },
+        "json": true,
+        "expect": "listener echoed text post json"
+    },
+
+    {
+        "name": "listener json get",
+        "method": "get",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/springnut/aux/echo/echoJSON",
+        "headers": null,
+        "parms": {
+            "theToEcho": "listener echoed json get"
+        },
+        "form": null,
+        "body": null,
+        "json": true,
+        "expect": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "listener echoed json get"
+        }
+    },
+    {
+        "name": "listener json post form",
+        "method": "post",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/springnut/aux/echo/echoJSONform",
+        "headers": null,
+        "parms": null,
+        "form": {
+            "theToEcho": "listener echoed json post form"
+        },
+        "body": null,
+        "json": true,
+        "expect": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "listener echoed json post form"
+        }
+    },
+    {
+        "name": "listener json post json",
+        "method": "post",
+        "host": "localhost",
+        "port": 8881,
+        "urlpath": "/springnut/aux/echo/echoJSONbody",
+        "headers": null,
+        "parms": null,
+        "form": null,
+        "body": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "listener echoed json post json"
+        },
+        "json": true,
+        "expect": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "listener echoed json post json"
+        }
+    }
+]

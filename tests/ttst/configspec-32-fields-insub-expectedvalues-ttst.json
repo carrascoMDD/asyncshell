@@ -1,0 +1,38 @@
+[
+    {
+        "path": "31-fields-insub-sub-1",
+        "expectedFields": {
+            "_v_Runnable": false,
+            "_v_InheritMode": "STATIC",
+            "_v_ScheduleSubs": "SERIES",
+            "_v_ExpectSuccess": false,
+            "_v_ExpectedEvent": "FAIL",
+            "_v_ConstructorModuleName": "@cmppath/general-test/void-test-0",
+            "_v_ConstructorName": "VoidTest_Constructor-0",
+            "_v_MethodName": "pF_Void-0",
+            "_v_ForceError": false,
+            "_v_ForceErrorDetail": "Forced error-fields-insub-1",
+            "_v_ForceErrorKind": "CALLBACK",
+            "_v_ForceErrorWhen": "OK"
+        }
+    },
+    {
+        "path": "31-fields-insub-sub-3",
+        "expectedFields": {
+            "_v_Runnable": true,
+            "_v_InheritMode": "STATIC",
+            "_v_ScheduleSubs": "SERIES",
+            "_v_ExpectSuccess": true,
+            "_v_ExpectedEvent": "OK",
+            "_v_ConstructorModuleName": "@cmppath/general-test/void-test-0",
+            "_v_ConstructorName": "VoidTest_Constructor-0",
+            "_v_MethodName": "pF_Void-0",
+            "_v_ForceError": true,
+            "_v_ForceErrorDetail": "Forced error-0",
+            "_v_ForceErrorKind": "EXCEPTION",
+            "_v_ForceErrorWhen": "INIT"
+        }
+    }
+]
+
+

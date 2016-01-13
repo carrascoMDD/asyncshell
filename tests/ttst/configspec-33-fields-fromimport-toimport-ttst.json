@@ -1,0 +1,21 @@
+{
+    "name": "33-fields-fromimport-toimport",
+    "runnable": true,
+    "inherit": "STATIC",
+    "scheduleSubs": "SERIES",
+    "expectSuccess": true,
+    "expectedEvent": "OK",
+    "module": "@cmppath/general-test/void-test-fromimport-toimport",
+    "constructorName": "VoidTest_Constructor-fromimport-toimport",
+    "methodName": "pF_Void-fromimport-toimport",
+    "forceError": true,
+    "forceErrorDetail": "Forced error-fromimport-toimport",
+    "forceErrorKind": "EXCEPTION",
+    "forceErrorWhen": "INIT"
+}
+
+
+
+
+
+

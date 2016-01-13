@@ -1,0 +1,132 @@
+{
+    "name": "suite-10-fileaccess-unlink-mayexists-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/fileaccess-test",
+    "constructorName": "FileAccess_Constructor",
+    "methodName": "pF_FileAccess",
+    "scheduleSubs": "SERIES",
+    "imports": [
+        {
+            "name": "paths-import",
+            "configurationPath": "@testspath/common/fileaccess/parms-fileaccess-fortest.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "parms": {
+        "fileaccess": {
+            "salutation": "Hello suite-10-fileaccess-unlink-mayexists-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+
+            "basePathParmName":        "parmsforfilestest.baseDirectoryForFileAccess10UnlinkMayexists",
+            "basePath":                null,
+            "dirPathParmName":         null,
+            "dirPath":                 null,
+            "filenameParmName":        "parmsforfilestest.filenameFor10UnlinkMayexists",
+            "filename":                null,
+            "fullFilePathParmName":    null,
+            "fullFilePath":            null,
+            "expandHome":              true,
+
+            "fileEncoding":            "DEFAULT",
+
+            "readFileContents":        true,
+
+            "unlinkFile":              true,
+            "touchFile":               false,
+            "createFile":              false,
+            "truncateFile":            false,
+            "appendToFile":            false,
+            "createFileMode":          "0660",
+
+            "failIfFileNotExists":     false,
+            "failIfFileAlreadyExists": false,
+            "failIfFileEmpty":         false,
+            "failIfFileNotEmpty":      false,
+
+            "dumppaths":               false,
+            "dumpstats":               true,
+            "dumpparseresult":         false,
+            "dumpfilecontents":        false,
+            "dumpremovals":            false,
+            "dumpcreatefile":          false,
+            "dumpreads":               false,
+            "dumpwrites":              false,
+            "dumpcontenttowrite":      false
+        }
+    },
+    "exports": [
+        {
+            "name": "suite-10-fileaccess-unlink-mayexists-test-export-UsedFullDirPath",
+            "exportAs": "UsedFullFilePath",
+            "exportOrigin": "TEST",
+            "exportSource": "_v_UsedFullFilePath",
+            "exportTarget": ".",
+            "exportWhen": "EXBEFORESUBS"
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-10-fileaccess-unlink-mayexists-test-sub-mustnotexistsafterunlink",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/fileaccess-test",
+            "constructorName": "FileAccess_Constructor",
+            "methodName": "pF_FileAccess",
+            "scheduleSubs": "SERIES",
+            "parms": {
+                "fileaccess": {
+                    "basePathParmName":        null,
+                    "basePath":                null,
+                    "dirPathParmName":         null,
+                    "dirPath":                 null,
+                    "filenameParmName":        null,
+                    "filename":                null,
+                    "fullFilePathParmName":    "UsedFullFilePath",
+                    "fullFilePath":            null,
+                    "expandHome":              true,
+
+                    "fileEncoding":            "DEFAULT",
+
+                    "readFileContents":        true,
+
+                    "unlinkFile":              false,
+                    "touchFile":               false,
+                    "createFile":              false,
+                    "truncateFile":            false,
+                    "appendToFile":            false,
+                    "createFileMode":          "0660",
+
+                    "failIfFileNotExists":     false,
+                    "failIfFileAlreadyExists": true,
+                    "failIfFileEmpty":         false,
+                    "failIfFileNotEmpty":      false,
+
+                    "dumppaths":               false,
+                    "dumpstats":               true,
+                    "dumpparseresult":         false,
+                    "dumpfilecontents":        false,
+                    "dumpremovals":            false,
+                    "dumpcreatefile":          false,
+                    "dumpreads":               true,
+                    "dumpwrites":              true,
+                    "dumpcontenttowrite":      true
+                }
+            },
+            "checks": [
+                {
+                    "name": "suite-10-fileaccess-unlink-mayexists-test-sub-mustnotexistsafterrmdir-check-_v_FullFileExisted-false",
+                    "checkWhen": "AFTER",
+                    "checkNegate": false,
+                    "checkKind": "EQ",
+                    "checkOrigin": "TEST",
+                    "checkSource": "_v_FullFileExisted",
+                    "checkValue": false
+                }
+            ]
+        }
+    ]
+}
+
+
+
+

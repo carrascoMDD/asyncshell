@@ -1,0 +1,350 @@
+{
+    "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/fileaccess-test",
+    "constructorName": "FileAccess_Constructor",
+    "methodName": "pF_FileAccess",
+    "scheduleSubs": "SERIES",
+    "imports": [
+        {
+            "name": "paths-import",
+            "configurationPath": "@testspath/common/fileaccess/parms-fileaccess-fortest.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "parms": {
+        "fileaccess": {
+            "salutation": "Hello suite-82-fileaccess-unlink-create-write-indirectory-ok-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+
+            "basePathParmName":        "parmsforfilestest.baseDirectoryForFileAccess82unlinkcreatewriteindirectory",
+            "basePath":                null,
+            "dirPathParmName":         "parmsforfilestest.directoryForFileAccess82unlinkcreatewriteindirectory",
+            "dirPath":                 null,
+            "filenameParmName":        "parmsforfilestest.filenameForFileAccess82unlinkcreatewriteindirectory",
+            "filename":                null,
+            "fullFilePathParmName":    null,
+            "fullFilePath":            null,
+            "expandHome":              true,
+
+            "fileEncoding":            "DEFAULT",
+
+            "readFileContents":        true,
+
+            "unlinkFile":              true,
+            "createFile":              true,
+            "createFileMode":          "0660",
+            "touchFile":               false,
+            "truncateFile":            false,
+            "appendToFile":            false,
+
+            "writeFileContents":       true,
+
+            "contentsToWriteParmName": "ContentsToWriteToFile",
+
+            "failIfFileNotExists":     false,
+            "failIfFileAlreadyExists": false,
+            "failIfFileEmpty":         false,
+            "failIfFileNotEmpty":      false,
+
+            "dumppaths":               false,
+            "dumpstats":               false,
+            "dumpparseresult":         false,
+            "dumpfilecontents":        false,
+            "dumpremovals":            true,
+            "dumpcreatefile":          true,
+            "dumpreads":               false,
+            "dumpwrites":              false,
+            "dumpcontenttowrite":      false
+        },
+        "ContentsToWriteToFile": "ContentsToWrite\nToFile\nUserHome/end2endfiletest/basedirforfileaccess82unlinkcreatewritindirectory/dirforfileaccess82unlinkcreatewritindirectory/subdirforfileaccess82unlinkcreatewritindirectory/subsubdirforfileaccess82unlinkcreatewritindirectory/subsubsubdirforfileaccess82unlinkcreatewritindirectory/filenamefor62writecreatedindirectory.txt"
+    },
+    "exports": [
+        {
+            "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-export-UsedFullFilePath",
+            "exportAs": "UsedFullFilePath",
+            "exportOrigin": "TEST",
+            "exportSource": "_v_UsedFullFilePath",
+            "exportTarget": ".",
+            "exportWhen": "EXBEFORESUBS"
+        }
+    ],
+    "required": [
+
+        {
+            "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-require-mkdirbeforecreatefile",
+            "parmNames": [
+                "mkdirbeforecreatefile"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-require-mkdirbeforecreatefile-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/directory-test",
+                    "constructorName": "Directory_Constructor",
+                    "methodName": "pF_Directory",
+                    "scheduleSubs": "SERIES",
+                    "parms": {
+                        "directory": {
+                            "basePathParmName":        "parmsforfilestest.baseDirectoryForFileAccess82unlinkcreatewriteindirectory",
+                            "basePath":                null,
+                            "dirPathParmName":         "parmsforfilestest.directoryForFileAccess82unlinkcreatewriteindirectory",
+                            "dirPath":                 null,
+                            "fullDirPathParmName":     null,
+                            "fullDirPath":             null,
+                            "expandHome":              true,
+
+                            "failIfDirNotExists":      false,
+                            "failIfDirAlreadyExists":  false,
+
+                            "tree":                    false,
+                            "treeDirs":                false,
+                            "treeLevel":               0,
+                            "treeFiles":               false,
+
+                            "rmDir":                   false,
+                            "rmDirContentsDirs":       false,
+                            "rmDirContentsFiles":      false,
+                            "failIfDirNotEmpty":       false,
+
+                            "createDir":               true,
+                            "createDirMode":           "0770",
+
+                            "dumppaths":               false,
+                            "dumpstats":               false,
+                            "dumpparseresult":         false,
+                            "dumpreaddirs":            false,
+                            "dumpdircontents":         false,
+                            "dumptree":                false,
+                            "dumptreeindented":        false,
+                            "dumptreestats":           false,
+                            "dumpremovals":            false,
+                            "dumpmkdirs":              true
+
+                        }
+                    },
+                    "exports": [
+                        {
+                            "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-require-mkdirbeforecreatefile-supplier-export-mkdirbeforecreatefile",
+                            "exportAs": "mkdirbeforecreatefile",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        },
+                        {
+                            "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-require-mkdirbeforecreatefile-supplier-export-UsedFullDirPath",
+                            "exportAs": "UsedFullDirPath",
+                            "exportOrigin": "TEST",
+                            "exportSource": "_v_UsedFullDirPath",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFORESUBS"
+                        }
+                    ],
+                    "checks": [
+                        {
+                            "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-sub-mkdirbeforecreatefile-check-LISTCONTAINS-_v_DirsInTreePaths-UsedFullDirPath",
+                            "checkWhen": "AFTER",
+                            "checkNegate": false,
+                            "checkKind": "LISTCONTAINS",
+                            "checkOrigin": "TEST",
+                            "checkSource": "_v_DirsCreated",
+                            "checkValue": "~UsedFullDirPath"
+                        }
+                    ],
+                    "required": [
+                        {
+                            "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-require-rmdirbeforemkdir",
+                            "parmNames": [
+                                "rmdirbeforemkdir"
+                            ],
+                            "suppliers": [
+                                {
+                                    "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-require-rmdirbeforemkdir-supplier",
+                                    "runnable": true,
+                                    "expectSuccess": true,
+                                    "module": "@cmppath/common-test/directory-test",
+                                    "constructorName": "Directory_Constructor",
+                                    "methodName": "pF_Directory",
+                                    "scheduleSubs": "SERIES",
+                                    "parms": {
+                                        "directory": {
+                                            "basePathParmName":        "parmsforfilestest.baseDirectoryForFileAccess82unlinkcreatewriteindirectory",
+                                            "basePath":                null,
+                                            "dirPathParmName":         null,
+                                            "dirPath":                 null,
+                                            "fullDirPathParmName":     null,
+                                            "fullDirPath":             null,
+                                            "expandHome":              true,
+
+                                            "tree":                    false,
+                                            "treeDirs":                false,
+                                            "treeLevel":               -1,
+                                            "treeFiles":               false,
+
+                                            "rmDir":                   true,
+                                            "rmDirContentsDirs":       true,
+                                            "rmDirContentsFiles":      true,
+                                            "failIfDirNotEmpty":       false,
+
+                                            "createDir":               false,
+                                            "createDirMode":           "0770",
+                                            "failIfDirNotExists":      false,
+                                            "failIfDirAlreadyExists":  false,
+
+                                            "dumppaths":               false,
+                                            "dumpstats":               false,
+                                            "dumpparseresult":         false,
+                                            "dumpreaddirs":            false,
+                                            "dumpdircontents":         false,
+                                            "dumptree":                false,
+                                            "dumptreeindented":        false,
+                                            "dumptreestats":           false,
+                                            "dumpremovals":            true,
+                                            "dumpmkdirs":              true
+                                        }
+                                    },
+                                    "exports": [
+                                        {
+                                            "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-require-rmdirbeforemkdir-supplier-export-rmdirbeforemkdir",
+                                            "exportAs": "rmdirbeforemkdir",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "*",
+                                            "exportTarget": ".",
+                                            "exportWhen": "OK"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "subs": [
+                        {
+                            "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-require-mkdirbeforecreatefile-sub-mustexistsaftermkdir",
+                            "runnable": true,
+                            "expectSuccess": true,
+                            "module": "@cmppath/common-test/directory-test",
+                            "constructorName": "Directory_Constructor",
+                            "methodName": "pF_Directory",
+                            "scheduleSubs": "SERIES",
+                            "parms": {
+                                "directory": {
+                                    "basePathParmName":        null,
+                                    "basePath":                null,
+                                    "dirPathParmName":         null,
+                                    "dirPath":                 null,
+                                    "fullDirPathParmName":     "UsedFullDirPath",
+                                    "fullDirPath":             null,
+                                    "expandHome":              true,
+
+                                    "tree":                    true,
+                                    "treeDirs":                true,
+                                    "treeLevel":               -1,
+                                    "treeFiles":               false,
+
+                                    "rmDir":                   false,
+                                    "rmDirContentsDirs":       false,
+                                    "rmDirContentsFiles":      false,
+                                    "failIfDirNotEmpty":       false,
+
+                                    "createDir":               false,
+                                    "createDirMode":           "0770",
+                                    "failIfDirNotExists":      true,
+                                    "failIfDirAlreadyExists":  false,
+
+                                    "dumppaths":               false,
+                                    "dumpstats":               false,
+                                    "dumpparseresult":         false,
+                                    "dumpreaddirs":            false,
+                                    "dumpdircontents":         false,
+                                    "dumptree":                false,
+                                    "dumptreeindented":        false,
+                                    "dumptreestats":           false,
+                                    "dumpremovals":            false,
+                                    "dumpmkdirs":              false
+                                }
+                            },
+                            "checks": [
+                                {
+                                    "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-require-mkdirbeforecreatefile-check-LISTCONTAINS-_v_DirsInTreePaths-UsedFullDirPath",
+                                    "checkWhen": "AFTER",
+                                    "checkNegate": false,
+                                    "checkKind": "LISTCONTAINS",
+                                    "checkOrigin": "TEST",
+                                    "checkSource": "_v_DirsInTreePaths",
+                                    "checkValue": "~UsedFullDirPath"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-sub-mustexistsaftercreatefile",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/fileaccess-test",
+            "constructorName": "FileAccess_Constructor",
+            "methodName": "pF_FileAccess",
+            "scheduleSubs": "SERIES",
+            "parms": {
+                "fileaccess": {
+                    "basePathParmName":        null,
+                    "basePath":                null,
+                    "dirPathParmName":         null,
+                    "dirPath":                 null,
+                    "filenameParmName":        null,
+                    "filename":                null,
+                    "fullFilePathParmName":    "UsedFullFilePath",
+                    "fullFilePath":            null,
+                    "expandHome":              true,
+
+                    "fileEncoding":            "DEFAULT",
+
+                    "readFileContents":        true,
+
+                    "unlinkFile":              false,
+                    "touchFile":               false,
+                    "createFile":              false,
+                    "createFileMode":          "0660",
+                    "truncateFile":            false,
+                    "appendToFile":            false,
+
+                    "failIfFileNotExists":     true,
+                    "failIfFileAlreadyExists": false,
+                    "failIfFileEmpty":         false,
+                    "failIfFileNotEmpty":      false,
+
+                    "dumppaths":               false,
+                    "dumpstats":               false,
+                    "dumpparseresult":         false,
+                    "dumpfilecontents":        false,
+                    "dumpremovals":            false,
+                    "dumpcreatefile":          false,
+                    "dumpreads":               false,
+                    "dumpwrites":              false,
+                    "dumpcontenttowrite":      false
+                }
+            },
+            "checks": [
+                {
+                    "name": "suite-82-fileaccess-unlink-create-write-indirectory-ok-test-sub-mustexistsaftercreatefile-check-_v_FullFileExisted-true",
+                    "checkWhen": "AFTER",
+                    "checkNegate": false,
+                    "checkKind": "EQ",
+                    "checkOrigin": "TEST",
+                    "checkSource": "_v_FullFileExisted",
+                    "checkValue": true
+                }
+            ]
+        }
+    ]
+}
+
+
+
+

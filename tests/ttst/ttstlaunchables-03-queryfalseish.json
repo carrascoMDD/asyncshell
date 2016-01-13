@@ -1,0 +1,10 @@
+[
+    {
+        "title": "queryparmsfalseishvaluesttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-50-parms-falseishvalues-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-50-parms-falseishvalues-expectedvalues-ttst.json"
+    }
+]

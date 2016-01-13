@@ -1,0 +1,542 @@
+{
+    "title": "testreleasingfile-03-releasing-requireds.json",
+    "RELEASING": [
+        {
+            "testName": "@testspath/releasing/suite-03-releasing-requireds-test.json",
+            "checkTest":  [
+                { "type":"ScheduleRootTest", "title": "pSL_createTest"},
+                { "type":"ScheduleOneTest", "title": "suite-03-releasing-requireds-test"},
+                { "type":"AllocTest", "title": "suite-03-releasing-requireds-test"},
+                { "type":"RunRequiredTest", "title": "suite-03-releasing-requireds-test.json-require-requiredtest"},
+                { "type":"AllocTest", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "type":"RunRequiredTest", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2"},
+                { "type":"AllocTest", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"}
+            ],
+            "checkConfiguration": [
+                { "type":"Configuration", "title": "suite-03-releasing-requireds-test"},
+                { "type":"ConfigParms", "title": "ParmsFor-suite-03-releasing-requireds-test"},
+                { "type":"ParmsParser", "title": "ParmsParser-For-SpecParser-For-suite-03-releasing-requireds-test"},
+                { "type":"Required", "title": "suite-03-releasing-requireds-test.json-require-requiredtest"},
+                { "type":"Configuration", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "type":"ConfigParms", "title": "ParmsFor-suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "type":"ParmsParser", "title": "ParmsParser-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-03-releasing-requireds-test"},
+                { "type":"Required", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2"},
+                { "type":"Configuration", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "type":"ConfigParms", "title": "ParmsFor-suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "type":"ParmsParser", "title": "ParmsParser-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-03-releasing-requireds-test"},
+                { "type":"ResolutionParm", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier alloc.numBuffers"},
+                { "type":"ResolutionParm", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier alloc.bufferSize"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_ConstructorModuleName"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_ConstructorName"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_MethodName"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_ForceError"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_ForceErrorDetail"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_ForceErrorKind"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_ForceErrorWhen"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_ExpectSuccess"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_ExpectedEvent"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier _v_ExpectedException"},
+                { "type":"SpecParserSupplierConfig", "title": "SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-03-releasing-requireds-test"},
+                { "type":"SpecParserRequired", "title": "SpecParserRequired-For-SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-03-releasing-requireds-test"},
+                { "type":"ResolutionParm", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier alloc.numBuffers"},
+                { "type":"ResolutionParm", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier alloc.bufferSize"},
+                { "type":"ResolutionParm", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier requiredtest2"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_ConstructorModuleName"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_ConstructorName"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_MethodName"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_ForceError"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_ForceErrorDetail"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_ForceErrorKind"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_ForceErrorWhen"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_ExpectSuccess"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_ExpectedEvent"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier _v_ExpectedException"},
+                { "type":"SpecParserSupplierConfig", "title": "SpecParserSupplierConfig-For-SpecParserRequired-For-SpecParser-For-suite-03-releasing-requireds-test"},
+                { "type":"SpecParserRequired", "title": "SpecParserRequired-For-SpecParser-For-suite-03-releasing-requireds-test"},
+                { "type":"ResolutionParm", "title": "suite-03-releasing-requireds-test alloc.numBuffers"},
+                { "type":"ResolutionParm", "title": "suite-03-releasing-requireds-test alloc.bufferSize"},
+                { "type":"ResolutionParm", "title": "suite-03-releasing-requireds-test requiredtest"},
+                { "type":"ResolutionParm", "title": "suite-03-releasing-requireds-test requiredtest2"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_ConstructorModuleName"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_ConstructorName"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_MethodName"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_ForceError"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_ForceErrorDetail"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_ForceErrorKind"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_ForceErrorWhen"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_ExpectSuccess"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_ExpectedEvent"},
+                { "type":"ResolutionField", "title": "suite-03-releasing-requireds-test _v_ExpectedException"},
+                { "type":"SpecParserConfig", "title": "SpecParser-For-suite-03-releasing-requireds-test"}
+            ],
+            "checkCallback": [
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "pF_CmpAndTestsPathsLoader","creator":null},
+                { "title": "fOverallRunCmpAndTestsPathsLoaderSeriesCallback","creator":null},
+                { "title": "fRunNextInCmpAndTestsPathsLoaderSeriesCallback","creator":null},
+                { "title": "fLoadCmpPathsCallback","creator":null},
+                { "title": "fLoadXCallback", "creatorType": "PathsLoader", "creatorTitle": "CmpPathsLoaderFor-CmpAndTestsPathsLoaderFor-undefined-ToLoad-../../../cmppath.json"},
+                { "title": "fRunNextInCmpAndTestsPathsLoaderSeriesCallback","creator":null},
+                { "title": "fRunNextInCmpAndTestsPathsLoaderSeriesCallback","creator":null},
+                { "title": "fLoadTestsPathsCallback","creator":null},
+                { "title": "fLoadXCallback", "creatorType": "PathsLoader", "creatorTitle": "TestsPathsLoaderFor-CmpAndTestsPathsLoaderFor-undefined-ToLoad-../../../testspath.json"},
+                { "title": "fRunNextInCmpAndTestsPathsLoaderSeriesCallback","creator":null},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "fReadConfigAsyncCallback", "creatorType": "LauncherOne"},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "fRunNextInLauncherSeriesCallback", "creatorType": "LauncherOne"},
+                { "title": "pF_LauncherMany", "creatorType": "LauncherOne"},
+                { "title": "fScheduleRootCallback","creatorType":"ScheduleRootTest", "creatorTitle": "pSL_createTest"},
+                { "title": "fScheduleOneCallback","creatorType":"ScheduleOneTest", "creatorTitle": "suite-03-releasing-requireds-test"},
+                { "title": "fOverallRunnableCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test"},
+                { "title": "fRunStepsCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test"},
+                { "title": "fRunRequiredsCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test"},
+                { "title": "fScheduleNextRequiredCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test"},
+                { "title": "fRunSuppliersCallback","creatorType":"RunRequiredTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest"},
+                { "title": "fScheduleNextSupplierCallback","creatorType":"RunRequiredTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest"},
+                { "title": "fOverallRunnableCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "title": "fRunStepsCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "title": "fRunRequiredsCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "title": "fScheduleNextRequiredCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "title": "fRunSuppliersCallback","creatorType":"RunRequiredTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2"},
+                { "title": "fScheduleNextSupplierCallback","creatorType":"RunRequiredTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2"},
+                { "title": "fOverallRunnableCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "title": "fRunStepsCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "title": "fRunRequiredsCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "title": "fRunSubsCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "title": "fRunSubsCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test.json-require-requiredtest-supplier"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test"},
+                { "title": "fScheduleNextStepCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test"},
+                { "title": "fRunSubsCallback","creatorType":"AllocTest", "creatorTitle": "suite-03-releasing-requireds-test"}
+            ],
+            "checkEvent": {
+                "INFO": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "LauncherOne": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSL_createTest": 1
+                            }
+                        },
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fFindStepToScheduleNext": 12,
+                                "fFindRequiredToScheduleNext": 2
+                            }
+                        },
+                        "RunRequiredTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fFindSupplierToScheduleNext": 2
+                            }
+                        }
+                    }
+                },
+                "BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleRoot": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_Alloc": 3
+                            }
+                        }
+                    }
+                },
+                "CALLBACKRECEIVED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSL_runTest": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 2,
+                                "pF_Alloc": 6,
+                                "fScheduleNextStepCallback": 9,
+                                "fScheduleNextSupplierCallback": 4
+                            }
+                        },
+                        "RunRequiredTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextRequiredCallback": 2
+                            }
+                        }
+                    }
+                },
+                "CALLBACKCHAINED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_Alloc": 3,
+                                "pS_RunSteps": 3,
+                                "fScheduleNextStepCallback": 12,
+                                "pS_RunRequireds": 3,
+                                "fScheduleNextRequiredCallback": 2,
+                                "pS_RunSubs": 3
+                            }
+                        },
+                        "RunRequiredTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSS_RunSuppliers": 2,
+                                "fScheduleNextSupplierCallback": 2
+                            }
+                        }
+                    }
+                },
+                "ADDEDSUBORDINATETEST": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 1
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 1
+                        }
+                    }
+                },
+                "BEGINRUNNABLE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_Alloc": 3
+                            }
+                        }
+                    }
+                },
+                "STEP_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSS_Alloc": 3
+                            }
+                        }
+                    }
+                },
+                "STEPS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSteps": 3
+                            }
+                        }
+                    }
+                },
+                "STEPS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextStep": 15
+                            }
+                        }
+                    }
+                },
+                "OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_retrieveAllocParms": 3,
+                                "pF_Alloc": 3
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        }
+                    }
+                },
+                "CALLBACKINVOKED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextStepCallback": 12,
+                                "pS_RunRequireds": 3,
+                                "pS_RunSubs": 3,
+                                "pS_RunSteps": 3,
+                                "pF_Alloc": 3,
+                                "fScheduleNextRequiredCallback": 2
+                            }
+                        },
+                        "RunRequiredTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextSupplierCallback": 2,
+                                "pSS_RunSuppliers": 2
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        }
+                    }
+                },
+                "STEP_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextStepCallback": 12
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunRequireds": 3
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextRequired": 5
+                            }
+                        }
+                    }
+                },
+                "SUPPLIERS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "RunRequiredTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSS_RunSuppliers": 2
+                            }
+                        }
+                    }
+                },
+                "SUPPLIERS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "RunRequiredTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextSupplier": 4
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextRequired": 3
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunRequireds": 3,
+                                "fScheduleNextRequiredCallback": 2
+                            }
+                        }
+                    }
+                },
+                "SUBS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSubs": 3
+                            }
+                        }
+                    }
+                },
+                "SUBS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextSub": 3
+                            }
+                        }
+                    }
+                },
+                "SUBS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextSub": 3
+                            }
+                        }
+                    }
+                },
+                "SUBS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSubs": 3
+                            }
+                        }
+                    }
+                },
+                "STEPS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextStep": 3
+                            }
+                        }
+                    }
+                },
+                "STEPS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSteps": 3
+                            }
+                        }
+                    }
+                },
+                "PASSED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "suite-03-releasing-requireds-test.json-require-requiredtest-supplier-require-requiredtest2-supplier": 1,
+                                "suite-03-releasing-requireds-test.json-require-requiredtest-supplier": 1,
+                                "suite-03-releasing-requireds-test": 1
+                            }
+                        }
+                    }
+                },
+                "SUPPLIERS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "RunRequiredTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextSupplierCallback": 2,
+                                "pSS_RunSuppliers": 2
+                            }
+                        }
+                    }
+                },
+                "SUPPLIERS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "RunRequiredTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextSupplier": 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

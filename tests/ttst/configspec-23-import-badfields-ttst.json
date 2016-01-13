@@ -1,0 +1,22 @@
+{
+    "name": "23-import-badfields",
+    "expectSuccess": false,
+    "expectedEvent": "FAIL",
+    "imports": [
+        {
+            "name": "23-import-badfields-configurationpath-number",
+            "configurationPath": 0
+        },
+        {
+            "name": "23-import-badfields-enum-importmode",
+            "configurationPath": "@testspath/general/ttst/configspec-01-base.json",
+            "importMode": "badSTATIC"
+        }
+    ]
+}
+
+
+
+
+
+

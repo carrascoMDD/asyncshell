@@ -1,0 +1,12 @@
+[
+    "@testspath/common/requestcached/suite-10-requestcached-nocachehit-nowritecache-1MB-test.json",
+    "@testspath/common/requestcached/suite-12-requestcached-nocachehit-writecache-1MB-test.json",
+    "@testspath/common/requestcached/suite-14-requestcached-cachehit-1MB-test.json",
+    "@testspath/common/requestcached/suite-16-requestcached-cachehit-updatecache-1MB-test.json",
+
+    "@testspath/common/requestcached/suite-20-requestcached-cachehit-10MB-test.json",
+    "@testspath/common/requestcached/suite-22-requestcached-cachehit-50MB-test.json",
+
+    "@testspath/common/requestcached/suite-30-requestcached-cachehit-updatecache-10MB-test.json",
+    "@testspath/common/requestcached/suite-32-requestcached-cachehit-updatecache-50MB-test.json"
+]

@@ -1,0 +1,654 @@
+{
+    "elements": [
+        {
+            "tag": "x00080005",
+            "tagName": "SpecificCharacterSet",
+            "valueLength": 10,
+            "VR": "CS",
+            "value": "ISO_IR 100",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080008",
+            "tagName": "ImageType",
+            "valueLength": 8,
+            "VR": "CS",
+            "value": "DERIVED",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080016",
+            "tagName": "SOPClassUID",
+            "valueLength": 26,
+            "VR": "UI",
+            "value": "1.2.840.10008.5.1.4.1.1.1",
+            "valueType": "UID",
+            "UID": "aUID"
+        },
+        {
+            "tag": "x00080018",
+            "tagName": "SOPInstanceUID",
+            "valueLength": 62,
+            "VR": "UI",
+            "value": "1.2.840.113564.10.1.17756644314055019171172651931355115733110",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080020",
+            "tagName": "StudyDate",
+            "valueLength": 8,
+            "VR": "DA",
+            "value": "20150521",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080021",
+            "tagName": "SeriesDate",
+            "valueLength": 8,
+            "VR": "DA",
+            "value": "20150521",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080022",
+            "tagName": "AcquisitionDate",
+            "valueLength": 8,
+            "VR": "DA",
+            "value": "20150521",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080023",
+            "tagName": "ContentDate",
+            "valueLength": 8,
+            "VR": "DA",
+            "value": "20150521",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080030",
+            "tagName": "StudyTime",
+            "valueLength": 10,
+            "VR": "TM",
+            "value": "090459.280",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080031",
+            "tagName": "SeriesTime",
+            "valueLength": 10,
+            "VR": "TM",
+            "value": "090555.233",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080032",
+            "tagName": "AcquisitionTime",
+            "valueLength": 6,
+            "VR": "TM",
+            "value": "090600",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080033",
+            "tagName": "ContentTime",
+            "valueLength": 10,
+            "VR": "TM",
+            "value": "090555.233",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080050",
+            "tagName": "AccessionNumber",
+            "valueLength": 6,
+            "VR": "SH",
+            "value": "998128",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080060",
+            "tagName": "Modality",
+            "valueLength": 2,
+            "VR": "CS",
+            "value": "CR",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080070",
+            "tagName": "Manufacturer",
+            "valueLength": 6,
+            "VR": "LO",
+            "value": "KODAK",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080080",
+            "tagName": "InstitutionName",
+            "valueLength": 28,
+            "VR": "LO",
+            "value": "SPRINGFIELD GENERAL HOSPITAL",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080081",
+            "tagName": "InstitutionAddress",
+            "valueLength": 34,
+            "VR": "ST",
+            "value": "Evergreen Terrace 742, Springfiled",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00080090",
+            "tagName": "ReferringPhysicianName",
+            "valueLength": 16,
+            "VR": "PN",
+            "value": "Dr. Nick Riviera",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00081010",
+            "tagName": "StationName",
+            "valueLength": 10,
+            "VR": "SH",
+            "value": "KODAK_CR2",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00081030",
+            "tagName": "StudyDescription",
+            "valueLength": 6,
+            "VR": "LO",
+            "value": "TORAX",
+            "valueType": "string"
+        },
+        {
+            "tag": "x0008103e",
+            "tagName": "SeriesDescription",
+            "valueLength": 2,
+            "VR": "LO",
+            "value": "AP",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00081040",
+            "tagName": "InstitutionalDepartmentName",
+            "valueLength": 6,
+            "VR": "LO",
+            "value": "11X14",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00081070",
+            "tagName": "OperatorsName",
+            "valueLength": 12,
+            "VR": "PN",
+            "value": "MARIE CURIE",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00081090",
+            "tagName": "ManufacturerModelName",
+            "valueLength": 6,
+            "VR": "LO",
+            "value": "CR850A",
+            "valueType": "string"
+        },
+        {
+            "tag": "x000900ff",
+            "valueLength": 14,
+            "VR": null,
+            "value": null,
+            "valueType": null
+        },
+        {
+            "tag": "x0009ff00",
+            "valueLength": 18,
+            "VR": null,
+            "value": "1.2.840.10008.1.2",
+            "valueType": "UID",
+            "UID": "Implicit VR Little Endian: Default Transfer Syntax for DICOM"
+        },
+        {
+            "tag": "x00100010",
+            "tagName": "PatientName",
+            "valueLength": 18,
+            "VR": "PN",
+            "value": "Adriana Donaldson",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00100020",
+            "tagName": "PatientID",
+            "valueLength": 6,
+            "VR": "LO",
+            "value": "792561",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00100030",
+            "tagName": "PatientBirthDate",
+            "valueLength": 8,
+            "VR": "DA",
+            "value": "19210602",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00100040",
+            "tagName": "PatientSex",
+            "valueLength": 2,
+            "VR": "CS",
+            "value": "M",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00101001",
+            "tagName": "OtherPatientNames",
+            "valueLength": 0,
+            "VR": "PN",
+            "value": null,
+            "valueType": "BIN"
+        },
+        {
+            "tag": "x00180010",
+            "tagName": "ContrastBolusAgent",
+            "valueLength": 0,
+            "VR": "LO",
+            "value": null,
+            "valueType": "BIN"
+        },
+        {
+            "tag": "x00180015",
+            "tagName": "BodyPartExamined",
+            "valueLength": 6,
+            "VR": "CS",
+            "value": null,
+            "valueType": "BIN"
+        },
+        {
+            "tag": "x00181000",
+            "tagName": "DeviceSerialNumber",
+            "valueLength": 16,
+            "VR": "LO",
+            "value": "0004001558D7A6E4",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00181004",
+            "tagName": "PlateID",
+            "valueLength": 10,
+            "VR": "LO",
+            "value": "9104425987",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00181020",
+            "tagName": "SoftwareVersions",
+            "valueLength": 10,
+            "VR": "LO",
+            "value": "4.60.18CP7",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00181030",
+            "tagName": "ProtocolName",
+            "valueLength": 6,
+            "VR": "LO",
+            "value": "TORAX",
+            "valueType": "string"
+        },
+        {
+            "tag": "x0018115e",
+            "tagName": "ImageAndFluoroscopyAreaDoseProduct",
+            "valueLength": 2,
+            "VR": "DS",
+            "value": "0",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00181164",
+            "tagName": "ImagerPixelSpacing",
+            "valueLength": 12,
+            "VR": "DS",
+            "value": "0.168\\0.168",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00181402",
+            "tagName": "CassetteOrientation",
+            "valueLength": 10,
+            "VR": "CS",
+            "value": "LANDSCAPE",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00181403",
+            "tagName": "CassetteSize",
+            "valueLength": 10,
+            "VR": "CS",
+            "value": "35CMX43CM",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00181405",
+            "tagName": "RelativeXRayExposure",
+            "valueLength": 4,
+            "VR": "IS",
+            "value": "1590",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00185100",
+            "tagName": "PatientPosition",
+            "valueLength": 0,
+            "VR": "CS",
+            "value": null,
+            "valueType": "BIN"
+        },
+        {
+            "tag": "x00185101",
+            "tagName": "ViewPosition",
+            "valueLength": 2,
+            "VR": "CS",
+            "value": "AP",
+            "valueType": "string"
+        },
+        {
+            "tag": "x0020000d",
+            "tagName": "StudyInstanceUID",
+            "valueLength": 6,
+            "VR": "UI",
+            "value": "943636",
+            "valueType": "string"
+        },
+        {
+            "tag": "x0020000e",
+            "tagName": "SeriesInstanceUID",
+            "valueLength": 6,
+            "VR": "UI",
+            "value": "892815",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00200010",
+            "tagName": "StudyID",
+            "valueLength": 6,
+            "VR": "SH",
+            "value": "772245",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00200011",
+            "tagName": "SeriesNumber",
+            "valueLength": 2,
+            "VR": "IS",
+            "value": "1",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00200013",
+            "tagName": "InstanceNumber",
+            "valueLength": 2,
+            "VR": "IS",
+            "value": "1",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00200020",
+            "tagName": "PatientOrientation",
+            "valueLength": 0,
+            "VR": "CS",
+            "value": null,
+            "valueType": "BIN"
+        },
+        {
+            "tag": "x00200060",
+            "tagName": "Laterality",
+            "valueLength": 0,
+            "VR": "CS",
+            "value": null,
+            "valueType": "BIN"
+        },
+        {
+            "tag": "x00201002",
+            "tagName": "ImagesInAcquisition",
+            "valueLength": 2,
+            "VR": "IS",
+            "value": "1",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00280002",
+            "tagName": "SamplesPerPixel",
+            "valueLength": 2,
+            "VR": "US",
+            "value": 1,
+            "valueType": "uint16"
+        },
+        {
+            "tag": "x00280004",
+            "tagName": "PhotometricInterpretation",
+            "valueLength": 12,
+            "VR": "CS",
+            "value": "MONOCHROME2",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00280010",
+            "tagName": "Rows",
+            "valueLength": 2,
+            "VR": "US",
+            "value": 2048,
+            "valueType": "uint16"
+        },
+        {
+            "tag": "x00280011",
+            "tagName": "Columns",
+            "valueLength": 2,
+            "VR": "US",
+            "value": 2500,
+            "valueType": "uint16"
+        },
+        {
+            "tag": "x00280030",
+            "tagName": "PixelSpacing",
+            "valueLength": 12,
+            "VR": "DS",
+            "value": "0.168\\0.168",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00280100",
+            "tagName": "BitsAllocated",
+            "valueLength": 2,
+            "VR": "US",
+            "value": 16,
+            "valueType": "uint16"
+        },
+        {
+            "tag": "x00280101",
+            "tagName": "BitsStored",
+            "valueLength": 2,
+            "VR": "US",
+            "value": 12,
+            "valueType": "uint16"
+        },
+        {
+            "tag": "x00280102",
+            "tagName": "HighBit",
+            "valueLength": 2,
+            "VR": "US",
+            "value": 11,
+            "valueType": "uint16"
+        },
+        {
+            "tag": "x00280103",
+            "tagName": "PixelRepresentation",
+            "valueLength": 2,
+            "VR": "US",
+            "value": 0,
+            "valueType": "uint16"
+        },
+        {
+            "tag": "x00280106",
+            "tagName": "SmallestImagePixelValue",
+            "valueLength": 2,
+            "VR": "US|SS",
+            "value": null,
+            "valueType": null
+        },
+        {
+            "tag": "x00280107",
+            "tagName": "LargestImagePixelValue",
+            "valueLength": 2,
+            "VR": "US|SS",
+            "value": null,
+            "valueType": null
+        },
+        {
+            "tag": "x00281050",
+            "tagName": "WindowCenter",
+            "valueLength": 4,
+            "VR": "DS",
+            "value": "2048",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00281051",
+            "tagName": "WindowWidth",
+            "valueLength": 4,
+            "VR": "DS",
+            "value": "4096",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00282110",
+            "tagName": "LossyImageCompression",
+            "valueLength": 2,
+            "VR": "CS",
+            "value": "00",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00400244",
+            "tagName": "PerformedProcedureStepStartDate",
+            "valueLength": 8,
+            "VR": "DA",
+            "value": "20150521",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00400245",
+            "tagName": "PerformedProcedureStepStartTime",
+            "valueLength": 10,
+            "VR": "TM",
+            "value": "090459.280",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00400253",
+            "tagName": "PerformedProcedureStepID",
+            "valueLength": 10,
+            "VR": "SH",
+            "value": "2015-82727",
+            "valueType": "string"
+        },
+        {
+            "tag": "x00400254",
+            "tagName": "PerformedProcedureStepDescription",
+            "valueLength": 6,
+            "VR": "LO",
+            "value": "TORAX",
+            "valueType": "string"
+        },
+        {
+            "tag": "x20500020",
+            "tagName": "PresentationLUTShape",
+            "valueLength": 8,
+            "VR": "CS",
+            "value": "IDENTITY",
+            "valueType": "string"
+        },
+        {
+            "tag": "x7fe00010",
+            "tagName": "PixelData",
+            "valueLength": 10240000,
+            "VR": "OW|OB",
+            "value": null,
+            "valueType": null
+        },
+        {
+            "tag": "x00020000",
+            "tagName": "FileMetaInformationGroupLength",
+            "valueLength": 4,
+            "VR": "UL",
+            "value": 220,
+            "valueType": "uint32",
+            "isHeader": true
+        },
+        {
+            "tag": "x00020001",
+            "tagName": "FileMetaInformationVersion",
+            "valueLength": 2,
+            "VR": "OB",
+            "value": 256,
+            "valueType": "BIN-len2",
+            "isHeader": true
+        },
+        {
+            "tag": "x00020002",
+            "tagName": "MediaStorageSOPClassUID",
+            "valueLength": 26,
+            "VR": "UI",
+            "value": "1.2.840.10008.5.1.4.1.1.1",
+            "valueType": "UID",
+            "isHeader": true,
+            "UID": "aUID"
+        },
+        {
+            "tag": "x00020003",
+            "tagName": "MediaStorageSOPInstanceUID",
+            "valueLength": 62,
+            "VR": "UI",
+            "value": "1.2.840.113564.10.1.17756644314055019171172651931355115733110",
+            "valueType": "string",
+            "isHeader": true
+        },
+        {
+            "tag": "x00020010",
+            "tagName": "TransferSyntaxUID",
+            "valueLength": 18,
+            "VR": "UI",
+            "value": "1.2.840.10008.1.2",
+            "valueType": "UID",
+            "isHeader": true,
+            "UID": "aUID"
+        },
+        {
+            "tag": "x00020012",
+            "tagName": "ImplementationClassUID",
+            "valueLength": 28,
+            "VR": "UI",
+            "value": "1.2.276.0.7230010.3.0.3.6.0",
+            "valueType": "string",
+            "isHeader": true
+        },
+        {
+            "tag": "x00020013",
+            "tagName": "ImplementationVersionName",
+            "valueLength": 16,
+            "VR": "SH",
+            "value": "OFFIS_DCMTK_360",
+            "valueType": "string",
+            "isHeader": true
+        },
+        {
+            "tag": "x00020016",
+            "tagName": "SourceApplicationEntityTitle",
+            "valueLength": 8,
+            "VR": "AE",
+            "value": "ISTPACS",
+            "valueType": "string",
+            "isHeader": true
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "parms-requestreplywrite-fortest",
+    "parms": {
+        "parmsforfilesrequestreplywritetest": {
+
+            "baseDirectoryForRequestReplyWrite":  "~/end2endrequestreplywritetest/basedirforrequestreplywrite",
+            "directoryForRequestReplyWrite":      "requestreplywritefiles"
+        }
+    }
+}
+

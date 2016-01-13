@@ -1,0 +1,11 @@
+[
+    "@testspath/common/directories/dependentonprebuilts/suite-40-directory-dopb-createdir-basepathparmname-nodirpathparmname-nodirpath-expandhome-basepathnotexists-ok-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-41-directory-dopb-createdir-basepathparmname-nodirpathparmname-nodirpath-expandhome-basepathalreadyexists-ok-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-41a-directory-dopb-createdir-basepathparmname-nodirpathparmname-nodirpath-expandhome-basepathalreadyexists-fail-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-42-directory-dopb-createdir-basepathparmname-dirpathparmname-expandhome-fullpathnotexists-ok-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-43-directory-dopb-createdir-basepathparmname-dirpathparmname-expandhome-fullpathalreadyexists-ok-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-43a-directory-dopb-createdir-basepathparmname-dirpathparmname-expandhome-fullpathalreadyexists-fail-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-44-directory-dopb-createdir-basepathparmname-dirpathparmname-expandhome-fullpathnotexists-nested1level-ok-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-46-directory-dopb-createdir-basepathparmname-dirpathparmname-expandhome-fullpathnotexists-nested2level-ok-test.json",
+    "@testspath/common/directories/dependentonprebuilts/suite-48-directory-dopb-createdir-basepathparmname-dirpathparmname-expandhome-fullpathnotexists-nested3level-ok-test.json"
+]

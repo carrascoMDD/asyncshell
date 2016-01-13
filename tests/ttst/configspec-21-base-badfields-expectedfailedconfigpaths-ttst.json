@@ -1,0 +1,22 @@
+[
+    [ "21-base-badfields", "21-base-badfields-strings", "21-base-badfields-str-module-number"],
+    [ "21-base-badfields", "21-base-badfields-strings", "21-base-badfields-str-constructorname-number"],
+    [ "21-base-badfields", "21-base-badfields-strings", "21-base-badfields-str-methodname-number"],
+    [ "21-base-badfields", "21-base-badfields-strings", "21-base-badfields-str-forceerrordetail-number"],
+    [ "21-base-badfields", "21-base-badfields-booleans", "21-base-badfields-bool-runnable", "21-base-badfields-bool-runnable-str"],
+    [ "21-base-badfields", "21-base-badfields-booleans", "21-base-badfields-bool-schedulesubs", "21-base-badfields-bool-schedulesubs-str"],
+    [ "21-base-badfields", "21-base-badfields-booleans", "21-base-badfields-bool-expectsuccess", "21-base-badfields-bool-expectsuccess-str"],
+    [ "21-base-badfields", "21-base-badfields-booleans", "21-base-badfields-bool-forceerror", "21-base-badfields-bool-forceerror-str"],
+    [ "21-base-badfields", "21-base-badfields-enums", "21-base-badfields-enum-inherit", "21-base-badfields-enum-inherit-badSTATIC"],
+    [ "21-base-badfields", "21-base-badfields-enums", "21-base-badfields-enum-schedulesubs", "21-base-badfields-enum-schedulesubs-badSERIES"],
+    [ "21-base-badfields", "21-base-badfields-enums", "21-base-badfields-enum-expectedevent", "21-base-badfields-enum-expectedevent-badINIT"],
+    [ "21-base-badfields", "21-base-badfields-enums", "21-base-badfields-enum-forceerrorkind", "21-base-badfields-enum-forceerrorkind-badEXCEPTION"],
+    [ "21-base-badfields", "21-base-badfields-enums", "21-base-badfields-enum-forceerrorwhen", "21-base-badfields-enum-forceerrorwhen-badINIT"]
+]
+
+
+
+
+
+
+

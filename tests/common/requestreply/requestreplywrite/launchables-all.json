@@ -1,0 +1,6 @@
+[
+    "@testspath/common/requestreply/requestreplywrite/suite-10-requestreplywrite-1MB-test.json",
+    "@testspath/common/requestreply/requestreplywrite/suite-40-requestreplywrite-10MB-test.json",
+    "@testspath/common/requestreply/requestreplywrite/suite-42-requestreplywrite-50MB-test.json",
+    "@testspath/common/requestreply/requestreplywrite/suite-44-requestreplywrite-100MB-test.json"
+]

@@ -1,0 +1,33 @@
+{
+    "name": "24-export-badfields-not",
+    "module": "@cmppath/general-test/void-test",
+    "constructorName": "VoidTest_Constructor",
+    "methodName": "pF_Void",
+    "subs": [
+        {
+            "name": "24-export-badfields-not-sub1",
+            "module": "@cmppath/general-test/void-test",
+            "constructorName": "VoidTest_Constructor",
+            "methodName": "pF_Void",
+            "parms": {
+                "parmToExport": "parmToExport-value"
+            },
+            "exports": [
+                {
+                    "name": "24-export-badfields-not-fromPARMS-when-PARSE",
+                    "exportAs": "exported_fromPARMSparmToExport_whenPARSE",
+                    "exportOrigin": "PARMS",
+                    "exportSource": "parmToExport",
+                    "exportTarget": "..",
+                    "exportWhen": "PARSE"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+

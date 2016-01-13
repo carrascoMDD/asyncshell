@@ -1,0 +1,23 @@
+[
+    {
+        "title": "platform-nodejs-express-test",
+        "module": "#root/lib/infrasvcs-test/httplistener/platforms/platform-nodejs-express-test",
+        "constructor": "PlatformNodejsExpressTest_Constructor",
+        "method": "pF_PlatformNodejsExpressTest",
+        "constructorparm": "#root/tests/infrasvcs/httplistener/httplistener-01-test.json"
+    },
+    {
+        "title": "httplistener-nodejs-express-test",
+        "module": "#root/lib/infrasvcs-test/httplistener/platforms/httplistener-nodejs-express-test",
+        "constructor": "HttpListenerNodejsExpressTest_Constructor",
+        "method": "pF_HttpListenerNodejsExpressTest",
+        "constructorparm": "#root/tests/infrasvcs/httplistener/httplistener-01-test.json"
+    },
+    {
+        "title": "httplistener-test",
+        "module": "#root/lib/infrasvcs-test/httplistener/httplistener-test",
+        "constructor": "HttpListenerTest_Constructor",
+        "method": "pF_HttpListenerTest",
+        "constructorparm": "#root/tests/infrasvcs/httplistener/httplistener-01-test.json"
+    }
+]

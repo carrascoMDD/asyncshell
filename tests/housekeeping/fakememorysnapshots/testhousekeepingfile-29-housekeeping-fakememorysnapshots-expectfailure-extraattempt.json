@@ -1,0 +1,20 @@
+{
+    "title": "testhousekeepingfile-29-housekeeping-fakememorysnapshots-expectfailure-extraattempt.json",
+    "HOUSEKEEPOPTIONS": {
+        "incrementalMode":  true,
+        "maxHeapUsed":      1000,
+        "minHeapAvailable": 10,
+        "ignoreThrashingMillis":  true,
+        "thrashingHeapAvailable": null,
+        "thrashingMillis":        null,
+        "forceBits":        null
+    },
+    "MEMORY": [
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-01-test.json",
+            "mustHaveExcessHousekeepingAttempt": true,
+            "attempts":  [  ]
+        }
+    ]
+}

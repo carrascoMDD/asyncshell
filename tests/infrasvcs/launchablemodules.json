@@ -1,0 +1,4 @@
+[
+    "#root/tests/infrasvcs/httprequest/launchablemodules.json",
+    "#root/tests/infrasvcs/httplistener/launchablemodules.json"
+]

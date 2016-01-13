@@ -1,0 +1,16 @@
+{
+    "name": "25-badsub",
+    "expectSuccess": false,
+    "expectedEvent": "FAIL",
+    "subs": [
+        {
+            "badname": "25-badsub-badname"
+        }
+    ]
+}
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+{
+    "name": "23-import-badfields-not",
+    "imports": [
+        {
+            "name": "23-import-import-badfields-not",
+            "configurationPath": "@testspath/ttst/configspec-01-base-ttst.json",
+            "importMode": "STATIC"
+        }
+    ]
+}
+
+
+
+
+

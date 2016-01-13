@@ -1,0 +1,184 @@
+{
+    "title": "testhousekeepingfile-04-housekeeping-fakememorysnapshots-allattempts.json",
+    "HOUSEKEEPOPTIONS": {
+        "incrementalMode":  true,
+        "maxHeapUsed":      1000,
+        "minHeapAvailable": 10,
+        "ignoreThrashingMillis":  true,
+        "thrashingHeapAvailable": null,
+        "thrashingMillis":        null,
+        "forceBits":        null
+    },
+    "MEMORY": [
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/fakememorysnapshots/suite-01-housekeeping-fakememorysnapshots-1Bx1-01-test.json",
+            "attempts":  [
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["CALLBACKSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["CALLBACKSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["EVENTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["EVENTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["TESTS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["CONFIGS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["CONFIGS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["CALLBACKS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["CALLBACKS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+                {
+                    "snapshot": { "memoryReport": { "heapTotal": null, "heapUsed": 992000000, "cmt": "Or 990MB plus two MB. 990MB is MaxHeapUsed 1GB - MinHeapAvailable 10MB . Will recommend to CleanUp 2MB which is ,more than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp the calculated 2MB"}},
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["EVENTS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 2000000, "max": 2000000}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["EVENTS"], "CLEANUP_HOWMUCHTOCLEAN": 2000000}
+                        }
+                    ]
+                },
+
+
+                { "shallHaveNoHousekeeping": true}
+            ]
+        }
+    ]
+}

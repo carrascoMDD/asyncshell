@@ -1,0 +1,406 @@
+{
+    "name": "suite-42-directory-rmdir-dirlevels01-ok-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/directory-test",
+    "constructorName": "Directory_Constructor",
+    "methodName": "pF_Directory",
+    "scheduleSubs": "SERIES",
+    "imports": [
+        {
+            "name": "paths-import",
+            "configurationPath": "@testspath/common/directories/parms-directory-fortest.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "parms": {
+        "directory": {
+            "salutation": "Hello suite-42-directory-rmdir-dirlevels01-ok-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+            "basePathParmName":        null,
+            "basePath":                null,
+            "dirPathParmName":         null,
+            "dirPath":                 null,
+            "fullDirPathParmName":     "UsedFullDirPath",
+            "fullDirPath":             null,
+            "expandHome":              true,
+
+            "tree":                    false,
+            "treeDirs":                false,
+            "treeLevel":               -1,
+            "treeFiles":               false,
+
+            "rmDir":                   true,
+            "rmDirContentsDirs":       true,
+            "rmDirContentsFiles":      true,
+            "failIfDirNotEmpty":       false,
+
+            "createDir":               false,
+            "createDirMode":           "0770",
+            "failIfDirNotExists":      false,
+            "failIfDirAlreadyExists":  false,
+
+            "dumppaths":               false,
+            "dumpstats":               false,
+            "dumpparseresult":         false,
+            "dumpreaddirs":            false,
+            "dumpdircontents":         false,
+            "dumptree":                false,
+            "dumptreeindented":        false,
+            "dumptreestats":           false,
+            "dumpremovals":            true,
+            "dumpmkdirs":              false
+        }
+    },
+    "exports": [
+        {
+            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-export-UsedFullDirPath",
+            "exportAs": "UsedFullDirPath",
+            "exportOrigin": "TEST",
+            "exportSource": "_v_UsedFullDirPath",
+            "exportTarget": ".",
+            "exportWhen": "EXBEFORESUBS"
+        }
+    ],
+    "required": [
+        {
+            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-require-mkdirbeforermdir",
+            "parmNames": [
+                "mkdirbeforermdir"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-42-directory-rmdir-dirlevels01-ok-test-require-mkdirbeforermdir-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/directory-test",
+                    "constructorName": "Directory_Constructor",
+                    "methodName": "pF_Directory",
+                    "scheduleSubs": "SERIES",
+                    "parms": {
+                        "directory": {
+                            "basePathParmName":        "parmsfordirectorytest.baseDirectoryForRmdir42dirlevels01",
+                            "basePath":                null,
+                            "dirPathParmName":         "parmsfordirectorytest.directoryForRmdir42",
+                            "dirPath":                 null,
+                            "fullDirPathParmName":     null,
+                            "fullDirPath":             null,
+                            "expandHome":              true,
+
+                            "failIfDirNotExists":      false,
+                            "failIfDirAlreadyExists":  true,
+
+                            "tree":                    false,
+                            "treeDirs":                false,
+                            "treeLevel":               0,
+                            "treeFiles":               false,
+
+                            "rmDir":                   false,
+                            "rmDirContentsDirs":       false,
+                            "rmDirContentsFiles":      false,
+                            "failIfDirNotEmpty":       false,
+
+                            "createDir":               true,
+                            "createDirMode":           "0770",
+
+                            "dumppaths":               false,
+                            "dumpstats":               false,
+                            "dumpparseresult":         false,
+                            "dumpreaddirs":            false,
+                            "dumpdircontents":         false,
+                            "dumptree":                false,
+                            "dumptreeindented":        false,
+                            "dumptreestats":           false,
+                            "dumpremovals":            false,
+                            "dumpmkdirs":              true
+
+                        }
+                    },
+                    "exports": [
+                        {
+                            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-require-mkdirbeforermdir-supplier-export-mkdirbeforermdir",
+                            "exportAs": "mkdirbeforermdir",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFORESUBS"
+                        },
+                        {
+                            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-require-mkdirbeforermdir-supplier-export-UsedFullDirPath",
+                            "exportAs": "UsedFullDirPath",
+                            "exportOrigin": "TEST",
+                            "exportSource": "_v_UsedFullDirPath",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFORESUBS"
+                        }
+                    ],
+                    "checks": [
+                        {
+                            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-sub-mustexistssaftemkmdir-check-_v_FullDirExisted-true",
+                            "checkWhen": "AFTER",
+                            "checkNegate": false,
+                            "checkKind": "LISTCONTAINS",
+                            "checkOrigin": "TEST",
+                            "checkSource": "_v_DirsCreated",
+                            "checkValue": "~UsedFullDirPath"
+                        }
+                    ],
+                    "required": [
+                        {
+                            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-require-mkdirbeforermdir-supplier-require-rmdirbeforemkdir",
+                            "parmNames": [
+                                "rmdirbeforemkdir"
+                            ],
+                            "suppliers": [
+                                {
+                                    "name": "suite-42-directory-rmdir-dirlevels01-ok-test-require-mkdirbeforermdir-supplier-require-rmdirbeforemkdir-supplier",
+                                    "runnable": true,
+                                    "expectSuccess": true,
+                                    "module": "@cmppath/common-test/directory-test",
+                                    "constructorName": "Directory_Constructor",
+                                    "methodName": "pF_Directory",
+                                    "scheduleSubs": "SERIES",
+                                    "parms": {
+                                        "directory": {
+                                            "basePathParmName":        "parmsfordirectorytest.baseDirectoryForRmdir42dirlevels01",
+                                            "basePath":                null,
+                                            "dirPathParmName":         null,
+                                            "dirPath":                 null,
+                                            "fullDirPathParmName":     null,
+                                            "fullDirPath":             null,
+                                            "expandHome":              true,
+
+                                            "tree":                    false,
+                                            "treeDirs":                false,
+                                            "treeLevel":               -1,
+                                            "treeFiles":               false,
+
+                                            "rmDir":                   true,
+                                            "rmDirContentsDirs":       true,
+                                            "rmDirContentsFiles":      true,
+                                            "failIfDirNotEmpty":       false,
+
+                                            "createDir":               false,
+                                            "createDirMode":           "0770",
+                                            "failIfDirNotExists":      false,
+                                            "failIfDirAlreadyExists":  false,
+
+                                            "dumppaths":               false,
+                                            "dumpstats":               false,
+                                            "dumpparseresult":         false,
+                                            "dumpreaddirs":            false,
+                                            "dumpdircontents":         false,
+                                            "dumptree":                false,
+                                            "dumptreeindented":        false,
+                                            "dumptreestats":           false,
+                                            "dumpremovals":            true,
+                                            "dumpmkdirs":              false
+                                        }
+                                    },
+                                    "exports": [
+                                        {
+                                            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-require-mkdirbeforermdir-supplier-require-rmdirbeforemkdir-supplier-export-rmdirbeforemkdir",
+                                            "exportAs": "rmdirbeforemkdir",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "*",
+                                            "exportTarget": ".",
+                                            "exportWhen": "OK"
+                                        },
+                                        {
+                                            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-require-mkdirbeforermdir-supplier-require-rmdirbeforemkdir-supplier-export-RemovedFullDirPath",
+                                            "exportAs": "RemovedFullDirPath",
+                                            "exportOrigin": "TEST",
+                                            "exportSource": "_v_UsedFullDirPath",
+                                            "exportTarget": ".",
+                                            "exportWhen": "EXBEFORESUBS"
+                                        }
+                                    ],
+                                    "subs": [
+                                        {
+                                            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-require-mkdirbeforermdir-supplier-require-rmdirbeforemkdir-supplier-sub-mustnotexistsafterrmdir",
+                                            "runnable": true,
+                                            "expectSuccess": true,
+                                            "module": "@cmppath/common-test/directory-test",
+                                            "constructorName": "Directory_Constructor",
+                                            "methodName": "pF_Directory",
+                                            "scheduleSubs": "SERIES",
+                                            "parms": {
+                                                "directory": {
+                                                    "basePathParmName":        null,
+                                                    "basePath":                null,
+                                                    "dirPathParmName":         null,
+                                                    "dirPath":                 null,
+                                                    "fullDirPathParmName":     "RemovedFullDirPath",
+                                                    "fullDirPath":             null,
+                                                    "expandHome":              true,
+
+                                                    "tree":                    false,
+                                                    "treeDirs":                false,
+                                                    "treeLevel":               -1,
+                                                    "treeFiles":               false,
+
+                                                    "rmDir":                   false,
+                                                    "rmDirContentsDirs":       false,
+                                                    "rmDirContentsFiles":      false,
+                                                    "failIfDirNotEmpty":       false,
+
+                                                    "createDir":               false,
+                                                    "createDirMode":           "0770",
+                                                    "failIfDirNotExists":      false,
+                                                    "failIfDirAlreadyExists":  true,
+
+                                                    "dumppaths":               false,
+                                                    "dumpstats":               false,
+                                                    "dumpparseresult":         false,
+                                                    "dumpreaddirs":            false,
+                                                    "dumpdircontents":         false,
+                                                    "dumptree":                false,
+                                                    "dumptreeindented":        false,
+                                                    "dumptreestats":           false,
+                                                    "dumpremovals":            false,
+                                                    "dumpmkdirs":              false
+                                                }
+                                            },
+                                            "checks": [
+                                                {
+                                                    "name": "suite-42-directory-rmdir-dirlevels01-ok-test-sub-mustnotexistsafterrmdir-check-_v_FullDirExisted-false",
+                                                    "checkWhen": "AFTER",
+                                                    "checkNegate": false,
+                                                    "checkKind": "EQ",
+                                                    "checkOrigin": "TEST",
+                                                    "checkSource": "_v_FullDirExisted",
+                                                    "checkValue": false
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "subs": [
+                        {
+                            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-sub-mustexistsaftermkdir",
+                            "runnable": true,
+                            "expectSuccess": true,
+                            "module": "@cmppath/common-test/directory-test",
+                            "constructorName": "Directory_Constructor",
+                            "methodName": "pF_Directory",
+                            "scheduleSubs": "SERIES",
+                            "parms": {
+                                "directory": {
+                                    "basePathParmName":        null,
+                                    "basePath":                null,
+                                    "dirPathParmName":         null,
+                                    "dirPath":                 null,
+                                    "fullDirPathParmName":     "UsedFullDirPath",
+                                    "fullDirPath":             null,
+                                    "expandHome":              true,
+
+                                    "tree":                    true,
+                                    "treeDirs":                true,
+                                    "treeLevel":               -1,
+                                    "treeFiles":               false,
+
+                                    "rmDir":                   false,
+                                    "rmDirContentsDirs":       false,
+                                    "rmDirContentsFiles":      false,
+                                    "failIfDirNotEmpty":       false,
+
+                                    "createDir":               false,
+                                    "createDirMode":           "0770",
+                                    "failIfDirNotExists":      true,
+                                    "failIfDirAlreadyExists":  false,
+
+                                    "dumppaths":               false,
+                                    "dumpstats":               false,
+                                    "dumpparseresult":         false,
+                                    "dumpreaddirs":            false,
+                                    "dumpdircontents":         false,
+                                    "dumptree":                false,
+                                    "dumptreeindented":        false,
+                                    "dumptreestats":           false,
+                                    "dumpremovals":            false,
+                                    "dumpmkdirs":              false
+                                }
+                            },
+                            "checks": [
+                                {
+                                    "name": "suite-42-directory-rmdir-dirlevels01-ok-test-sub-mustexistssaftemkmdir-check-LISTCONTAINS-_v_DirsInTreePaths-UsedFullDirPath",
+                                    "checkWhen": "AFTER",
+                                    "checkNegate": false,
+                                    "checkKind": "LISTCONTAINS",
+                                    "checkOrigin": "TEST",
+                                    "checkSource": "_v_DirsInTreePaths",
+                                    "checkValue": "~UsedFullDirPath"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-42-directory-rmdir-dirlevels01-ok-test-sub-mustnotexistsafterrmdir",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/directory-test",
+            "constructorName": "Directory_Constructor",
+            "methodName": "pF_Directory",
+            "scheduleSubs": "SERIES",
+            "parms": {
+                "directory": {
+                    "basePathParmName":        null,
+                    "basePath":                null,
+                    "dirPathParmName":         null,
+                    "dirPath":                 null,
+                    "fullDirPathParmName":     "UsedFullDirPath",
+                    "fullDirPath":             null,
+                    "expandHome":              true,
+
+                    "tree":                    false,
+                    "treeDirs":                false,
+                    "treeLevel":               -1,
+                    "treeFiles":               false,
+
+                    "rmDir":                   false,
+                    "rmDirContentsDirs":       false,
+                    "rmDirContentsFiles":      false,
+                    "failIfDirNotEmpty":       false,
+
+                    "createDir":               false,
+                    "createDirMode":           "0770",
+                    "failIfDirNotExists":      false,
+                    "failIfDirAlreadyExists":  true,
+
+                    "dumppaths":               false,
+                    "dumpstats":               false,
+                    "dumpparseresult":         false,
+                    "dumpreaddirs":            false,
+                    "dumpdircontents":         false,
+                    "dumptree":                false,
+                    "dumptreeindented":        false,
+                    "dumptreestats":           false,
+                    "dumpremovals":            false,
+                    "dumpmkdirs":              false
+                }
+            },
+            "checks": [
+                {
+                    "name": "suite-42-directory-rmdir-dirlevels01-ok-test-sub-mustnotexistsafterrmdir-check-_v_FullDirExisted-false",
+                    "checkWhen": "AFTER",
+                    "checkNegate": false,
+                    "checkKind": "EQ",
+                    "checkOrigin": "TEST",
+                    "checkSource": "_v_FullDirExisted",
+                    "checkValue": false
+                }
+            ]
+        }
+    ]
+}
+
+
+
+

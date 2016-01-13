@@ -1,0 +1,22 @@
+{
+    "name": "27-check-badfields-not",
+    "module": "@cmppath/general-test/void-test",
+    "constructorName": "VoidTest_Constructor",
+    "methodName": "pF_Void",
+    "checks": [
+        {
+            "name": "27-check-badfields-not-TEST",
+            "checkWhen": "TERMINATED",
+            "checkKind": "EQUAL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": "VOID"
+        }
+    ]
+}
+
+
+
+
+
+

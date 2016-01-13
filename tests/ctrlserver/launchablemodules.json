@@ -1,0 +1,16 @@
+[
+    {
+        "title": "minserver-test",
+        "module": "#root/lib/ctrlserver-test/minserver-test",
+        "constructor": "MinServerTest_Constructor",
+        "method": "pF_MinServerTest",
+        "constructorparm": "#root/tests/ctrlserver/ctrlserver-requestspecs-01-test.json"
+    },
+    {
+        "title": "actionsserver-test",
+        "module": "#root/lib/ctrlserver-test/actionsserver-test",
+        "constructor": "ActionsServerTest_Constructor",
+        "method": "pF_ActionsServerTest",
+        "constructorparm": "#root/tests/ctrlserver/ctrlserver-requestspecs-01-test.json"
+    }
+]

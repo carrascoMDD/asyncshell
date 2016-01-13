@@ -1,0 +1,515 @@
+{
+    "name": "suite-10-requestreplywrite-1MB-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/requestreply-test",
+    "constructorName": "RequestReply_Constructor",
+    "methodName": "pF_RequestReply",
+    "parms": {
+        "requestreply": {
+            "usePayloadHolder": true,
+
+            "contentkind":  "BINARY",
+            "baseURLparmName": "hitpoint-common-samplefiles.baseURL",
+            "requestmethod": "GET",
+            "URLpath": "/RandomFile_1MB.bin",
+            "URLparms": null,
+            "URLparmsnotencoded": null,
+            "URLpathParms": null,
+            "NOTUSED_AnotherURLfull":      "http://192.168.69.3:8600/RandomFile_1MB.bin",
+            "NOTUSED_OtherURLfull":        "http://www.SpringNut.org/springnut/resources/images/SpringNut300transparentbg.png",
+            "NOTUSED_URLfull":             "http://192.168.69.111:64404/springnut/resources/images/SpringNut300transparentbg.png",
+            "NOTUSED_OtherURLfull":        "http://www.SpringNut.org/springnut/resources/images/SpringNut300transparentbg.png",
+            "statuscode": 200,
+            "dumpurl":                true,
+            "UNUSED_dumprequestdata": false,
+            "UNUSED_dumpreply":       false
+        }
+    },
+    "scheduleSubs": "SERIES",
+    "imports": [
+        {
+            "name": "hitpoint-common-samplefiles-import",
+            "configurationPath": "@testspath/common/parms-hitpoint-common-samplefiles.json",
+            "importMode": "STATIC"
+        },
+        {
+            "name": "requestreplywrite-fortest-import",
+            "configurationPath": "@testspath/common/requestreply/requestreplywrite/parms-requestreplywrite-fortest.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "exports": [
+        {
+            "name": "suite-10-requestreplywrite-1MB-test-export-contentsToWriteToFile",
+            "exportAs": "contentsToWriteToFile",
+            "exportOrigin": "TEST",
+            "exportSource": "_v_Reply",
+            "exportTarget": ".",
+            "exportWhen": "EXBEFORESUBS"
+        }
+    ],
+    "required": [
+        {
+            "name": "suite-10-requestreplywrite-1MB-test-require-mkdirbeforewritefile",
+            "parmNames": [
+                "mkdirbeforecreatefile"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-10-requestreplywrite-1MB-test-require-mkdirbeforewritefile-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/directory-test",
+                    "constructorName": "Directory_Constructor",
+                    "methodName": "pF_Directory",
+                    "scheduleSubs": "SERIES",
+                    "parms": {
+                        "directory": {
+                            "basePathParmName":        "parmsforfilesrequestreplywritetest.baseDirectoryForRequestReplyWrite",
+                            "basePath":                null,
+                            "dirPathParmName":         "parmsforfilesrequestreplywritetest.directoryForRequestReplyWrite",
+                            "dirPath":                 null,
+                            "fullDirPathParmName":     null,
+                            "fullDirPath":             null,
+                            "expandHome":              true,
+
+                            "failIfDirNotExists":      false,
+                            "failIfDirAlreadyExists":  false,
+
+                            "tree":                    false,
+                            "treeDirs":                false,
+                            "treeLevel":               0,
+                            "treeFiles":               false,
+
+                            "rmDir":                   false,
+                            "rmDirContentsDirs":       false,
+                            "rmDirContentsFiles":      false,
+                            "failIfDirNotEmpty":       false,
+
+                            "createDir":               true,
+                            "createDirMode":           "0770",
+
+                            "dumppaths":               false,
+                            "dumpstats":               false,
+                            "dumpparseresult":         false,
+                            "dumpreaddirs":            false,
+                            "dumpdircontents":         false,
+                            "dumptree":                false,
+                            "dumptreeindented":        false,
+                            "dumptreestats":           false,
+                            "dumpremovals":            false,
+                            "dumpmkdirs":              true
+
+                        }
+                    },
+                    "exports": [
+                        {
+                            "name": "suite-10-requestreplywrite-1MB-test-require-mkdirbeforewritefile-supplier-export-mkdirbeforecreatefile",
+                            "exportAs": "mkdirbeforecreatefile",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        },
+                        {
+                            "name": "suite-10-requestreplywrite-1MB-test-require-mkdirbeforewritefile-supplier-export-UsedFullDirPath",
+                            "exportAs": "UsedFullDirPath",
+                            "exportOrigin": "TEST",
+                            "exportSource": "_v_UsedFullDirPath",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFORESUBS"
+                        }
+                    ],
+                    "subs": [
+                        {
+                            "name": "suite-10-requestreplywrite-1MB-test-require-mkdirbeforewritefile-supplier",
+                            "runnable": true,
+                            "expectSuccess": true,
+                            "module": "@cmppath/common-test/directory-test",
+                            "constructorName": "Directory_Constructor",
+                            "methodName": "pF_Directory",
+                            "scheduleSubs": "SERIES",
+                            "parms": {
+                                "directory": {
+                                    "basePathParmName":        "parmsforfilesrequestreplywritetest.baseDirectoryForRequestReplyWrite",
+                                    "basePath":                null,
+                                    "dirPathParmName":         "parmsforfilesrequestreplywritetest.directoryForRequestReplyWrite",
+                                    "dirPath":                 null,
+                                    "fullDirPathParmName":     "UsedFullDirPath",
+                                    "fullDirPath":             null,
+                                    "expandHome":              true,
+
+                                    "failIfDirNotExists":      false,
+                                    "failIfDirAlreadyExists":  false,
+
+                                    "tree":                    false,
+                                    "treeDirs":                false,
+                                    "treeLevel":               0,
+                                    "treeFiles":               false,
+
+                                    "rmDir":                   false,
+                                    "rmDirContentsDirs":       false,
+                                    "rmDirContentsFiles":      false,
+                                    "failIfDirNotEmpty":       false,
+
+                                    "createDir":               false,
+                                    "createDirMode":           "0770",
+
+                                    "dumppaths":               false,
+                                    "dumpstats":               true,
+                                    "dumpparseresult":         false,
+                                    "dumpreaddirs":            false,
+                                    "dumpdircontents":         false,
+                                    "dumptree":                false,
+                                    "dumptreeindented":        false,
+                                    "dumptreestats":           false,
+                                    "dumpremovals":            false,
+                                    "dumpmkdirs":              false
+
+                                }
+                            },
+                            "checks": [
+                                {
+                                    "name": "suite-10-requestreplywrite-1MB-test-require-mkdirbeforewritefile-supplier-check-_v_FullDirExisted-true",
+                                    "checkWhen": "AFTER",
+                                    "checkNegate": false,
+                                    "checkKind": "EQ",
+                                    "checkOrigin": "TEST",
+                                    "checkSource": "_v_FullDirExisted",
+                                    "checkValue": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "suite-10-requestreplywrite-1MB-test-require-unlinkbeforecreatefile",
+            "parmNames": [
+                "unlinkbeforecreatefile"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-10-requestreplywrite-1MB-test-require-unlinkbeforecreatefile-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/fileaccess-test",
+                    "constructorName": "FileAccess_Constructor",
+                    "methodName": "pF_FileAccess",
+                    "scheduleSubs": "SERIES",
+                    "parms": {
+                        "fileaccess": {
+                            "usePayloadHolder": true,
+                            "basePathParmName":        "parmsforfilesrequestreplywritetest.baseDirectoryForRequestReplyWrite",
+                            "basePath":                null,
+                            "dirPathParmName":         "parmsforfilesrequestreplywritetest.directoryForRequestReplyWrite",
+                            "dirPath":                 null,
+                            "filenameParmName":        null,
+                            "filename":                "RandomFile_1MB_reply.bin",
+                            "fullFilePathParmName":    null,
+                            "fullFilePath":            null,
+                            "expandHome":              true,
+
+                            "fileEncoding":            "BINARY",
+
+                            "readFileContents":        true,
+
+                            "unlinkFile":              true,
+                            "touchFile":               false,
+                            "createFile":              false,
+                            "createFileMode":          "0660",
+                            "truncateFile":            false,
+                            "appendToFile":            false,
+                            "writeFileContents":       false,
+
+                            "failIfFileNotExists":     false,
+                            "failIfFileAlreadyExists": false,
+                            "failIfFileEmpty":         false,
+                            "failIfFileNotEmpty":      false,
+
+                            "dumppaths":               false,
+                            "dumpstats":               false,
+                            "dumpparseresult":         false,
+                            "dumpfilecontents":        false,
+                            "dumpremovals":            true,
+                            "dumpcreatefile":          false,
+                            "dumpreads":               false,
+                            "dumpwrites":              false,
+                            "dumpcontenttowrite":      false
+                        }
+                    },
+                    "exports": [
+                        {
+                            "name": "suite-10-requestreplywrite-1MB-test-require-unlinkbeforecreatefile-supplier-export-unlinkbeforecreatefile",
+                            "exportAs": "unlinkbeforecreatefile",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        },
+                        {
+                            "name": "suite-10-requestreplywrite-1MB-test-require-directoryunlinkfile-supplier-require-createfilebeforeunlink-export-UsedFullFilePath",
+                            "exportAs": "UsedFullFilePath",
+                            "exportOrigin": "TEST",
+                            "exportSource": "_v_UsedFullFilePath",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFORESUBS"
+                        }
+                    ],
+                    "subs": [
+                        {
+                            "name": "suite-10-requestreplywrite-1MB-test-require-unlinkbeforecreatefile-supplier-sub-mustnotexistsafterunlink",
+                            "runnable": true,
+                            "expectSuccess": true,
+                            "module": "@cmppath/common-test/fileaccess-test",
+                            "constructorName": "FileAccess_Constructor",
+                            "methodName": "pF_FileAccess",
+                            "scheduleSubs": "SERIES",
+                            "parms": {
+                                "fileaccess": {
+                                    "usePayloadHolder": true,
+                                    "basePathParmName":        null,
+                                    "basePath":                null,
+                                    "dirPathParmName":         null,
+                                    "dirPath":                 null,
+                                    "filenameParmName":        null,
+                                    "filename":                null,
+                                    "fullFilePathParmName":    "UsedFullFilePath",
+                                    "fullFilePath":            null,
+                                    "expandHome":              true,
+
+                                    "fileEncoding":            "BINARY",
+
+                                    "readFileContents":        true,
+
+                                    "unlinkFile":              false,
+                                    "touchFile":               false,
+                                    "createFile":              false,
+                                    "createFileMode":          "0660",
+                                    "truncateFile":            false,
+                                    "appendToFile":            false,
+                                    "writeFileContents":       false,
+
+                                    "failIfFileNotExists":     false,
+                                    "failIfFileAlreadyExists": true,
+                                    "failIfFileEmpty":         false,
+                                    "failIfFileNotEmpty":      false,
+
+                                    "dumppaths":               false,
+                                    "dumpstats":               true,
+                                    "dumpparseresult":         false,
+                                    "dumpfilecontents":        false,
+                                    "dumpremovals":            false,
+                                    "dumpcreatefile":          false,
+                                    "dumpreads":               false,
+                                    "dumpwrites":              false,
+                                    "dumpcontenttowrite":      false
+                                }
+                            },
+                            "checks": [
+                                {
+                                    "name": "suite-10-requestreplywrite-1MB-test-require-unlinkbeforecreatefile-supplier-check-_v_FullFileExisted-false",
+                                    "checkWhen": "AFTER",
+                                    "checkNegate": false,
+                                    "checkKind": "EQ",
+                                    "checkOrigin": "TEST",
+                                    "checkSource": "_v_FullFileExisted",
+                                    "checkValue": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "suite-10-requestreplywrite-1MB-test-require-garbagecollectbefore",
+            "parmNames": [
+                "garbagecollectbefore"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-10-requestreplywrite-1MB-test-require-garbagecollectbefore-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/memory-test",
+                    "constructorName": "Memory_Constructor",
+                    "methodName": "pF_Memory",
+                    "parms": {
+                        "memory": {
+                            "minHeapAvailable":                -1,
+                            "maxHeapUsed":                     -1,
+                            "maxHeapTotal":                    -1,
+
+                            "failIfUnderMinHeapAvailable":      false,
+                            "failIfOverMaxHeapUsed":            false,
+                            "failIfOverMaxHeapTotal":           false,
+
+                            "garbageCollectIfMinHeapAvailable": false,
+                            "garbageCollectIfMaxHeapUsed":      false,
+                            "garbageCollectIfMaxHeapTotal":     false,
+                            "garbageCollectAlways":             true,
+
+                            "reportMemoryAfter":                true,
+
+                            "dumpmemoryreport":                 true,
+                            "dumpgarbagecollect":               true
+                        }
+                    },
+                    "scheduleSubs": "SERIES",
+                    "exports": [
+                        {
+                            "name": "suite-10-requestreplywrite-1MB-test-require-garbagecollectbefore-supplier-export-",
+                            "exportAs": "garbagecollectbefore",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "subs": [
+        {
+            "name": "suite-10-requestreplywrite-1MB-test-sub-writefile",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/fileaccess-test",
+            "constructorName": "FileAccess_Constructor",
+            "methodName": "pF_FileAccess",
+            "scheduleSubs": "SERIES",
+            "parms": {
+                "fileaccess": {
+                    "usePayloadHolder": true,
+
+                    "basePathParmName":        "parmsforfilesrequestreplywritetest.baseDirectoryForRequestReplyWrite",
+                    "basePath":                null,
+                    "dirPathParmName":         "parmsforfilesrequestreplywritetest.directoryForRequestReplyWrite",
+                    "dirPath":                 null,
+                    "filenameParmName":        null,
+                    "filename":                "RandomFile_1MB_reply.bin",
+                    "fullFilePathParmName":    null,
+                    "fullFilePath":            null,
+                    "expandHome":              true,
+
+                    "fileEncoding":            "BINARY",
+
+                    "readFileContents":        true,
+
+                    "unlinkFile":              false,
+                    "touchFile":               false,
+                    "createFile":              true,
+                    "createFileMode":          "0660",
+                    "truncateFile":            true,
+                    "appendToFile":            false,
+                    "writeFileContents":       true,
+
+                    "contentsToWriteParmName": "contentsToWriteToFile",
+
+                    "failIfFileNotExists":     false,
+                    "failIfFileAlreadyExists": false,
+                    "failIfFileEmpty":         false,
+                    "failIfFileNotEmpty":      false,
+
+                    "dumppaths":               false,
+                    "dumpstats":               false,
+                    "dumpparseresult":         false,
+                    "dumpfilecontents":        false,
+                    "dumpremovals":            false,
+                    "dumpcreatefile":          true,
+                    "dumpreads":               false,
+                    "dumpwrites":              true,
+                    "dumpcontenttowrite":      false
+                }
+            },
+            "exports": [
+                {
+                    "name": "suite-10-requestreplywrite-1MB-test-sub-writefile-export-UsedFullFilePath",
+                    "exportAs": "UsedFullFilePath",
+                    "exportOrigin": "TEST",
+                    "exportSource": "_v_UsedFullFilePath",
+                    "exportTarget": ".",
+                    "exportWhen": "EXBEFORESUBS"
+                }
+            ]
+        },
+        {
+            "name": "suite-10-requestreplywrite-1MB-test-sub-reportmemorybeforegarbagecollect",
+            "runnable": true,
+            "expectSuccess": true,
+            "module": "@cmppath/common-test/memory-test",
+            "constructorName": "Memory_Constructor",
+            "methodName": "pF_Memory",
+            "parms": {
+                "memory": {
+                    "minHeapAvailable":                -1,
+                    "maxHeapUsed":                     -1,
+                    "maxHeapTotal":                    -1,
+
+                    "failIfUnderMinHeapAvailable":      false,
+                    "failIfOverMaxHeapUsed":            false,
+                    "failIfOverMaxHeapTotal":           false,
+
+                    "garbageCollectIfMinHeapAvailable": false,
+                    "garbageCollectIfMaxHeapUsed":      false,
+                    "garbageCollectIfMaxHeapTotal":     false,
+                    "garbageCollectAlways":             false,
+
+                    "reportMemoryAfter":                false,
+
+                    "dumpmemoryreport":                 true,
+                    "dumpgarbagecollect":               true
+                }
+            },
+            "scheduleSubs": "SERIES",
+            "exports": [
+                {
+                    "name": "suite-10-requestreplywrite-1MB-test-sub-reportmemorybeforegarbagecollect-export-toReleaseRequestReplyPayloads",
+                    "exportAs": "toReleaseRequestReplyPayloads",
+                    "exportOrigin": "TEST",
+                    "exportSource": "*",
+                    "exportTarget": ".",
+                    "exportWhen": "EXBEFORESUBS",
+                    "exportCompuExtraParms": "~contentsToWriteToFile",
+                    "exportComputation": "function( theMemoryTest, theContentsToWriteToFile) { return theContentsToWriteToFile && theContentsToWriteToFile.pReleasePayload && theContentsToWriteToFile.pReleasePayload(); }"
+                }
+            ],
+            "subs": [
+                {
+                    "name": "suite-10-requestreplywrite-1MB-test-sub-reportmemorybeforegarbagecollect-sub-garbagecollectafter-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/common-test/memory-test",
+                    "constructorName": "Memory_Constructor",
+                    "methodName": "pF_Memory",
+                    "parms": {
+                        "memory": {
+                            "minHeapAvailable":                -1,
+                            "maxHeapUsed":                     -1,
+                            "maxHeapTotal":                    -1,
+
+                            "failIfUnderMinHeapAvailable":      false,
+                            "failIfOverMaxHeapUsed":            false,
+                            "failIfOverMaxHeapTotal":           false,
+
+                            "garbageCollectIfMinHeapAvailable": false,
+                            "garbageCollectIfMaxHeapUsed":      false,
+                            "garbageCollectIfMaxHeapTotal":     false,
+                            "garbageCollectAlways":             true,
+
+                            "reportMemoryAfter":                true,
+
+                            "dumpmemoryreport":                 true,
+                            "dumpgarbagecollect":               true
+                        }
+                    },
+                    "scheduleSubs": "SERIES"
+                }
+            ]
+        }
+    ]
+}

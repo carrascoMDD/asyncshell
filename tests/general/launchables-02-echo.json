@@ -1,0 +1,6 @@
+[
+    "@testspath/general/suite-21-echo-wosession-test.json",
+    "@testspath/general/suite-22-echo-withsession-test.json",
+    "@testspath/general/suite-31-requestreply-echo-test.json",
+    "@testspath/general/suite-32-requestreply-echo-contributor-session-test.json"
+]

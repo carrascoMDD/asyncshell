@@ -1,0 +1,117 @@
+{
+    "name": "suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/common-test/fileaccess-test",
+    "constructorName": "FileAccess_Constructor",
+    "methodName": "pF_FileAccess",
+    "scheduleSubs": "SERIES",
+    "imports": [
+        {
+            "name": "paths-import",
+            "configurationPath": "@testspath/common/fileaccess/parms-fileaccess-fortest.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "parms": {
+        "fileaccess": {
+            "salutation": "Hello suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+
+            "basePathParmName":        "parmsforfilestest.baseDirectoryForFileAccess90unlinkcreatewritermdirmkdirindirectory",
+            "basePath":                null,
+            "dirPathParmName":         "parmsforfilestest.directoryForFileAccess90unlinkcreatewritermdirmkdirindirectory",
+            "dirPath":                 null,
+            "filenameParmName":        "parmsforfilestest.filenameForFileAccess90unlinkcreatewritermdirmkdirindirectory",
+            "filename":                null,
+            "fullFilePathParmName":    null,
+            "fullFilePath":            null,
+            "expandHome":              true,
+
+            "fileEncoding":            "DEFAULT",
+
+            "readFileContents":        true,
+
+            "unlinkFile":              true,
+            "createFile":              true,
+            "createFileMode":          "0660",
+            "touchFile":               false,
+            "truncateFile":            false,
+            "appendToFile":            false,
+
+            "writeFileContents":       true,
+
+            "contentsToWriteParmName": "ContentsToWriteToFile",
+
+            "failIfFileNotExists":     false,
+            "failIfFileAlreadyExists": false,
+            "failIfFileEmpty":         false,
+            "failIfFileNotEmpty":      false,
+
+            "dumppaths":               false,
+            "dumpstats":               false,
+            "dumpparseresult":         false,
+            "dumpfilecontents":        false,
+            "dumpremovals":            true,
+            "dumpcreatefile":          true,
+            "dumpreads":               false,
+            "dumpwrites":              false,
+            "dumpcontenttowrite":      false,
+
+            "doDirectory":             true
+        },
+        "directory": {
+            "basePathParmName":        "ToBeInjectedByInstance_suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test_of_fileaccess-test_withValue_null",
+            "basePath":                "ToBeInjectedByInstance_suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test_of_fileaccess-test_withValue_null",
+            "dirPathParmName":         "ToBeInjectedByInstance_suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test_of_fileaccess-test_withValue_null",
+            "dirPath":                 "ToBeInjectedByInstance_suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test_of_fileaccess-test_withValue_null",
+            "fullDirPathParmName":     "ToBeInjectedByInstance_suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test_of_fileaccess-test_into_synthetic_instance_of_directory-test_withValue_ofProperty_v_DirectoryOfUsedFullFilePath",
+            "fullDirPath":             "ToBeInjectedByInstance_suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test_of_fileaccess-test_withValue_null",
+            "expandHome":              "ToBeInjectedByInstance_suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test_of_fileaccess-test_withValue_false",
+
+            "failIfDirNotExists":      false,
+            "failIfDirAlreadyExists":  false,
+
+            "tree":                    true,
+            "treeDirs":                true,
+            "treeLevel":               -1,
+            "treeFiles":               true,
+
+            "rmDir":                   true,
+            "rmDirContentsDirs":       true,
+            "rmDirContentsFiles":      true,
+            "failIfDirNotEmpty":       false,
+
+            "createDir":               true,
+            "createDirMode":           "0770",
+            "failIfDirNotExists":      false,
+            "failIfDirAlreadyExists":  false,
+
+            "dumppaths":               false,
+            "dumpstats":               false,
+            "dumpparseresult":         false,
+            "dumpreaddirs":            false,
+            "dumpdircontents":         false,
+            "dumptree":                false,
+            "dumptreeindented":        false,
+            "dumptreestats":           false,
+            "dumpremovals":            false,
+            "dumpmkdirs":              true
+        },
+        "ContentsToWriteToFile": "ContentsToWrite\nToFile\nUserHome/end2endfiletest/basedirforfileaccess62writecreatedindirectory/dirforfileaccess62writecreatedindirectory/subdirforfileaccess62writecreatedindirectory/subsubdirforfileaccess62writecreatedindirectory/subsubsubdirforfileaccess62writecreatedindirectory/filenamefor62writecreatedindirectory.txt"
+    },
+  "checks": [
+        {
+            "name": "suite-90-fileaccess-unlink-create-write-rmdir-mkdir-indirectory-ok-test-check-_v_FullFileExists-true",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_FullFileExists",
+            "checkValue": true
+        }
+    ]
+}
+
+
+
+

@@ -1,0 +1,12 @@
+{
+    "name": "obtain-parms-05-releasing-echo-imports-test",
+    "parms": {
+        "obtain-parms-05-releasing-echo-imports-test": {
+            "obtain-parms-05-releasing-echo-imports-test-parm1": "obtain-parms-05-releasing-echo-imports-test-parm1-value",
+            "obtain-parms-05-releasing-echo-imports-test-parm2": "obtain-parms-05-releasing-echo-imports-test-parm2-value"
+        }
+    }
+}
+
+
+

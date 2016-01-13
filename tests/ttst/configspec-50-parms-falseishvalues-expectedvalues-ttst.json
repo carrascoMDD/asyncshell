@@ -1,0 +1,35 @@
+[
+    {
+        "path": ".",
+        "expectedParms": {
+            "parmok_null":      null,
+            "parmok_null":      null,
+            "parmok_0":         0,
+            "parmok_false":     false,
+            "parmok_emptystr":  "",
+            "parmok_emptylist": [],
+            "parmok_emptyobj":  {},
+
+            "parmfail_null":      1,
+            "parmfail_0":         1,
+            "parmfail_false":     1,
+            "parmfail_emptystr":  1,
+            "parmfail_emptylist": 1,
+            "parmfail_emptyobj":  1
+        },
+        "failedParms": [
+            "parmfail_null",
+            "parmfail_0",
+            "parmfail_false",
+            "parmfail_emptystr",
+            "parmfail_emptylist",
+            "parmfail_emptyobj"
+        ]
+    }
+]
+
+
+
+
+
+

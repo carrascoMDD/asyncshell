@@ -1,0 +1,59 @@
+{
+    "name": "obtener-isauthenticated-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/general-test/security-test/isauthenticated-test",
+    "constructorName": "IsAuthenticatedTest_Constructor",
+    "methodName": "pF_IsAuthenticated",
+    "scheduleSubs": "SERIES",
+    "parms": {
+        "salutation": "Hello obtener-isauthenticated-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+        "isauthenticated": {
+            "lazy": false
+        }
+    },
+    "imports": [
+        {
+            "name": "hitpoint-import",
+            "configurationPath": "@testspath/general/security/parms-hitpoint.json",
+            "importMode": "STATIC"
+        }
+    ],
+    "required": [
+        {
+            "name": "obtener-isauthenticated-test-required-logintest",
+            "parmNames": [
+                "logintest"
+            ],
+            "suppliers": [
+                {
+                    "name": "obtener-isauthenticated-test-required-logintest-supplier",
+                    "imports": [
+                        {
+                            "name": "obtener-isauthenticated-test-required-logintest-imported",
+                            "configurationPath": "@testspath/general/security/obtener-login-test.json"
+                        }
+                    ],
+                    "exports": [
+                        {
+                            "name": "obtener-isauthenticated-test-required-logintest-export",
+                            "exportAs": "logintest",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+
+

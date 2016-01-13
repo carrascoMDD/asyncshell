@@ -1,0 +1,125 @@
+{
+    "name": "21-base-badfields",
+    "expectSuccess": false,
+    "expectedEvent": "FAIL",
+    "subs": [
+        {
+            "name": "21-base-badfields-strings",
+            "subs": [
+                {
+                    "name": "21-base-badfields-str-module-number",
+                    "module": 1
+                },
+                {
+                    "name": "21-base-badfields-str-constructorname-number",
+                    "constructorName": 1
+                },
+                {
+                    "name": "21-base-badfields-str-methodname-number",
+                    "methodName": 1
+                },
+                {
+                    "name": "21-base-badfields-str-forceerrordetail-number",
+                    "forceErrorDetail": 1
+                }
+            ]
+        },
+        {
+            "name": "21-base-badfields-booleans",
+            "subs": [
+                {
+                    "name": "21-base-badfields-bool-runnable",
+                    "subs": [
+                        {
+                            "name": "21-base-badfields-bool-runnable-str",
+                            "runnable": "str"
+                        }
+                    ]
+                },
+                {
+                    "name": "21-base-badfields-bool-schedulesubs",
+                    "subs": [
+                        {
+                            "name": "21-base-badfields-bool-schedulesubs-str",
+                            "scheduleSubs": "str"
+                        }
+                    ]
+                },
+                {
+                    "name": "21-base-badfields-bool-expectsuccess",
+                    "subs": [
+                        {
+                            "name": "21-base-badfields-bool-expectsuccess-str",
+                            "expectSuccess": "str"
+                        }
+                    ]
+                },
+                {
+                    "name": "21-base-badfields-bool-forceerror",
+                    "subs": [
+                        {
+                            "name": "21-base-badfields-bool-forceerror-str",
+                            "expectSuccess": "str"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "21-base-badfields-enums",
+            "subs": [
+                {
+                    "name": "21-base-badfields-enum-inherit",
+                    "subs": [
+                        {
+                            "name": "21-base-badfields-enum-inherit-badSTATIC",
+                            "inherit": "badSTATIC"
+                        }
+                    ]
+                },
+                {
+                    "name": "21-base-badfields-enum-schedulesubs",
+                    "subs": [
+                        {
+                            "name": "21-base-badfields-enum-schedulesubs-badSERIES",
+                            "scheduleSubs": "badSERIES"
+                        }
+                    ]
+                },
+                {
+                    "name": "21-base-badfields-enum-expectedevent",
+                    "subs": [
+                        {
+                            "name": "21-base-badfields-enum-expectedevent-badINIT",
+                            "expectedEvent": "badINIT"
+                        }
+                    ]
+                },
+                {
+                    "name": "21-base-badfields-enum-forceerrorkind",
+                    "subs": [
+                        {
+                            "name": "21-base-badfields-enum-forceerrorkind-badEXCEPTION",
+                            "forceErrorKind": "badEXCEPTION"
+                        }
+                    ]
+                },
+                {
+                    "name": "21-base-badfields-enum-forceerrorwhen",
+                    "subs": [
+                        {
+                            "name": "21-base-badfields-enum-forceerrorwhen-badINIT",
+                            "forceErrorWhen": "badINIT"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+

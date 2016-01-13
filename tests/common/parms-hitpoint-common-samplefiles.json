@@ -1,0 +1,20 @@
+{
+    "name": "parms-hitpoint-common-samplefiles",
+    "parms": {
+        "hitpoint-common-samplefiles": {
+            "baseURL": "http://192.168.69.3:8600",
+
+
+            "XXXSamples_baseURL": "http://192.168.69.3:8600",
+            "XXXSamples_URLs": "http://192.168.69.3:8600/RandomFile_10MB.bin http://192.168.69.3:8600/RandomFile_50MB.bin http://192.168.69.3:8600/RandomFile_100MB.bin",
+
+            "YYYSamples_baseURL": "http://samplefiles.te2est.org",
+            "YYYSamples_URLs": "http://samplefiles.te2est.org/RandomFile_10MB.bin http://samplefiles.te2est.org/RandomFile_50MB.bin http://samplefiles.te2est.org/RandomFile_100MB.bin",
+
+            "ZZZbaseURL": "http://localhost:64404/springnut"
+        }
+    }
+}
+
+
+

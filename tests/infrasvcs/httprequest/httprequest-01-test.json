@@ -1,0 +1,87 @@
+[
+    {
+        "name": "request text get",
+        "method": "get",
+        "url": "http://{{host}}:{{port}}/springnut/aux/echo/echo?theToEcho=request echoed text get",
+        "headers": null,
+        "form": null,
+        "body": null,
+        "json": null,
+        "expect": "request echoed text get"
+    },
+    {
+        "name": "request text post form",
+        "method": "post",
+        "url": "http://{{host}}:{{port}}/springnut/aux/echo/echoForm",
+        "headers": null,
+        "form": {
+            "theToEcho": "request echoed text post form"
+        },
+        "body": null,
+        "json": null,
+        "expect": "request echoed text post form"
+    },
+    {
+        "name": "request text post json",
+        "method": "post",
+        "url": "http://{{host}}:{{port}}/springnut/aux/echo/echoBody",
+        "headers": null,
+        "form": null,
+        "body": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "request echoed text post json"
+        },
+        "json": true,
+        "expect": "request echoed text post json"
+    },
+
+    {
+        "name": "request json get",
+        "method": "get",
+        "url": "http://{{host}}:{{port}}/springnut/aux/echo/echoJSON?theToEcho=request echoed json get",
+        "headers": null,
+        "form": null,
+        "body": null,
+        "json": true,
+        "expect": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "request echoed json get"
+        }
+    },
+    {
+        "name": "request json post form",
+        "method": "post",
+        "url": "http://{{host}}:{{port}}/springnut/aux/echo/echoJSONform",
+        "headers": null,
+        "form": {
+            "theToEcho": "request echoed json post form"
+        },
+        "body": null,
+        "json": true,
+        "expect": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "request echoed json post form"
+        }
+    },
+    {
+        "name": "request json post json",
+        "method": "post",
+        "url": "http://{{host}}:{{port}}/springnut/aux/echo/echoJSONbody",
+        "headers": null,
+        "form": null,
+        "body": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "request echoed json post json"
+        },
+        "json": true,
+        "expect": {
+            "vTipo": "EchoDatos",
+            "vSuccess":true,
+            "vToEcho": "request echoed json post json"
+        }
+    }
+]

@@ -1,0 +1,33 @@
+{
+    "name": "suite-41-withvariationandconstant-defaults-fail-variation-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/general-test/withvariationandconstant-test",
+    "constructorName": "WithvariationandconstantTest_Constructor",
+    "methodName": "pF_Withvariationandconstant",
+    "scheduleSubs": "SERIES",
+    "parms": {
+        "salutation": "Hello suite-41-withvariationandconstant-defaults-fail-variation-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}"
+    },
+    "checks": [
+        {
+            "name": "suite-41-withvariationandconstant-defaults-fail-checkNegate-NAMEDVARIATION-98765432",
+            "checkWhen": "AFTER",
+            "checkNegate": true,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "NAMEDVARIATION",
+            "checkValue": 11
+        },
+        {
+            "name": "suite-41-withvariationandconstant-defaults-fail-check-NAMEDCONSTANT-123456789",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "NAMEDCONSTANT",
+            "checkValue": 123456789
+        }
+    ]
+}
+

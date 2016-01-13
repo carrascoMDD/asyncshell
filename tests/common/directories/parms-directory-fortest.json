@@ -1,0 +1,36 @@
+{
+    "name": "parms-directory-fortest",
+    "parms": {
+        "parmsfordirectorytest": {
+            "baseDirectoryForRmdir10mayexists":    "~/end2enddirtest/basedirforrmdir10mayexists",
+
+            "baseDirectoryForMkdir20":             "~/end2enddirtest/basedirformkdir20",
+
+            "baseDirectoryForMkdir22":             "~/end2enddirtest/basedirformkdir22",
+            "directoryForMkdir22":                 "dirformkdir22",
+
+            "baseDirectoryForMkdir24":             "~/end2enddirtest/basedirformkdir24",
+            "directoryForMkdir24":                 "dirformkdir24/subdirformkdir24",
+
+            "baseDirectoryForMkdir26":             "~/end2enddirtest/basedirformkdir26",
+            "directoryForMkdir26":                 "dirformkdir26/subdirformkdir26/subsubdirformkdir26/subsubsubdirformkdir26",
+
+
+            "baseDirectoryForRmdir40onlybasepath": "~/end2enddirtest/basedirforrmdir40onlybasepath",
+
+            "baseDirectoryForRmdir42dirlevels01":  "~/end2enddirtest/basedirforrmdir42dirlevels01",
+            "directoryForRmdir42":                 "dirforrmdir42",
+
+            "baseDirectoryForRmdir44dirlevels02":  "~/end2enddirtest/basedirforrmdir44dirlevels02",
+            "directoryForRmdir44":                 "dirforrmdir44/subdirforrmdir44",
+
+            "baseDirectoryForRmdir46dirlevels04":  "~/end2enddirtest/basedirforrmdir46dirlevels04",
+            "directoryForRmdir46":                 "dirforrmdir46/subdirforrmdir46/subsubdirforrmdir46/subsubsubdirforrmdir46",
+
+
+            "baseDirectoryForRmdirMkdir60":       "~/end2enddirtest/basedirforrmdirmkdirdir60",
+            "directoryForRmdir60":                 "dirforrmdirmkdir60"
+        }
+    }
+}
+

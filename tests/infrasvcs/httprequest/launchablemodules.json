@@ -1,0 +1,23 @@
+[
+    {
+        "title": "platform-nodejs-request-test",
+        "module": "#root/lib/infrasvcs-test/httprequest/platforms/platform-nodejs-request-test",
+        "constructor": "PlatformNodejsRequestTest_Constructor",
+        "method": "pF_PlatformNodejsRequestTest",
+        "constructorparm": "#root/tests/infrasvcs/httprequest/httprequest-01-test.json"
+    },
+    {
+        "title": "httprequest-nodejs-request-test",
+        "module": "#root/lib/infrasvcs-test/httprequest/platforms/httprequest-nodejs-request-test",
+        "constructor": "HttpRequestNodejsRequestTest_Constructor",
+        "method": "pF_HttpRequestNodejsRequestTest",
+        "constructorparm": "#root/tests/infrasvcs/httprequest/httprequest-01-test.json"
+    },
+    {
+        "title": "httprequest-nodejs-request-test",
+        "module": "#root/lib/infrasvcs-test/httprequest/httprequest-test",
+        "constructor": "HttpRequestTest_Constructor",
+        "method": "pF_HttpRequestTest",
+        "constructorparm": "#root/tests/infrasvcs/httprequest/httprequest-01-test.json"
+    }
+]

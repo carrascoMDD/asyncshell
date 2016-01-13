@@ -1,0 +1,23 @@
+{
+    "name": "21-base-badfields-not",
+    "runnable": true,
+    "inherit": "STATIC",
+    "scheduleSubs": "SERIES",
+    "expectSuccess": true,
+    "expectedEvent": "OK",
+    "module": "@cmppath/general-test/void-test",
+    "constructorName": "VoidTest_Constructor",
+    "methodName": "pF_Void",
+    "forceError": false,
+    "forceErrorDetail": "Forced error",
+    "forceErrorKind": "EXCEPTION",
+    "forceErrorWhen": "BEGIN"
+}
+
+
+
+
+
+
+
+

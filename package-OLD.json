@@ -1,0 +1,101 @@
+{
+  "name": "asyncshell",
+  "version": "0.3.1",
+  "description": "Asynchronous shell and components for End2end test of JSON APIs and AngularJS user interfaces.",
+  "keywords": [
+    "end2end",
+    "asynchronous",
+    "async",
+    "test",
+    "testing",
+    "API",
+    "JSON",
+    "angular",
+    "protractor",
+    "jasmine",
+    "webdriver",
+    "webdriverjs",
+    "selenium"
+  ],
+  "homepage": "https://github.com/asyncshell",
+  "bugs": {
+    "url": "https://github.com/carrascoMDD/asyncshell/issues"
+  },
+  "license": "EUPL-1.1",
+  "author": {
+    "name": "Antonio Carrasco",
+    "email": "carrascomdd@gmail.com"
+  },
+  "files": [],
+  "main": null,
+  "bin": null,
+  "man": null,
+  "directories": {
+    "lib": "./lib",
+    "tests": "./tests",
+    "tools": "./tools",
+    "doc":   "./doc",
+    "launch-tests": "./launch-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carrascoMDD/asyncshell.git"
+  },
+  "scripts": {},
+  "config": {},
+  "dependencies": {
+    "body-parser": "1.9.0",
+    "dicom-data-dictionary": "0.3.1",
+    "dicom-parser": "1.2.0",
+    "errorhandler": "1.2.0",
+    "express": "4.9.4",
+    "minimist": "1.1.1",
+    "osenv": "0.1.3",
+    "parse-filepath": "0.6.3",
+    "protractor": "1.3.1",
+    "request": "2.44.0"
+  },
+  "devDependencies": {
+  },
+  "bin": {
+    "protractor": "bin/protractor",
+    "webdriver-manager": "bin/webdriver-manager"
+  },
+  "main": "lib/protractor.js",
+  "scripts": {
+    "pretest": "jshint lib spec",
+    "test": "scripts/test.js",
+    "start": "testapp/scripts/web-server.js"
+  },
+  "webdriverVersions": {
+    "selenium": "2.43.1",
+    "chromedriver": "2.10",
+    "iedriver": "2.43.0"
+  },
+  "gitHead": "94240b204244af13b84ade66f80d97e7f0404ff5",
+  "_id": "protractor@1.3.1",
+  "_shasum": "1cb016c79d482700b17b70b10207359e09af5fc4",
+  "_from": "protractor@",
+  "_npmVersion": "1.4.14",
+  "_npmUser": {
+    "name": "juliemr",
+    "email": "ju.ralph@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "juliemr",
+      "email": "ju.ralph@gmail.com"
+    },
+    {
+      "name": "angularcore",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "dist": {
+    "shasum": "1cb016c79d482700b17b70b10207359e09af5fc4",
+    "tarball": "http://registry.npmjs.org/protractor/-/protractor-1.3.1.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/protractor/-/protractor-1.3.1.tgz",
+  "readme": "ERROR: No README data found!"
+}

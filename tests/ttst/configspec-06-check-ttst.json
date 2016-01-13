@@ -1,0 +1,305 @@
+{
+    "name": "06-check",
+    "module": "@cmppath/general-test/void-test",
+    "constructorName": "VoidTest_Constructor",
+    "methodName": "pF_Void",
+    "checks": [
+        {
+            "name": "06-check-TEST-when-AFTER",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": "VOID"
+        },
+        {
+            "name": "06-check-TEST-kind-TYPE_BOOL",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "TYPE_BOOL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-TYPE_STRING",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "TYPE_STRING",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-TYPE_NUMBER",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "TYPE_NUMBER",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-TYPE_OBJECT",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "TYPE_OBJECT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-TYPE_LIST",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "TYPE_LIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-TYPE_FUNCTION",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "TYPE_FUNCTION",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-NULL",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "NULL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-NOTNULL",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "NOTNULL",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-EMPTYSTRING",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EMPTYSTRING",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-NOTEMPTYSTRING",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "NOTEMPTYSTRING",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-EMPTYLIST",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EMPTYLIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-NOTEMPTYLIST",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "NOTEMPTYLIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-EMPTYDICT",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EMPTYDICT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-NOTEMPTYDICT",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "NOTEMPTYDICT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-EQ",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "EQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-NEQ",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "NEQ",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-GT",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "GT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-GTE",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "GTE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-LT",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "LT",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-LTE",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "LTE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-INLIST",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "INLIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-NOTINLIST",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "NOTINLIST",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-LISTCONTAINS",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "LISTCONTAINS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-LISTNOTCONTAINS",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "LISTNOTCONTAINS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-INKEYS",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "INKEYS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-NOTINKEYS",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "NOTINKEYS",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-INVALUES",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "INVALUES",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-NOTINVALUES",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "NOTINVALUES",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-DICTCONTAINSKEY",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "DICTCONTAINSKEY",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-DICTNOTCONTAINSKEY",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "DICTNOTCONTAINSKEY",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-DICTCONTAINSVALUE",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "DICTCONTAINSVALUE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        },
+        {
+            "name": "06-check-TEST-kind-DICTNOTCONTAINSVALUE",
+            "checkWhen": "AFTER",
+            "checkNegate": false,
+            "checkKind": "DICTNOTCONTAINSVALUE",
+            "checkOrigin": "TEST",
+            "checkSource": "_v_Void",
+            "checkValue": null
+        }
+    ]
+}

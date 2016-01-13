@@ -1,0 +1,399 @@
+{
+    "title": "testreleasingfile-01-releasing-single.json",
+    "RELEASING": [
+        {
+            "testName": "@testspath/releasing/suite-01-releasing-single-test.json",
+            "checkTest":  [
+                { "type": "ScheduleRootTest", "title": "pSL_createTest"},
+                { "type": "ScheduleOneTest",  "title": "suite-01-releasing-single-test"},
+                { "type": "AllocTest",        "title": "suite-01-releasing-single-test"}
+            ],
+            "checkConfiguration": [
+                { "type": "Configuration",    "title": "suite-01-releasing-single-test"},
+                { "type": "ConfigParms",      "title": "ParmsFor-suite-01-releasing-single-test"},
+                { "type": "ParmsParser",      "title": "ParmsParser-For-SpecParser-For-suite-01-releasing-single-test"},
+                { "type": "ResolutionParm",   "title": "suite-01-releasing-single-test alloc.numBuffers"},
+                { "type": "ResolutionParm",   "title": "suite-01-releasing-single-test alloc.bufferSize"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_ConstructorModuleName"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_ConstructorName"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_MethodName"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_ForceError"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_ForceErrorDetail"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_ForceErrorKind"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_ForceErrorWhen"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_ExpectSuccess"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_ExpectedEvent"},
+                { "type": "ResolutionField",  "title": "suite-01-releasing-single-test _v_ExpectedException"},
+                { "type": "SpecParserConfig", "title": "SpecParser-For-suite-01-releasing-single-test"}
+            ],
+            "checkCallback": [
+                { "title":"fRunNextInLauncherSeriesCallback", "creatorType":"LauncherOne"},
+                { "title":"pF_CmpAndTestsPathsLoader"},
+                { "title":"fOverallRunCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title":"fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title":"fLoadCmpPathsCallback"},
+                { "title":"fLoadXCallback", "creatorType":"PathsLoader", "creatorTitle":"CmpPathsLoaderFor-CmpAndTestsPathsLoaderFor-undefined-ToLoad-../../../cmppath.json"},
+                { "title":"fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title":"fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title":"fLoadTestsPathsCallback"},
+                { "title":"fLoadXCallback", "creatorType":"PathsLoader", "creatorTitle":"TestsPathsLoaderFor-CmpAndTestsPathsLoaderFor-undefined-ToLoad-../../../testspath.json"},
+                { "title":"fRunNextInCmpAndTestsPathsLoaderSeriesCallback"},
+                { "title":"fRunNextInLauncherSeriesCallback", "creatorType":"LauncherOne"},
+                { "title":"fRunNextInLauncherSeriesCallback", "creatorType":"LauncherOne"},
+                { "title":"fReadConfigAsyncCallback", "creatorType":"LauncherOne"},
+                { "title":"fRunNextInLauncherSeriesCallback", "creatorType":"LauncherOne"},
+                { "title":"fRunNextInLauncherSeriesCallback", "creatorType":"LauncherOne"},
+                { "title":"fRunNextInLauncherSeriesCallback", "creatorType":"LauncherOne"},
+                { "title":"pF_LauncherMany", "creatorType":"LauncherOne"},
+                { "title":"fScheduleRootCallback", "creatorType":"ScheduleRootTest", "creatorTitle":"pSL_createTest"},
+                { "title":"fScheduleOneCallback", "creatorType":"ScheduleOneTest", "creatorTitle":"suite-01-releasing-single-test"},
+                { "title":"fOverallRunnableCallback", "creatorType":"AllocTest", "creatorTitle":"suite-01-releasing-single-test"},
+                { "title":"fRunStepsCallback", "creatorType":"AllocTest", "creatorTitle":"suite-01-releasing-single-test"},
+                { "title":"fScheduleNextStepCallback", "creatorType":"AllocTest", "creatorTitle":"suite-01-releasing-single-test"},
+                { "title":"fScheduleNextStepCallback", "creatorType":"AllocTest", "creatorTitle":"suite-01-releasing-single-test"},
+                { "title":"fRunRequiredsCallback", "creatorType":"AllocTest", "creatorTitle":"suite-01-releasing-single-test"},
+                { "title":"fScheduleNextStepCallback", "creatorType":"AllocTest", "creatorTitle":"suite-01-releasing-single-test"},
+                { "title":"fScheduleNextStepCallback", "creatorType":"AllocTest", "creatorTitle":"suite-01-releasing-single-test"},
+                { "title":"fRunSubsCallback", "creatorType":"AllocTest", "creatorTitle":"suite-01-releasing-single-test"}
+            ],
+            "checkEvent": {
+                "INFO": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "LauncherOne": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSL_createTest": 1
+                            }
+                        },
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fFindStepToScheduleNext": 4
+                            }
+                        }
+                    }
+                },
+                "BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleRoot": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_Alloc": 1
+                            }
+                        }
+                    }
+                },
+                "CALLBACKRECEIVED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSL_runTest": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 2,
+                                "pF_Alloc": 2,
+                                "fScheduleNextStepCallback": 3
+                            }
+                        }
+                    }
+                },
+                "CALLBACKCHAINED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_Alloc": 1,
+                                "pS_RunSteps": 1,
+                                "fScheduleNextStepCallback": 4,
+                                "pS_RunRequireds": 1,
+                                "pS_RunSubs": 1
+                            }
+                        }
+                    }
+                },
+                "ADDEDSUBORDINATETEST": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "ScheduleRootTest": {
+                            "ownEvents": 1
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 1
+                        }
+                    }
+                },
+                "BEGINRUNNABLE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_Alloc": 1
+                            }
+                        }
+                    }
+                },
+                "STEP_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pSS_Alloc": 1
+                            }
+                        }
+                    }
+                },
+                "STEPS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSteps": 1
+                            }
+                        }
+                    }
+                },
+                "STEPS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextStep": 5
+                            }
+                        }
+                    }
+                },
+                "OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_retrieveAllocParms": 1,
+                                "pF_Alloc": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        }
+                    }
+                },
+                "CALLBACKINVOKED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextStepCallback": 4,
+                                "pS_RunRequireds": 1,
+                                "pS_RunSubs": 1,
+                                "pS_RunSteps": 1,
+                                "pF_Alloc": 1
+                            }
+                        },
+                        "ScheduleOneTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pF_ScheduleOne": 1
+                            }
+                        },
+                        "ScheduleRootTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_ScheduleOne": 1
+                            }
+                        }
+                    }
+                },
+                "STEP_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "fScheduleNextStepCallback": 4
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunRequireds": 1
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextRequired": 1
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextRequired": 1
+                            }
+                        }
+                    }
+                },
+                "REQUIREDS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunRequireds": 1
+                            }
+                        }
+                    }
+                },
+                "SUBS_BEGIN": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSubs": 1
+                            }
+                        }
+                    }
+                },
+                "SUBS_FINDNEXT": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextSub": 1
+                            }
+                        }
+                    }
+                },
+                "SUBS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextSub": 1
+                            }
+                        }
+                    }
+                },
+                "SUBS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSubs": 1
+                            }
+                        }
+                    }
+                },
+                "STEPS_NOMORE": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pTryToScheduleNextStep": 1
+                            }
+                        }
+                    }
+                },
+                "STEPS_OK": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "pS_RunSteps": 1
+                            }
+                        }
+                    }
+                },
+                "PASSED": {
+                    "ownEvents": 0,
+                    "eventsByRecordedType": {
+                        "AllocTest": {
+                            "ownEvents": 0,
+                            "eventsByStep": {
+                                "suite-01-releasing-single-test": 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

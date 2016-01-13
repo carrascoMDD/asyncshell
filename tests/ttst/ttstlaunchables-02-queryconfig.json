@@ -1,0 +1,141 @@
+[
+    {
+        "title": "queryfieldsattopttst",
+        "module": "@cmppath/ttst/queryconfig/queryfields-ttst",
+        "constructor": "QueryFieldsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-31-fields-attop-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-31-fields-attop-expectedvalues-ttst.json"
+    },
+    {
+        "title": "queryfieldsinsubttst",
+        "module": "@cmppath/ttst/queryconfig/queryfields-ttst",
+        "constructor": "QueryFieldsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-32-fields-insub-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-32-fields-insub-expectedvalues-ttst.json"
+    },
+    {
+        "title": "queryfieldsfromimportttst",
+        "module": "@cmppath/ttst/queryconfig/queryfields-ttst",
+        "constructor": "QueryFieldsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-33-fields-fromimport-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-33-fields-fromimport-expectedvalues-ttst.json"
+    },
+
+    {
+        "title": "queryfieldsattopfailedttst",
+        "module": "@cmppath/ttst/queryconfig/queryfields-ttst",
+        "constructor": "QueryFieldsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-31-fields-attop-failed-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-31-fields-attop-failedvalues-ttst.json"
+    },
+    {
+        "title": "queryfieldsinsubfailedttst",
+        "module": "@cmppath/ttst/queryconfig/queryfields-ttst",
+        "constructor": "QueryFieldsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-32-fields-insub-failed-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-32-fields-insub-failedvalues-ttst.json"
+    },
+    {
+        "title": "queryfieldsfromimportfailedttst",
+        "module": "@cmppath/ttst/queryconfig/queryfields-ttst",
+        "constructor": "QueryFieldsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-33-fields-fromimport-failed-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-33-fields-fromimport-failedvalues-ttst.json"
+    },
+
+
+
+
+    {
+        "title": "queryparmsattopttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-41-parms-attop-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-41-parms-attop-expectedvalues-ttst.json"
+    },
+    {
+        "title": "queryparmsinsubttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-42-parms-insub-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-42-parms-insub-expectedvalues-ttst.json"
+    },
+    {
+        "title": "queryparmsfromimportttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-43-parms-fromimport-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-43-parms-fromimport-expectedvalues-ttst.json"
+    },
+    {
+        "title": "queryparmsfromexportttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-44-parms-fromexport-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-44-parms-fromexport-expectedvalues-ttst.json"
+    },
+
+
+    {
+        "title": "queryparmsattopfailedttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-41-parms-attop-failed-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-41-parms-attop-failedvalues-ttst.json"
+    },
+    {
+        "title": "queryparmsinsubfailedttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-42-parms-insub-failed-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-42-parms-insub-failedvalues-ttst.json"
+    },
+    {
+        "title": "queryparmsfromimportfailedttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-43-parms-fromimport-failed-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-43-parms-fromimport-failedvalues-ttst.json"
+    },
+    {
+        "title": "queryparmsfromexportfailedttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-44-parms-fromexport-failed-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-44-parms-fromexport-failedvalues-ttst.json"
+    },
+
+
+
+
+    {
+        "title": "queryparmsfromdefaultsttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-45-parms-fromdefaults-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-45-parms-fromdefaults-expectedvalues-ttst.json"
+    },
+    {
+        "title": "queryparmsfromdefaultsfailedttst",
+        "module": "@cmppath/ttst/queryconfig/queryparms-ttst",
+        "constructor": "QueryParmsTtst_Constructor",
+        "method": "pF_Ttst",
+        "specOrPath": "@testspath/ttst/configspec-45-parms-fromdefaults-failed-ttst.json",
+        "expectedValues": "@testspath/ttst/configspec-45-parms-fromdefaults-failedvalues-ttst.json"
+    }
+]

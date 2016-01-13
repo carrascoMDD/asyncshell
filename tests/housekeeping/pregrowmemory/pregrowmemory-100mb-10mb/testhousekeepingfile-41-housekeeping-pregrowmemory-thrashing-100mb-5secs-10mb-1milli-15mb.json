@@ -1,0 +1,129 @@
+{
+    "title": "testhousekeepingfile-41-housekeeping-pregrowmemory-thrashing-100mb-2secs-10mb-1milli-15mb.json",
+    "HOUSEKEEPOPTIONS": {
+        "incrementalMode":  true,
+        "maxHeapUsed":      100,
+        "minHeapAvailable": 10,
+        "ignoreThrashingMillis": false,
+        "thrashingHeapAvailable": 20,
+        "thrashingMillis": {
+            "TESTSPAYLOADS": 4000,
+            "CONFIGSPAYLOADS": 4000,
+            "CALLBACKSPAYLOADS": 4000,
+            "EVENTSPAYLOADS": 4000,
+            "TESTS": 4000,
+            "CONFIGS": 4000,
+            "CALLBACKS": 4000,
+            "EVENTS": 4000
+        },
+        "forceBits":        null
+    },
+    "MEMORY": [
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "COMMENT-@testspath/housekeeping/pregrowmemory/suite-04-housekeeping-pregrowmemory-delay-5secs-test.json",
+            "comment":  "This spec is here just for documentation purposes, no houskeeping is checked on execution of the named test.",
+            "comment2":  "A delay test component is executed with 5 seconds parameter, to make sure that this test is not affected by any recent CLEANUP MEMORY action that may have been triggered by any test that may have been executed before this one."
+        },
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/pregrowmemory/pregrowmemory-100mb-10mb/suite-11-housekeeping-pregrowmemory-maxheapused-100mb-minheapavailable-10mb-exportbuffers-test.json",
+            "attempts":  [
+                {
+                    "comment": "After Grow to maxHeapUsed 1000MB minHeapAvailable 10MB, heapAvailable is less than 10MB, Will recommend to CleanUp from 1 to 999999 bytes, which is less than than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp MINHOWMUCHTOCLEAN 1MB",
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ]
+                },
+                {
+                    "comment": "Grow is keeping the buffers in CONFIGPAYLOADS. Will recommend to CleanUp from 1 to 999999 bytes, which is less than than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp MINHOWMUCHTOCLEAN 1MB",
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ]
+                },
+                { "shallHaveNoHousekeeping": true}
+            ]
+        },
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "COMMENT-@testspath/housekeeping/pregrowmemory/suite-02-housekeeping-pregrowmemory-delay-1millisec-01-test.json",
+            "comment":  "This spec is here just for documentation purposes, no houskeeping is checked on execution of the named test.",
+            "comment2":  "A VERY SHORT delay test component is executed with 1 millis parameter which is short enough that when the next housekeeping check is run, less than thrashingMillis.TESTSPAYLOADS millis have lapsed, and therefore recommends an extra attempt with CLEANUP MEMORY whatToClean CONFIGSPAYLOADS"
+        },
+        {
+            "moment":   "AFTERSPEC",
+            "testName": "@testspath/housekeeping/pregrowmemory/pregrowmemory-100mb-10mb/suite-11-housekeeping-pregrowmemory-maxheapused-100mb-minheapavailable-10mb-exportbuffers-02-test.json",
+            "attempts":  [
+                {
+                    "comment": "After Grow to maxHeapUsed 1000MB minHeapAvailable 10MB, heapAvailable is less than 10MB, Will recommend to CleanUp from 1 to 999999 bytes, which is less than than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp MINHOWMUCHTOCLEAN 1MB",
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["TESTSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ]
+                },
+                {
+                    "comment": "Grow is keeping the buffers in CONFIGPAYLOADS. Will recommend to CleanUp from 1 to 999999 bytes, which is less than than MINHOWMUCHTOCLEAN 1MB, so it shall recommend to CleanUp MINHOWMUCHTOCLEAN 1MB",
+                    "expectedRecommendations": [
+                        {
+                            "recommendationKind":                 "ACTION",
+                            "recommendedActionKind":              "CLEANUP",
+                            "recommendedActionPriority":          1,
+                            "recommendedHousekeeperSpecificKind": "MEMORY",
+                            "recommendedParameters":              {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ],
+                    "expectedActions": [
+                        {
+                            "actionKind":                    "CLEANUP",
+                            "actionPriority":                1,
+                            "actionHousekeeperSpecificKind": "MEMORY",
+                            "parameters":                    {"CLEANUP_WHATTOCLEAN":["CONFIGSPAYLOADS"], "CLEANUP_HOWMUCHTOCLEAN": { "min": 1, "max": 9999999}}
+                        }
+                    ]
+                },
+                { "shallHaveNoHousekeeping": true}
+            ]
+        }
+    ]
+}

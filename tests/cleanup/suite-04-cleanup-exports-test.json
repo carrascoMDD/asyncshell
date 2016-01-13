@@ -1,0 +1,234 @@
+{
+    "name": "suite-04-cleanup-exports-test",
+    "runnable": true,
+    "expectSuccess": true,
+    "module": "@cmppath/general-test/alloc-test",
+    "constructorName": "AllocTest_Constructor",
+    "methodName": "pF_Alloc",
+    "scheduleSubs": "SERIES",
+    "parms": {
+        "salutation": "Hello suite-04-cleanup-exports-test. You are using te2est asyncshell written in Javascript. Copyright 2014 2015 Antonio Carrasco Valero {{CopyrightNoticeJSON2}} Licensed under the EUPL, Version 1.1 only (the 'Licence'); You may not use this work except in compliance with the Licence. You may obtain a copy of the Licence at: https://joinup.ec.europa.eu/software/page/eupl/licence-eupl Unless required by applicable law or agreed to in writing, software distributed under the Licence is distributed on an 'AS IS' basis, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the Licence for the specific language governing permissions and limitations under the Licence.  {{LicenseJSON2}}  {{LicensedJSON1}} {{LicensedJSON2}}",
+        "alloc": {
+            "numBuffers":   1,
+            "bufferSize":   1
+        }
+    },
+    "required": [
+        {
+            "name": "suite-04-cleanup-exports-test.json-require-requiredtest",
+            "parmNames": [
+                "requiredtest"
+            ],
+            "suppliers": [
+                {
+                    "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier",
+                    "runnable": true,
+                    "expectSuccess": true,
+                    "module": "@cmppath/general-test/alloc-test",
+                    "constructorName": "AllocTest_Constructor",
+                    "methodName": "pF_Alloc",
+                    "scheduleSubs": "SERIES",
+                    "parms": {
+                        "alloc": {
+                            "numBuffers":   1,
+                            "bufferSize":   1
+                        }
+                    },
+                    "exports": [
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originTEST",
+                            "exportAs": "requiredtest",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originTEST-AFTERINIT",
+                            "exportAs": "requiredtestAFTERINIT",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "AFTERINIT"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originTEST-EXBETWEENSTEPS",
+                            "exportAs": "requiredtestEXBETWEENSTEPS",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBETWEENSTEPS"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originTEST",
+                            "exportAs": "requiredtestEXBEFORESUBS",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFORESUBS"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originTEST-EXBEFOREREQUIREDS",
+                            "exportAs": "requiredtestEXBEFOREREQUIREDS",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFOREREQUIREDS"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originTEST-EXBETWEENSUBS",
+                            "exportAs": "requiredtestEXBETWEENSUBS",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBETWEENSUBS"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originTEST-FAIL",
+                            "exportAs": "requiredtestFAIL",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "FAIL"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originTEST-AFTER",
+                            "exportAs": "requiredtestAFTER",
+                            "exportOrigin": "TEST",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "AFTER"
+                        },
+
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originPARMS",
+                            "exportAs": "requiredtest",
+                            "exportOrigin": "PARMS",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "OK"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originPARMS-PARSE",
+                            "exportAs": "requiredtestPARSE",
+                            "exportOrigin": "PARMS",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "PARSE"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originPARMS-AFTERINIT",
+                            "exportAs": "requiredtestAFTERINIT",
+                            "exportOrigin": "PARMS",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "AFTERINIT"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originPARMS-EXBETWEENSTEPS",
+                            "exportAs": "requiredtestEXBETWEENSTEPS",
+                            "exportOrigin": "PARMS",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBETWEENSTEPS"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originPARMS",
+                            "exportAs": "requiredtestEXBEFORESUBS",
+                            "exportOrigin": "PARMS",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFORESUBS"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originPARMS-EXBEFOREREQUIREDS",
+                            "exportAs": "requiredtestEXBEFOREREQUIREDS",
+                            "exportOrigin": "PARMS",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBEFOREREQUIREDS"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originPARMS-EXBETWEENSUBS",
+                            "exportAs": "requiredtestEXBETWEENSUBS",
+                            "exportOrigin": "PARMS",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "EXBETWEENSUBS"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originPARMS-FAIL",
+                            "exportAs": "requiredtestFAIL",
+                            "exportOrigin": "PARMS",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "FAIL"
+                        },
+                        {
+                            "name": "suite-04-cleanup-exports-test.json-require-requiredtest-supplier-export-originPARMS-AFTER",
+                            "exportAs": "requiredtestAFTER",
+                            "exportOrigin": "PARMS",
+                            "exportSource": "*",
+                            "exportTarget": ".",
+                            "exportWhen": "AFTER"
+                        }
+                    ],
+                    "subs": [
+                        {
+                            "name": "suite-04-cleanup-exports-test-sub-1",
+                            "runnable": true,
+                            "expectSuccess": true,
+                            "module": "@cmppath/general-test/alloc-test",
+                            "constructorName": "AllocTest_Constructor",
+                            "methodName": "pF_Alloc",
+                            "scheduleSubs": "SERIES",
+                            "parms": {
+                                "alloc": {
+                                    "numBuffers":   1,
+                                    "bufferSize":   1
+                                }
+                            },
+                            "subs": [
+                                {
+                                    "name": "suite-04-cleanup-exports-test-sub-1-sub-1",
+                                    "runnable": true,
+                                    "expectSuccess": true,
+                                    "module": "@cmppath/general-test/alloc-test",
+                                    "constructorName": "AllocTest_Constructor",
+                                    "methodName": "pF_Alloc",
+                                    "scheduleSubs": "SERIES",
+                                    "parms": {
+                                        "alloc": {
+                                            "numBuffers":   1,
+                                            "bufferSize":   1
+                                        }
+                                    },
+                                    "subs": [
+                                    ]
+                                },
+                                {
+                                    "name": "suite-04-cleanup-exports-test-sub-1-sub-2",
+                                    "runnable": true,
+                                    "expectSuccess": true,
+                                    "module": "@cmppath/general-test/alloc-test",
+                                    "constructorName": "AllocTest_Constructor",
+                                    "methodName": "pF_Alloc",
+                                    "scheduleSubs": "SERIES",
+                                    "parms": {
+                                        "alloc": {
+                                            "numBuffers":   1,
+                                            "bufferSize":   1
+                                        }
+                                    },
+                                    "subs": [
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

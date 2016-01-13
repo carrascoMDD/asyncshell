@@ -1,0 +1,4 @@
+[
+    "@testspath/general/security/suite-01-login-forcerr-test.json",
+    "@testspath/general/security/suite-11-isauthenticated-forcerr-test.json"
+]

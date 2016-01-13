@@ -1,0 +1,15 @@
+{
+    "name": "43-parms-fromimport-failed",
+    "imports": [
+        {
+            "name": "43-parms-fromimport-toimport-failed-here",
+            "configurationPath": "@testspath/ttst/configspec-43-parms-fromimport-toimport-failed-ttst.json",
+            "importMode": "STATIC"
+        }
+    ]
+}
+
+
+
+
+

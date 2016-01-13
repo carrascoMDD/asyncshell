@@ -1,0 +1,8 @@
+[
+    "@testspath/common/checkkinds/launchables.json",
+    "@testspath/common/directories/launchables.json",
+    "@testspath/common/fileaccess/launchables.json",
+    "@testspath/common/memory/launchables.json",
+    "@testspath/common/requestreply/launchables.json",
+    "@testspath/common/requestcached/launchables.json"
+]

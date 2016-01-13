@@ -1,0 +1,12 @@
+{
+    "name": "28-defaults-badfields",
+    "expectSuccess": false,
+    "expectedEvent": "FAIL",
+    "defaults": "str"
+}
+
+
+
+
+
+

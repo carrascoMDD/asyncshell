@@ -1,0 +1,53 @@
+[
+    {
+        "comment":     "#root is defined in resloader.js as the relative path from the resloader.js file to the root of the project  RESLOADER_PATH_TO_ROOT = ../../../"
+    },
+    {
+        "packagePath": "common-test",
+        "resPath":     "#root/lib/common-test/"
+    },
+    {
+        "packagePath": "ttst",
+        "resPath":     "#root/lib/ttst/"
+    },
+    {
+        "packagePath": "general-test",
+        "resPath":     "#root/lib/general-test/"
+    },
+    {
+        "packagePath": "springnut-test",
+        "resPath":     "#root/lib/springnut-test/"
+    },
+    {
+        "packagePath": "modulo10-test",
+        "resPath":     "#root/lib/modulo10-test/"
+    },
+
+    {
+        "packagePath": "browser-test",
+        "resPath":     "#root/lib/browser-test/"
+    },
+
+    {
+        "packagePath": "dicom-test",
+        "resPath":     "#root/lib/dicom-test/"
+    },
+
+
+
+    {
+        "packagePath": "#remote",
+        "resPath":     "http://localhost:64404/springnut/tests"
+    },
+    {
+        "packagePath": "#springnutremote",
+        "resPath":     "#remote/springnut/lib/"
+    },
+    {
+        "packagePath": "springnut-test-example-remote",
+        "resPath":     "#springnutremote/springnut-test/",
+        "comment":     "Expands to:  http://localhost:64404/springnut/tests/     /springnut/lib/    /springnut-test/",
+        "comment2":    "De forma que @cmppath/springnut-test-example-remote/ine-test/ficheros-test/ficheros-list-ine-springnut-test",
+        "comment3":    "Expande a  http://localhost:64404/springnut/tests/    /springnut/lib/    /springnut-test/    ine-test/ficheros-test/ficheros-list-ine-springnut-test   auto terminado en .js"
+    }
+]

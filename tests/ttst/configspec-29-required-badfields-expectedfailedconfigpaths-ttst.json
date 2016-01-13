@@ -1,0 +1,5 @@
+[
+    [ "29-required-badfields", "29-required-badfields-required-notobjectlist"],
+    [ "29-required-badfields", "29-required-badfields-required-parmNames", "29-required-badfields-required-parmNames-notstringlist"],
+    [ "29-required-badfields", "29-required-badfields-required-suppliers", "29-required-badfields-required-suppliers-notobjectlist"]
+]
