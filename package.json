@@ -1,6 +1,6 @@
 {
   "name": "asyncshell",
-  "version": "0.3.3",
+  "version": "0.3.7",
   "description": "Asynchronous shell and components for End2end test of JSON APIs and AngularJS user interfaces.",
   "keywords": [
     "end2end",
@@ -17,9 +17,9 @@
     "webdriverjs",
     "selenium"
   ],
-  "homepage": "https://github.com/carrascoMDD/asyncshell",
+  "homepage": "http://github.com/carrascoMDD/asyncshell",
   "bugs": {
-    "url": "https://github.com/carrascoMDD/asyncshell/issues"
+    "url": "http://github.com/carrascoMDD/asyncshell/issues"
   },
   "license": "EUPL-1.1",
   "author": {
@@ -28,12 +28,18 @@
   },
   "files": [],
   "main": null,
-  "bin": {},
+  "bin": null,
   "man": null,
-  "directories": {},
+  "directories": {
+    "lib": "./lib",
+    "tests": "./tests",
+    "tools": "./tools",
+    "doc":   "./doc",
+    "launch-tests": "./launch-tests"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/carrascoMDD/asyncshell.git"
+    "url": "http://github.com/carrascoMDD/asyncshell.git"
   },
   "scripts": {},
   "config": {},
@@ -48,7 +54,12 @@
     "parse-filepath": "0.6.3",
     "request": "2.44.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+  },
+  "bin": {
+  },
+  "scripts": {
+  },
   "webdriverVersions": {
     "selenium": "2.43.1",
     "chromedriver": "2.10",
@@ -60,5 +71,5 @@
       "email": "carrascomdd@gmail.com"
     }
   ],
-  "readme": "ERROR: No README data found!"
+  "readme": "http://github.com/carrascoMDD/asyncshell/README.md"
 }
