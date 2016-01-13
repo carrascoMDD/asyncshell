@@ -1,6 +1,6 @@
 {
   "name": "asyncshell",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "Asynchronous shell and components for End2end test of JSON APIs and AngularJS user interfaces.",
   "keywords": [
     "end2end",
@@ -71,5 +71,5 @@
       "email": "carrascomdd@gmail.com"
     }
   ],
-  "readme": "http://github.com/carrascoMDD/asyncshell/README.md"
+  "readme": "https://github.com/carrascoMDD/asyncshell/blob/master/README.md"
 }
