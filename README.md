@@ -1,4 +1,4 @@
-AsyncShell [![NPM version](http://img.shields.io/npm/v/async.svg)](https://www.npmjs.org/package/asyncshell)
+AsyncShell
 ==========
 
 
@@ -16,11 +16,9 @@ Compatibility
 AsyncShell is compatible with Node.js from v0.10 to v4 and newer.
 
 
-Rationale
----------
 
 Declarative
-...........
+-----------
 
 AsyncShell is declarative, as opposed to other test imperative test frameworks, 
 such that AsyncShell can be integrated into rich software factory pipelines, 
@@ -31,7 +29,7 @@ AsyncShell JSON tests are parsed according to a well defined syntax, representin
 
 
 Nested environments
-...................
+-------------------
 
 Each individual test operates on its own environment populated with properties, optionally with default values, 
 and where new properties and values can be exported from the execution of the test.
@@ -44,7 +42,7 @@ A global environment allows to set and resolve property values as the last chanc
 
 
 Suites of suites
-................
+----------------
 
 AsyncTests may be launched individually, or in whole collections, or collections of collections, which may be launched for repeated number of times.
 Even when the tests are arranged in a deep tree, AsyncShell allows to flatten the tree of individual tests, 
@@ -52,7 +50,7 @@ and launch the tests in a randomized order.
 
 
 Asynchronous with Callbacks
-...........................
+---------------------------
 
 AsyncShell asynchronicity is implemented directly with Javascript callbacks, 
 following the Node.js convention (error, data),
@@ -64,7 +62,7 @@ making dificult to observe the chain of expected asynchronous delegations while 
 
 
 Instrumented
-............
+------------
 
 AsyncShell is instrumented to record all significant activity during the test.
 Because AsyncShell shall serve the purpose of assessing the quality of other pieces of software,
@@ -79,10 +77,11 @@ While all activity is recorded, only specific event kinds configured in JSON fil
 
 
 Memory management
-.................
+-----------------
 
 Because longer test runs may consume lots of memory, 
-AsyncShell includes memory management facilities to selectively discard test configurations,
+AsyncShell includes memory management facilities to collect garbage, 
+and to selectively discard test configurations,
 test instances, test instance variables, callbacks, callback arguments, events, and event info.
 
 
