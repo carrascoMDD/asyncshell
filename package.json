@@ -1,6 +1,6 @@
 {
   "name": "asyncshell",
-  "version": "0.3.13",
+  "version": "0.3.14",
   "description": "Asynchronous shell and components for End2end test of JSON APIs and AngularJS user interfaces.",
   "keywords": [
     "end2end",
@@ -26,14 +26,28 @@
     "name": "Antonio Carrasco Valero",
     "email": "carrascomdd@gmail.com"
   },
-  "files": [],
+  "files": [
+    "lib",
+    "tests",
+    "launch-tests",
+    "cmppath.json",
+    "testspath.json",
+    "custom.js",
+    "custom_logpassed.js",
+    "custom_logalot.js",
+    "overrides.js",
+    "overrides_logpassed.js",
+    "overrides_logalot.js",
+    "LICENCIA",
+    "serverdef.json"
+  ],
   "main": null,
   "bin": null,
   "man": null,
-  "directories": {
-    "lib": "lib",
-    "tests": "tests",
-    "launch-tests": "launch-tests"
+  "KKKdirectories": {
+    "lib": "./lib",
+    "tests": "./tests",
+    "launch-tests": "./launch-tests"
   },
   "repository": {
     "type": "git",
