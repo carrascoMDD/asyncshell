@@ -1,6 +1,6 @@
 {
   "name": "asyncshell",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "Asynchronous shell and components for End2end test of JSON APIs and AngularJS user interfaces.",
   "keywords": [
     "end2end",
@@ -31,11 +31,9 @@
   "bin": null,
   "man": null,
   "directories": {
-    "lib": "./lib",
-    "tests": "./tests",
-    "tools": "./tools",
-    "doc":   "./doc",
-    "launch-tests": "./launch-tests"
+    "lib": "lib",
+    "tests": "tests",
+    "launch-tests": "launch-tests"
   },
   "repository": {
     "type": "git",
