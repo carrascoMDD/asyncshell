@@ -1,6 +1,6 @@
 {
   "name": "asyncshell",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "Asynchronous shell and components for End2end test of JSON APIs and AngularJS user interfaces.",
   "keywords": [
     "end2end",
