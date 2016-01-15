@@ -44,11 +44,6 @@
   "main": null,
   "bin": null,
   "man": null,
-  "KKKdirectories": {
-    "lib": "./lib",
-    "tests": "./tests",
-    "launch-tests": "./launch-tests"
-  },
   "repository": {
     "type": "git",
     "url": "http://github.com/carrascoMDD/asyncshell.git"
@@ -64,6 +59,7 @@
     "minimist": "1.1.1",
     "osenv": "0.1.3",
     "parse-filepath": "0.6.3",
+    "protractor-relaunchable": "0.0.1",
     "request": "2.44.0"
   },
   "devDependencies": {
