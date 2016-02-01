@@ -2,13 +2,13 @@
 
 /*
  custom.js
- Creado 201409250210
+ Created 201409250210
  */
 
 /*
  ***************************************************************************
 
- Copyright 2014 2015 Antonio Carrasco Valero
+ Copyright 2014 2015 2016 Antonio Carrasco Valero
  te2est asyncshell written in Javascript http://www.te2est.org http://www.asyncshell.org
 
 Licensed under the EUPL, Version 1.1 only (the "Licence");
@@ -41,7 +41,7 @@ permissions and limitations under the Licence.
         var ModuleFullName = ModulePackages + "/" + ModuleName;
 
 
-        if( !( typeof gfLOGMODULELOADS == "undefined") && ( typeof gfLOGMODULELOADS == "function") && gfLOGMODULELOADS()) { gfLOGMODULELOADS(ModuleFullName);}
+        if( !( typeof gfLOGMODULELOADS == "undefined") && ( typeof gfLOGMODULELOADS == "function")) { gfLOGMODULELOADS(ModuleFullName);}
 
 
 

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>70</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>fontsize=11
+package.json
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>70</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>fontsize=11
+custom.js
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>820</x>
+      <y>70</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>fontsize=11
+cmppath.json
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>70</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>fontsize=11
+overrides.js
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>70</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>fontsize=11
+testspath.json
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>670</x>
+      <y>120</y>
+      <w>160</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>tests
+--
+fontsize=11
+halign=left
+valign=top
+launchables.json
+some-test
+   launchables.json
+   sub1-some-tests
+      launchables.json
+      test-x-1.json
+      test-y-1
+   sub2-some-tests
+      launchables.json
+      test-a-2.json
+other-test
+   launchables.json
+   test-z.json
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>490</x>
+      <y>120</y>
+      <w>150</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lib
+--
+fontsize=11
+halign=left
+valign=top
+a.js
+codedir1
+   b.js
+   codesubdir-a
+      c.js
+   codesubdir-b
+      d.js
+codedir2
+   z.js
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>860</x>
+      <y>120</y>
+      <w>160</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>launchers
+--
+fontsize=11
+halign=left
+valign=top
+launchtogether.sh
+launch-some-test
+   launchtogether.sh
+   launch-sub1-some-tests
+      launchtogether.sh
+      launchone-test-x-1.sh
+      launchone-test-y-1
+   launch-sub2-some-tests
+      launchtogether.sh
+      launchone-test-a-2.sh
+launch-other-test
+   launchtogether.sh
+   launchone-test-z.sh
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>30</y>
+      <w>570</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>pkg asyncshell
+--
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>470</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>package.json
+asyncshell
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>470</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>custom.js
+asyncshell
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>550</x>
+      <y>470</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>cmppath.json
+asyncshell
+
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>470</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>overrides.js
+asyncshell
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>470</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>testspath.json
+asyncshell
+
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>340</x>
+      <y>560</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>tests
+--
+halign=left
+valign=top
+launchables.json
+some-test
+   launchables.json
+   sub1-some-tests
+      launchables.json
+      test-x-1.json
+      test-y-1
+   sub2-some-tests
+      launchables.json
+      test-a-2.json
+other-test
+   launchables.json
+   test-z.json
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>50</x>
+      <y>560</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lib
+--
+halign=left
+valign=top
+a.js
+codedir1
+   b.js
+   codesubdir-a
+      c.js
+   codesubdir-b
+      d.js
+codedir2
+   z.js
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>640</x>
+      <y>560</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>launchers
+--
+halign=left
+valign=top
+launchtogether.sh
+launch-some-test
+   launchtogether.sh
+   launch-sub1-some-tests
+      launchtogether.sh
+      launchone-test-x-1.sh
+      launchone-test-y-1
+   launch-sub2-some-tests
+      launchtogether.sh
+      launchone-test-a-2.sh
+launch-other-test
+   launchtogether.sh
+   launchone-test-z.sh
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>400</y>
+      <w>900</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>pkg asyncshell
+--
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

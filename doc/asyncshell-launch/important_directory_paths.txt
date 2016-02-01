@@ -1,0 +1,125 @@
+Important directory paths
+=========================
+
+AsyncShell is delivered as a node package.
+May be used on its own to extend or test, or installed as a module in other node package.
+
+
+Important artifacts
+-------------------
+
+
+components
+
+  - Javascript code implementations of test machinery
+
+  - generally under the lib directory of the asyncshell package or another package reusing asyncshell
+
+
+tests
+
+  - JSON specifications of tests
+
+  - generally under the tests
+
+launchers
+
+  - shell command files to launch tests from console
+
+  - in a deep hierarchy
+
+
+
+
+Important directories
+---------------------
+
+
+where components are located
+
+  - generally under the lib directory of the asyncshell package or another package reusing asyncshell
+
+
+where tests are located
+
+  - generally under the tests directory of the asyncshell package or another package reusing asyncshell
+
+
+where launchers are located
+
+  - generally under the tests directory of the asyncshell package or another package reusing asyncshell
+
+
+
+Configuration artifacts
+-----------------------
+
+
+command line arguments
+
+  - LAUNCHARGUMENTS
+
+    - "r", "random"
+    - "f", "flat"
+    - "v", "verboseplan"
+    - "d", "dryrun"
+    - "n", "repeats"
+
+
+  - HOUSEKEEPARGUMENTS
+
+    - "u", "maxHeapUsed"
+    - "a", "minHeapAvailable"
+    - "t", "testHousekeepingFile"
+    - "m", "incrementalMode"
+    - "h", "thrashingHeapAvailable"
+    - "i", "ignoreThrashingMillis"
+    - "b", "forceBits"
+
+
+    - RELEASINGARGUMENTS
+
+      - "l", "testReleasingAll"
+      - "z", "testReleasingFile"
+
+
+    - CLEANUPARGUMENTS
+
+      - "c", "testCleanUpAll"
+      - "k", "testCleanUpFile"
+
+
+
+  - overrider arguments: prefixed by OV and dots replaced with "_-_"
+
+    replace values supplied on the overrides.js which itself replaces values supplied in custom.js
+
+
+
+cmppath.json
+
+  Specified locations where components may be found (Javascript code implementations of test machinery)
+
+  Contains a JSON Array of objects with keys "packagePath" and "resPath"
+[
+    {
+        "comment":     "#root is defined in resloader.js as the relative path from the resloader.js file to the root of the project  RESLOADER_PATH_TO_ROOT = ../../../"
+    },
+    {
+        "packagePath": "common-test",
+        "resPath":     "#root/lib/common-test/"
+    },
+    {
+        "packagePath": "ttst",
+        "resPath":     "#root/lib/ttst/"
+    },
+    {
+        "packagePath": "general-test",
+        "resPath":     "#root/lib/general-test/"
+    },
+
+    {
+        "packagePath": "browser-test",
+        "resPath":     "#root/lib/browser-test/"
+    }
+]

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>50</y>
+      <w>900</w>
+      <h>440</h>
+    </coordinates>
+    <panel_attributes>pkg te2est-asyncshell
+--
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>120</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>package.json
+te2est-asyncshell
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>120</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>custom.js
+te2est-asyncshell
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>120</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>cmppath.json
+te2est-asyncshell
+
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>120</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>overrides.js
+te2est-asyncshell
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>120</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>testspath.json
+te2est-asyncshell
+
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>350</x>
+      <y>210</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>tests
+--
+halign=left
+valign=top
+launchables.json
+some-test
+   launchables.json
+   sub1-some-tests
+      launchables.json
+      test-x-1.json
+      test-y-1
+   sub2-some-tests
+      launchables.json
+      test-a-2.json
+other-test
+   launchables.json
+   test-z.json
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>60</x>
+      <y>210</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>lib
+--
+halign=left
+valign=top
+a.js
+codedir1
+   b.js
+   codesubdir-a
+      c.js
+   codesubdir-b
+      d.js
+codedir2
+   z.js
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>650</x>
+      <y>210</y>
+      <w>210</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>launchers
+--
+halign=left
+valign=top
+launchtogether.sh
+launch-some-test
+   launchtogether.sh
+   launch-sub1-some-tests
+      launchtogether.sh
+      launchone-test-x-1.sh
+      launchone-test-y-1
+   launch-sub2-some-tests
+      launchtogether.sh
+      launchone-test-a-2.sh
+launch-other-test
+   launchtogether.sh
+   launchone-test-z.sh
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -2,13 +2,13 @@
 
 /*
  custom.js
- Creado 201409250210
+ Created 201409250210
  */
 
 /*
  ***************************************************************************
 
- Copyright 2014 2015 Antonio Carrasco Valero
+ Copyright 2014 2015 2016 Antonio Carrasco Valero
  te2est asyncshell written in Javascript http://www.te2est.org http://www.asyncshell.org
 
 Licensed under the EUPL, Version 1.1 only (the "Licence");
@@ -41,7 +41,7 @@ permissions and limitations under the Licence.
         var ModuleFullName = ModulePackages + "/" + ModuleName;
 
 
-        if( !( typeof gfLOGMODULELOADS == "undefined") && ( typeof gfLOGMODULELOADS == "function") && gfLOGMODULELOADS()) { gfLOGMODULELOADS(ModuleFullName);}
+        if( !( typeof gfLOGMODULELOADS == "undefined") && ( typeof gfLOGMODULELOADS == "function")) { gfLOGMODULELOADS(ModuleFullName);}
 
 
 
@@ -365,31 +365,6 @@ permissions and limitations under the Licence.
                                 "comment":     "Expands to:  http://localhost:8080/springnut/tests/     /springnut/lib/    /springnut-test/",
                                 "comment2":    "De forma que @cmppath/springnut-test-example-remote/ine-test/ficheros-test/ficheros-list-ine-springnut-test",
                                 "comment3":    "Expande a  http://localhost:8080/springnut/tests/    /springnut/lib/    /springnut-test/    ine-test/ficheros-test/ficheros-list-ine-springnut-test   auto terminado en .js"
-                            },
-
-
-
-
-
-                            {
-                                "packagePath_OLD": "common-test",
-                                "resPath":     "../"
-                            },
-                            {
-                                "packagePath_OLD": "ttst",
-                                "resPath":     "../../ttst/"
-                            },
-                            {
-                                "packagePath_OLD": "general-test",
-                                "resPath":     "../../general-test/"
-                            },
-                            {
-                                "packagePath_OLD": "springnut-test",
-                                "resPath":     "../../springnut-test/"
-                            },
-                            {
-                                "packagePath_OLD": "modulo10-test",
-                                "resPath":     "../../modulo10-test/"
                             }
                             */
                         ]
