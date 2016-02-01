@@ -49,13 +49,29 @@
 
 
 
+        var FILETERMINATION_REGEXP_REPLACE = "<theFileTermination>";
+        var FILETERMINATION_REGEXP_TEMPLATE = "[0-1a-zA-Z_\-]+\." + FILETERMINATION_REGEXP_REPLACE +"$";
 
 
-        var fScanModuleNames = function() {
+
+
+
+
+
+        var fScanModuleNames = function( theDirectory,
+                                         theFileTermination,
+                                         theRemoveFileTerminationFromModuleName,
+                                         thePathPrefix) {
             
             var someScannedModules = [ ];
 
-            pScanModuleNames_into( __dirname, "", someScannedModules);
+            pScanModuleNames_into(
+                theDirectory,
+                theFileTermination,
+                theRemoveFileTerminationFromModuleName,
+                thePathPrefix,
+                someScannedModules
+            );
 
             return someScannedModules;
 
@@ -66,7 +82,11 @@
 
 
 
-        var pScanModuleNames_into = function( theDirectory, thePathPrefix, theScannedModules) {
+        var pScanModuleNames_into = function( theDirectory,
+                                              theFileTermination,
+                                              theRemoveFileTerminationFromModuleName,
+                                              thePathPrefix,
+                                              theScannedModules) {
 
             if( !theDirectory) {
                 return;
@@ -85,7 +105,7 @@
                 return;
             }
 
-            var someDirContents = theM_fs.read.readdirSync( theDirectory);
+            var someDirContents = theM_fs.readdirSync( theDirectory);
             if( !someDirContents) {
                 return;
             }
@@ -95,11 +115,21 @@
                 return;
             }
 
+            var aFileTermination_regex = null;
+            if( theFileTermination) {
+                var aFileTermination_regexp_source = FILETERMINATION_REGEXP_TEMPLATE.replace( FILETERMINATION_REGEXP_REPLACE, theFileTermination);
+                aFileTermination_regex = new RegExp( aFileTermination_regexp_source);
+            }
+
+
+
             for( var aDirContentsIdx=0; aDirContentsIdx < aNumDirContents; aDirContentsIdx++) {
                 var aDirContents = someDirContents[ aDirContentsIdx];
                 if( aDirContents) {
 
-                    var aStatsDirContents = theM_fs.lstatSync( aDirContents);
+                    var aDirContentsPath = theM_path.join( theDirectory, aDirContents);
+
+                    var aStatsDirContents = theM_fs.lstatSync( aDirContentsPath);
                     if( !aStatsDirContents) {
                         continue;
                     }
@@ -119,16 +149,58 @@
                             aPathPrefix  = aDirContents;
                         }
 
-                        pScanModuleNames_into( aDirContents, aPathPrefix, theScannedModules);
+                        pScanModuleNames_into(
+                            aDirContentsPath,
+                            theFileTermination,
+                            theRemoveFileTerminationFromModuleName,
+                            aPathPrefix,
+                            theScannedModules
+                        );
                         continue;
                     }
 
-                    var aFilename = theM_path.join( thePathPrefix, aDirContents);
-                    theScannedModules.push( aFilename);
+
+                    var anAcceptFilename = false;
+                    if( aFileTermination_regex) {
+                        if( aFileTermination_regex.test( aDirContents)) {
+                            anAcceptFilename = true;
+                        }
+                    }
+                    else {
+                        anAcceptFilename = true;
+                    }
+
+
+                    if( anAcceptFilename) {
+
+                        var aFilenameWithTermination = aDirContents;
+                        var aFilename = aFilenameWithTermination;
+
+                        if( theRemoveFileTerminationFromModuleName) {
+                            aFilename = aFilename.substring( 0, aFilenameWithTermination.length - theFileTermination.length - 1);
+                        }
+
+
+                        var aModulePath = null;
+                        if( thePathPrefix) {
+                            aModulePath = theM_path.join( thePathPrefix, aFilename);
+                        }
+                        else {
+                            aModulePath  = aFilename;
+                        }
+
+                        theScannedModules.push( aModulePath);
+                    }
                 }
             }
         };
         if( pScanModuleNames_into){}/* CQT */
+
+
+
+
+
+
 
 
 
